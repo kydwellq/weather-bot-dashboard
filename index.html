@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Weather Bot</title>
+<title>Fleet Dashboard</title>
 <meta http-equiv="refresh" content="60">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -21,16 +21,8 @@
     border-bottom: 1px solid #21262d;
     margin-bottom: 20px;
   }
-  .header h1 {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-  .header .subtitle {
-    font-size: 13px;
-    color: #8b949e;
-    margin-top: 4px;
-  }
+  .header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+  .header .subtitle { font-size: 13px; color: #8b949e; margin-top: 4px; }
   .header .mode {
     display: inline-block;
     padding: 3px 10px;
@@ -43,6 +35,17 @@
   }
   .mode-paper { background: #d29922; color: #0d1117; }
   .mode-live { background: #f85149; color: #fff; }
+  .kill-active {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #f85149;
+    color: #fff;
+    margin-left: 6px;
+  }
 
   .card {
     background: #161b22;
@@ -90,8 +93,55 @@
   .red { color: #f85149; }
   .yellow { color: #d29922; }
   .blue { color: #58a6ff; }
+  .purple { color: #bc8cff; }
   .dim { color: #8b949e; }
 
+  /* Bot status grid */
+  .bot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .bot-card {
+    background: #0d1117;
+    border-radius: 10px;
+    padding: 14px;
+    border-left: 3px solid #21262d;
+    position: relative;
+  }
+  .bot-card .bot-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .bot-card .bot-name .icon { font-size: 16px; }
+  .bot-status {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .status-run { background: #3fb950; box-shadow: 0 0 6px rgba(63,185,80,0.5); }
+  .status-stop { background: #f85149; box-shadow: 0 0 6px rgba(248,81,73,0.5); }
+  .bot-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    font-size: 12px;
+  }
+  .bot-stat-label { color: #8b949e; }
+  .bot-stat-value {
+    text-align: right;
+    font-family: 'SF Mono', monospace;
+    font-weight: 600;
+  }
+
+  /* Trade list */
   .trade-list { list-style: none; }
   .trade-item {
     padding: 12px;
@@ -127,6 +177,13 @@
   .badge-win { background: rgba(63,185,80,0.2); color: #3fb950; }
   .badge-loss { background: rgba(248,81,73,0.2); color: #f85149; }
   .badge-open { background: rgba(210,153,34,0.2); color: #d29922; }
+  .badge-bot {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-right: 4px;
+  }
 
   .trade-details {
     display: grid;
@@ -137,17 +194,26 @@
   }
   .trade-details span { white-space: nowrap; }
 
-  .city-row {
+  /* Filter tabs */
+  .filter-tabs {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #21262d;
-    font-size: 14px;
+    gap: 6px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
   }
-  .city-row:last-child { border-bottom: none; }
-  .city-name { font-weight: 600; }
-  .city-record { font-family: 'SF Mono', monospace; font-size: 13px; }
+  .filter-tab {
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #30363d;
+    background: transparent;
+    color: #8b949e;
+    transition: all 0.15s;
+  }
+  .filter-tab:hover { border-color: #58a6ff; color: #58a6ff; }
+  .filter-tab.active { background: #58a6ff; color: #0d1117; border-color: #58a6ff; }
 
   .live-temp {
     padding: 12px;
@@ -159,15 +225,8 @@
     align-items: center;
   }
   .live-city { font-weight: 600; font-size: 14px; }
-  .live-temp-val {
-    font-family: 'SF Mono', monospace;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  .live-forecast {
-    font-size: 12px;
-    color: #8b949e;
-  }
+  .live-temp-val { font-family: 'SF Mono', monospace; font-size: 20px; font-weight: 700; }
+  .live-forecast { font-size: 12px; color: #8b949e; }
 
   .footer {
     text-align: center;
@@ -177,7 +236,7 @@
   }
 
   @media (min-width: 768px) {
-    body { max-width: 600px; margin: 0 auto; }
+    body { max-width: 640px; margin: 0 auto; }
     .stat-grid { grid-template-columns: 1fr 1fr 1fr 1fr; }
   }
 </style>
@@ -185,14 +244,15 @@
 <body>
 
 <div class="header">
-  <h1>Weather Bot</h1>
-  <div class="subtitle">Kalshi Temperature Markets</div>
+  <h1>Fleet Dashboard</h1>
+  <div class="subtitle">Kalshi · Weather · Finance · Energy · Economics</div>
   <div class="mode mode-paper">PAPER</div>
+  
 </div>
 
-<!-- Account -->
+<!-- Fleet Account -->
 <div class="card">
-  <div class="card-title">Account</div>
+  <div class="card-title">Fleet Account</div>
   <div class="stat-grid">
     <div class="stat stat-full">
       <div class="stat-value ">$100.00</div>
@@ -203,11 +263,11 @@
       <div class="stat-label">Net P&L</div>
     </div>
     <div class="stat">
-      <div class="stat-value">$34.63</div>
+      <div class="stat-value">$53.23</div>
       <div class="stat-label">Deployed</div>
     </div>
     <div class="stat">
-      <div class="stat-value red">$1.48</div>
+      <div class="stat-value red">$2.40</div>
       <div class="stat-label">Fees</div>
     </div>
     <div class="stat">
@@ -217,12 +277,12 @@
   </div>
 </div>
 
-<!-- Record -->
+<!-- Fleet Record -->
 <div class="card">
   <div class="card-title">Record</div>
   <div class="stat-grid">
     <div class="stat">
-      <div class="stat-value">10</div>
+      <div class="stat-value">19</div>
       <div class="stat-label">Total</div>
     </div>
     <div class="stat">
@@ -234,7 +294,7 @@
       <div class="stat-label">Lost</div>
     </div>
     <div class="stat">
-      <div class="stat-value yellow">10</div>
+      <div class="stat-value yellow">19</div>
       <div class="stat-label">Pending</div>
     </div>
     <div class="stat stat-full">
@@ -244,10 +304,86 @@
   </div>
 </div>
 
+<!-- Bot Status Grid -->
+<div class="card">
+  <div class="card-title">Bots</div>
+  <div class="bot-grid">
+    
+    <div class="bot-card" style="border-left-color:#58a6ff">
+      <div class="bot-status status-run"></div>
+      <div class="bot-name">
+        <span class="icon">🌤</span>
+        <span style="color:#58a6ff">Weather</span>
+      </div>
+      <div class="bot-stats">
+        <span class="bot-stat-label">P&L</span>
+        <span class="bot-stat-value dim">$+0.00</span>
+        <span class="bot-stat-label">Exposed</span>
+        <span class="bot-stat-value">$53.23</span>
+        <span class="bot-stat-label">Record</span>
+        <span class="bot-stat-value">0W/0L <span class='dim'>(19p)</span></span>
+        <span class="bot-stat-label">Alloc</span>
+        <span class="bot-stat-value">$25</span>
+      </div>
+    </div>
+    <div class="bot-card" style="border-left-color:#79c0ff">
+      <div class="bot-status status-run"></div>
+      <div class="bot-name">
+        <span class="icon">📈</span>
+        <span style="color:#79c0ff">Finance</span>
+      </div>
+      <div class="bot-stats">
+        <span class="bot-stat-label">P&L</span>
+        <span class="bot-stat-value dim">$+0.00</span>
+        <span class="bot-stat-label">Exposed</span>
+        <span class="bot-stat-value">$0.00</span>
+        <span class="bot-stat-label">Record</span>
+        <span class="bot-stat-value">0W/0L</span>
+        <span class="bot-stat-label">Alloc</span>
+        <span class="bot-stat-value">$25</span>
+      </div>
+    </div>
+    <div class="bot-card" style="border-left-color:#d29922">
+      <div class="bot-status status-run"></div>
+      <div class="bot-name">
+        <span class="icon">⛽</span>
+        <span style="color:#d29922">Energy</span>
+      </div>
+      <div class="bot-stats">
+        <span class="bot-stat-label">P&L</span>
+        <span class="bot-stat-value dim">$+0.00</span>
+        <span class="bot-stat-label">Exposed</span>
+        <span class="bot-stat-value">$0.00</span>
+        <span class="bot-stat-label">Record</span>
+        <span class="bot-stat-value">0W/0L</span>
+        <span class="bot-stat-label">Alloc</span>
+        <span class="bot-stat-value">$25</span>
+      </div>
+    </div>
+    <div class="bot-card" style="border-left-color:#bc8cff">
+      <div class="bot-status status-run"></div>
+      <div class="bot-name">
+        <span class="icon">📊</span>
+        <span style="color:#bc8cff">Economics</span>
+      </div>
+      <div class="bot-stats">
+        <span class="bot-stat-label">P&L</span>
+        <span class="bot-stat-value dim">$+0.00</span>
+        <span class="bot-stat-label">Exposed</span>
+        <span class="bot-stat-value">$0.00</span>
+        <span class="bot-stat-label">Record</span>
+        <span class="bot-stat-value">0W/0L</span>
+        <span class="bot-stat-label">Alloc</span>
+        <span class="bot-stat-value">$25</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Live Temperatures -->
 
         <div class="card">
-          <div class="card-title">Live Temperatures (partial day)</div>
+          <div class="card-title">Live Temperatures</div>
           
             <div class="live-temp">
               <div>
@@ -268,7 +404,7 @@
                 <div class="live-city">Miami</div>
                 <div class="live-forecast">Forecast: 78°F</div>
               </div>
-              <div class="live-temp-val blue">79°F</div>
+              <div class="live-temp-val blue">81°F</div>
             </div>
             <div class="live-temp">
               <div>
@@ -279,41 +415,203 @@
             </div>
         </div>
 
-<!-- City Breakdown -->
-<div class="card">
-  <div class="card-title">By City</div>
-  
-        <div class="city-row">
-          <span class="city-name">Austin</span>
-          <span class="city-record">1 open</span>
-          <span class="dim">$+0.00</span>
-        </div>
-        <div class="city-row">
-          <span class="city-name">Chicago</span>
-          <span class="city-record">2 open</span>
-          <span class="dim">$+0.00</span>
-        </div>
-        <div class="city-row">
-          <span class="city-name">Los Angeles</span>
-          <span class="city-record">4 open</span>
-          <span class="dim">$+0.00</span>
-        </div>
-        <div class="city-row">
-          <span class="city-name">Miami</span>
-          <span class="city-record">3 open</span>
-          <span class="dim">$+0.00</span>
-        </div>
-</div>
-
 <!-- Trades -->
 <div class="card">
-  <div class="card-title">Trades (10)</div>
-  <ul class="trade-list">
+  <div class="card-title">Trades (19)</div>
+  <div class="filter-tabs" id="filterTabs">
+    <button class="filter-tab active" onclick="filterTrades('all')">All</button>
+    <button class="filter-tab" onclick="filterTrades('weather')" style="border-color:#58a6ff40">🌤 Weather</button>
+    <button class="filter-tab" onclick="filterTrades('finance')" style="border-color:#79c0ff40">📈 Finance</button>
+    <button class="filter-tab" onclick="filterTrades('energy')" style="border-color:#d2992240">⛽ Energy</button>
+    <button class="filter-tab" onclick="filterTrades('economics')" style="border-color:#bc8cff40">📊 Econ</button>
+  </div>
+  <ul class="trade-list" id="tradeList">
     
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXCPI-26MAR-T0.9</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>1x @ $0.51</span>
+            <span>Cost: $0.51</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Cpi Mom</span>
+            <span>Edge: 37%</span>
+            <span class="dim">2026-04-05 14:48</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXCPI-26MAR-T0.6</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>31x @ $0.03</span>
+            <span>Cost: $0.93</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Cpi Mom</span>
+            <span>Edge: 85%</span>
+            <span class="dim">2026-04-05 14:48</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXCPI-26MAR-T0.8</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>3x @ $0.29</span>
+            <span>Cost: $0.87</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Cpi Mom</span>
+            <span>Edge: 59%</span>
+            <span class="dim">2026-04-05 14:48</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXCPI-26MAR-T0.7</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>23x @ $0.04</span>
+            <span>Cost: $0.92</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Cpi Mom</span>
+            <span>Edge: 84%</span>
+            <span class="dim">2026-04-05 14:48</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXCPICORE-26MAR-T0.1</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>37x @ $0.04</span>
+            <span>Cost: $1.48</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Core Cpi Mom</span>
+            <span>Edge: 75%</span>
+            <span class="dim">2026-04-05 14:07</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXAAAGASW-26APR06-4.110</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-yes">YES</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>4x @ $0.81</span>
+            <span>Cost: $3.24</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Us Gas Price (Weekly)</span>
+            <span>Edge: 17%</span>
+            <span class="dim">2026-04-05 13:51</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXAAAGASW-26APR06-4.120</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-yes">YES</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>7x @ $0.47</span>
+            <span>Cost: $3.29</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Us Gas Price (Weekly)</span>
+            <span>Edge: 45%</span>
+            <span class="dim">2026-04-05 13:51</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXAAAGASW-26APR06-4.140</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-yes">YES</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>93x @ $0.04</span>
+            <span>Cost: $3.72</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Us Gas Price (Weekly)</span>
+            <span>Edge: 56%</span>
+            <span class="dim">2026-04-05 13:51</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
+          <div class="trade-header">
+            <span class="trade-ticker">KXAAAGASW-26APR06-4.130</span>
+            <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
+              <span class="trade-badge badge-yes">YES</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>28x @ $0.13</span>
+            <span>Cost: $3.64</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Us Gas Price (Weekly)</span>
+            <span>Edge: 67%</span>
+            <span class="dim">2026-04-05 13:51</span>
+          </div>
+        </li>
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHAUS-26APR05-B70.5</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-no">NO</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -329,10 +627,11 @@
             <span class="dim">2026-04-05 11:48</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHMIA-26APR05-B81.5</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-no">NO</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -348,10 +647,11 @@
             <span class="dim">2026-04-05 11:48</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHLAX-26APR05-B76.5</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-no">NO</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -367,10 +667,11 @@
             <span class="dim">2026-04-05 03:32</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHLAX-26APR05-B78.5</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-no">NO</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -386,10 +687,11 @@
             <span class="dim">2026-04-05 03:11</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHMIA-26APR05-B83.5</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-no">NO</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -405,10 +707,11 @@
             <span class="dim">2026-04-05 03:11</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHCHI-26APR05-T50</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-yes">YES</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -424,10 +727,11 @@
             <span class="dim">2026-04-05 03:11</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHLAX-26APR05-T81</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-yes">YES</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -443,10 +747,11 @@
             <span class="dim">2026-04-05 03:11</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHMIA-26APR05-B83.5</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-no">NO</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -462,10 +767,11 @@
             <span class="dim">2026-04-05 02:52</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHCHI-26APR05-T50</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-yes">YES</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -481,10 +787,11 @@
             <span class="dim">2026-04-05 02:52</span>
           </div>
         </li>
-        <li class="trade-item open">
+        <li class="trade-item open" data-bot="weather" style="border-left-color:#58a6ff">
           <div class="trade-header">
             <span class="trade-ticker">KXHIGHLAX-26APR05-T81</span>
             <span>
+              <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff">🌤 Weather</span>
               <span class="trade-badge badge-yes">YES</span>
               <span class="trade-badge badge-open">OPEN</span>
             </span>
@@ -504,8 +811,24 @@
 </div>
 
 <div class="footer">
-  Updated 2026-04-05 12:04 UTC · Auto-refreshes every 60s
+  Updated 2026-04-05 15:18 UTC · Auto-refreshes every 60s
 </div>
+
+<script>
+function filterTrades(bot) {
+  const items = document.querySelectorAll('.trade-item');
+  const tabs = document.querySelectorAll('.filter-tab');
+  tabs.forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  items.forEach(item => {
+    if (bot === 'all' || item.dataset.bot === bot) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+</script>
 
 </body>
 </html>
