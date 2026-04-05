@@ -811,10 +811,24 @@
 </div>
 
 <div class="footer">
-  Updated 2026-04-05 15:18 UTC · Auto-refreshes every 60s
+  Updated 2026-04-05 15:39 UTC · Auto-refreshes every 60s
+</div>
+<div id="stale-banner" style="display:none;background:#d32;color:#fff;text-align:center;padding:10px;font-weight:bold;position:fixed;top:0;left:0;right:0;z-index:999">
+  ⚠ Dashboard is stale — last updated 2026-04-05 15:39 UTC. Bot may be down.
 </div>
 
 <script>
+// Stale check — warn if dashboard is more than 2 hours old
+(function() {
+  var updated = new Date("2026-04-05T15:39:23Z");
+  var now = new Date();
+  var hoursOld = (now - updated) / (1000 * 60 * 60);
+  if (hoursOld > 2) {
+    document.getElementById('stale-banner').style.display = 'block';
+    document.body.style.paddingTop = '40px';
+  }
+})();
+
 function filterTrades(bot) {
   const items = document.querySelectorAll('.trade-item');
   const tabs = document.querySelectorAll('.filter-tab');
