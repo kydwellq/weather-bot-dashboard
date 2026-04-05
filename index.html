@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Weather Bot</title>
+<meta http-equiv="refresh" content="60">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    padding: 16px;
+    padding-bottom: 100px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .header {
+    text-align: center;
+    padding: 20px 0 16px;
+    border-bottom: 1px solid #21262d;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .header .subtitle {
+    font-size: 13px;
+    color: #8b949e;
+    margin-top: 4px;
+  }
+  .header .mode {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 8px;
+  }
+  .mode-paper { background: #d29922; color: #0d1117; }
+  .mode-live { background: #f85149; color: #fff; }
+
+  .card {
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .card-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .stat {
+    text-align: center;
+    padding: 12px 8px;
+    background: #0d1117;
+    border-radius: 8px;
+  }
+  .stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'SF Mono', 'JetBrains Mono', monospace;
+    letter-spacing: -0.02em;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: #8b949e;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .stat-full { grid-column: 1 / -1; }
+
+  .green { color: #3fb950; }
+  .red { color: #f85149; }
+  .yellow { color: #d29922; }
+  .blue { color: #58a6ff; }
+  .dim { color: #8b949e; }
+
+  .trade-list { list-style: none; }
+  .trade-item {
+    padding: 12px;
+    background: #0d1117;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-left: 3px solid #21262d;
+  }
+  .trade-item.win { border-left-color: #3fb950; }
+  .trade-item.loss { border-left-color: #f85149; }
+  .trade-item.open { border-left-color: #d29922; }
+
+  .trade-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .trade-ticker {
+    font-family: 'SF Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .trade-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 8px;
+    text-transform: uppercase;
+  }
+  .badge-yes { background: rgba(63,185,80,0.15); color: #3fb950; }
+  .badge-no { background: rgba(248,81,73,0.15); color: #f85149; }
+  .badge-win { background: rgba(63,185,80,0.2); color: #3fb950; }
+  .badge-loss { background: rgba(248,81,73,0.2); color: #f85149; }
+  .badge-open { background: rgba(210,153,34,0.2); color: #d29922; }
+
+  .trade-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    font-size: 12px;
+    color: #8b949e;
+  }
+  .trade-details span { white-space: nowrap; }
+
+  .city-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #21262d;
+    font-size: 14px;
+  }
+  .city-row:last-child { border-bottom: none; }
+  .city-name { font-weight: 600; }
+  .city-record { font-family: 'SF Mono', monospace; font-size: 13px; }
+
+  .live-temp {
+    padding: 12px;
+    background: #0d1117;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .live-city { font-weight: 600; font-size: 14px; }
+  .live-temp-val {
+    font-family: 'SF Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .live-forecast {
+    font-size: 12px;
+    color: #8b949e;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 11px;
+    color: #484f58;
+  }
+
+  @media (min-width: 768px) {
+    body { max-width: 600px; margin: 0 auto; }
+    .stat-grid { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Weather Bot</h1>
+  <div class="subtitle">Kalshi Temperature Markets</div>
+  <div class="mode mode-paper">PAPER</div>
+</div>
+
+<!-- Account -->
+<div class="card">
+  <div class="card-title">Account</div>
+  <div class="stat-grid">
+    <div class="stat stat-full">
+      <div class="stat-value ">$100.00</div>
+      <div class="stat-label">Balance</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value ">$+0.00</div>
+      <div class="stat-label">Net P&L</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">$34.63</div>
+      <div class="stat-label">Deployed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value red">$1.48</div>
+      <div class="stat-label">Fees</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value ">+0.0%</div>
+      <div class="stat-label">ROI</div>
+    </div>
+  </div>
+</div>
+
+<!-- Record -->
+<div class="card">
+  <div class="card-title">Record</div>
+  <div class="stat-grid">
+    <div class="stat">
+      <div class="stat-value">10</div>
+      <div class="stat-label">Total</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value green">0</div>
+      <div class="stat-label">Won</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value red">0</div>
+      <div class="stat-label">Lost</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value yellow">10</div>
+      <div class="stat-label">Pending</div>
+    </div>
+    <div class="stat stat-full">
+      <div class="stat-value blue">—</div>
+      <div class="stat-label">Win Rate</div>
+    </div>
+  </div>
+</div>
+
+<!-- Live Temperatures -->
+
+        <div class="card">
+          <div class="card-title">Live Temperatures (partial day)</div>
+          
+            <div class="live-temp">
+              <div>
+                <div class="live-city">Los Angeles</div>
+                <div class="live-forecast">Forecast: 84°F</div>
+              </div>
+              <div class="live-temp-val blue">84°F</div>
+            </div>
+            <div class="live-temp">
+              <div>
+                <div class="live-city">Chicago</div>
+                <div class="live-forecast">Forecast: 46°F</div>
+              </div>
+              <div class="live-temp-val blue">43°F</div>
+            </div>
+            <div class="live-temp">
+              <div>
+                <div class="live-city">Miami</div>
+                <div class="live-forecast">Forecast: 78°F</div>
+              </div>
+              <div class="live-temp-val blue">79°F</div>
+            </div>
+            <div class="live-temp">
+              <div>
+                <div class="live-city">Austin</div>
+                <div class="live-forecast">Forecast: 67°F</div>
+              </div>
+              <div class="live-temp-val blue">64°F</div>
+            </div>
+        </div>
+
+<!-- City Breakdown -->
+<div class="card">
+  <div class="card-title">By City</div>
+  
+        <div class="city-row">
+          <span class="city-name">Austin</span>
+          <span class="city-record">1 open</span>
+          <span class="dim">$+0.00</span>
+        </div>
+        <div class="city-row">
+          <span class="city-name">Chicago</span>
+          <span class="city-record">2 open</span>
+          <span class="dim">$+0.00</span>
+        </div>
+        <div class="city-row">
+          <span class="city-name">Los Angeles</span>
+          <span class="city-record">4 open</span>
+          <span class="dim">$+0.00</span>
+        </div>
+        <div class="city-row">
+          <span class="city-name">Miami</span>
+          <span class="city-record">3 open</span>
+          <span class="dim">$+0.00</span>
+        </div>
+</div>
+
+<!-- Trades -->
+<div class="card">
+  <div class="card-title">Trades (10)</div>
+  <ul class="trade-list">
+    
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHAUS-26APR05-B70.5</span>
+            <span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>5x @ $0.63</span>
+            <span>Cost: $3.15</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Austin</span>
+            <span>Edge: 26%</span>
+            <span class="dim">2026-04-05 11:48</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHMIA-26APR05-B81.5</span>
+            <span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>6x @ $0.55</span>
+            <span>Cost: $3.30</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Miami</span>
+            <span>Edge: 30%</span>
+            <span class="dim">2026-04-05 11:48</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHLAX-26APR05-B76.5</span>
+            <span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>5x @ $0.69</span>
+            <span>Cost: $3.45</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Los Angeles</span>
+            <span>Edge: 26%</span>
+            <span class="dim">2026-04-05 03:32</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHLAX-26APR05-B78.5</span>
+            <span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>5x @ $0.65</span>
+            <span>Cost: $3.25</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Los Angeles</span>
+            <span>Edge: 26%</span>
+            <span class="dim">2026-04-05 03:11</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHMIA-26APR05-B83.5</span>
+            <span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>7x @ $0.47</span>
+            <span>Cost: $3.29</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Miami</span>
+            <span>Edge: 46%</span>
+            <span class="dim">2026-04-05 03:11</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHCHI-26APR05-T50</span>
+            <span>
+              <span class="trade-badge badge-yes">YES</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>15x @ $0.24</span>
+            <span>Cost: $3.60</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Chicago</span>
+            <span>Edge: 55%</span>
+            <span class="dim">2026-04-05 03:11</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHLAX-26APR05-T81</span>
+            <span>
+              <span class="trade-badge badge-yes">YES</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>62x @ $0.06</span>
+            <span>Cost: $3.72</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Los Angeles</span>
+            <span>Edge: 70%</span>
+            <span class="dim">2026-04-05 03:11</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHMIA-26APR05-B83.5</span>
+            <span>
+              <span class="trade-badge badge-no">NO</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>8x @ $0.44</span>
+            <span>Cost: $3.52</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Miami</span>
+            <span>Edge: 52%</span>
+            <span class="dim">2026-04-05 02:52</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHCHI-26APR05-T50</span>
+            <span>
+              <span class="trade-badge badge-yes">YES</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>15x @ $0.24</span>
+            <span>Cost: $3.60</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Chicago</span>
+            <span>Edge: 60%</span>
+            <span class="dim">2026-04-05 02:52</span>
+          </div>
+        </li>
+        <li class="trade-item open">
+          <div class="trade-header">
+            <span class="trade-ticker">KXHIGHLAX-26APR05-T81</span>
+            <span>
+              <span class="trade-badge badge-yes">YES</span>
+              <span class="trade-badge badge-open">OPEN</span>
+            </span>
+          </div>
+          <div class="trade-details">
+            <span>75x @ $0.05</span>
+            <span>Cost: $3.75</span>
+            <span class="dim">P&L: —</span>
+          </div>
+          <div class="trade-details" style="margin-top:4px">
+            <span>Los Angeles</span>
+            <span>Edge: 75%</span>
+            <span class="dim">2026-04-05 02:52</span>
+          </div>
+        </li>
+  </ul>
+</div>
+
+<div class="footer">
+  Updated 2026-04-05 11:59 UTC · Auto-refreshes every 60s
+</div>
+
+</body>
+</html>
