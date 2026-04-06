@@ -507,13 +507,13 @@
 <!-- ── Status Banner ────────────────────────────────── -->
 <div class="status-banner">
   <span class="status-dot status-dot-warn"></span>
-  <span>3 of 4 bots running · Finance paused · 9 open trades</span>
-  <span style="margin-left:auto; opacity:0.5; font-size:0.82em;">Updated Apr 06, 06:59 AM ET</span>
+  <span>2 of 4 bots running · Finance, Economics paused · 9 open trades</span>
+  <span style="margin-left:auto; opacity:0.5; font-size:0.82em;">Updated Apr 06, 08:04 AM ET</span>
 </div>
 
 <!-- ── Stale Banner ─────────────────────────────────── -->
 <div id="stale-banner">
-  Dashboard may be stale — last updated Apr 06, 06:59 AM ET
+  Dashboard may be stale — last updated Apr 06, 08:04 AM ET
 </div>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -535,7 +535,7 @@
         <div class="stat-helper">settled trades</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm green">$+118.05</div>
+        <div class="stat-value stat-value-sm green">$+118.03</div>
         <div class="stat-label">Paper Gain</div>
         <div class="stat-helper">if closed now</div>
       </div>
@@ -642,7 +642,7 @@
       <button class="kill-btn kill-btn-stop" onclick="killSwitch('pause_bot', 'energy')">Pause</button>
     </div>
     <div class="bot-card" style="border-left-color:#bc8cff">
-      <div class="bot-status status-run"></div>
+      <div class="bot-status status-stop"></div>
       <div class="bot-name">
         <span class="icon">📊</span>
         <span style="color:#bc8cff">Economics</span>
@@ -651,7 +651,7 @@
         <span class="bot-stat-label">Profit</span>
         <span class="bot-stat-value dim">$+0.00</span>
         <span class="bot-stat-label">Paper</span>
-        <span class="bot-stat-value"><span class="red">$-0.06</span></span>
+        <span class="bot-stat-value"><span class="red">$-0.08</span></span>
         <span class="bot-stat-label">At Risk</span>
         <span class="bot-stat-value">$4.71</span>
         <span class="bot-stat-label">Record</span>
@@ -659,7 +659,7 @@
         <span class="bot-stat-label">Budget</span>
         <span class="bot-stat-value">$100</span>
       </div>
-      <button class="kill-btn kill-btn-stop" onclick="killSwitch('pause_bot', 'economics')">Pause</button>
+      <button class="kill-btn kill-btn-run" onclick="killSwitch('resume_bot', 'economics')">Resume</button>
     </div>
     </div>
   </div>
@@ -678,51 +678,27 @@
   
   <div class="card">
     <div class="card-title">System Monitor</div>
-    <div class="card-subtitle">What's running and when</div>
+    <div class="card-subtitle">APScheduler · persistent process · auto-restart</div>
 
     <div style="font-size:12px">
       <div style="display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #21262d">
-        <span style="font-size:16px">🟢</span>
+        <span style="font-size:16px">🔴</span>
         <div style="flex:1">
-          <div style="font-weight:600;color:#3fb950">Fleet Controller</div>
-          <div class="dim" style="font-size:11px">Scans all 4 bots, finds trades, manages risk</div>
+          <div style="font-weight:600;color:#f85149">Fleet Controller</div>
+          <div class="dim" style="font-size:11px">Weather + Energy bots · scan → edge → rank → trade</div>
         </div>
         <div style="text-align:right">
-          <div class="mono" style="font-size:12px;color:#3fb950">0min ago</div>
+          <div class="mono" style="font-size:12px;color:#f85149">66min ago — STALE</div>
           <div class="dim" style="font-size:10px">Apr 06, 06:58 AM ET</div>
-        </div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #21262d">
-        <span style="font-size:16px">🩺</span>
-        <div style="flex:1">
-          <div style="font-weight:600">Health Monitor</div>
-          <div class="dim" style="font-size:11px">Alerts if fleet goes silent</div>
-        </div>
-        <div style="text-align:right">
-          <div class="mono dim" style="font-size:12px">every 30min</div>
-          <div class="dim" style="font-size:10px">:20 and :50</div>
-        </div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #21262d">
-        <span style="font-size:16px">📊</span>
-        <div style="flex:1">
-          <div style="font-weight:600">Report + Dashboard</div>
-          <div class="dim" style="font-size:11px">Settlement check, P&L report, publish dashboard</div>
-        </div>
-        <div style="text-align:right">
-          <div class="mono dim" style="font-size:12px">every 4h</div>
-          <div class="dim" style="font-size:10px">:17 past</div>
         </div>
       </div>
     </div>
 
     <div style="margin-top:12px;padding:10px;background:#161b22;border-radius:6px">
-      <div style="display:flex;justify-content:space-between;font-size:12px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:8px">
         <div>
           <div class="dim" style="font-size:10px">NEXT FLEET CYCLE</div>
-          <div class="mono" style="font-weight:600;color:#58a6ff">~6min</div>
+          <div class="mono" style="font-weight:600;color:#58a6ff">~15min</div>
         </div>
         <div style="text-align:center">
           <div class="dim" style="font-size:10px">LAST CYCLE</div>
@@ -734,7 +710,23 @@
         </div>
         <div style="text-align:right">
           <div class="dim" style="font-size:10px">NEXT HEALTH CHECK</div>
-          <div class="mono" style="font-weight:600;color:#3fb950">~21min</div>
+          <div class="mono" style="font-weight:600;color:#3fb950">~5min</div>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid #21262d;padding-top:8px;font-size:11px">
+        <div class="dim" style="font-size:10px;margin-bottom:4px;font-weight:600">FULL SCHEDULE (ET)</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px 12px">
+          <div><span style="color:#58a6ff">⏱</span> Fleet Cycle <span class="dim">every 15min</span></div>
+          <div><span style="color:#3fb950">🩺</span> Health Check <span class="dim">every 15min</span></div>
+          <div><span style="color:#d29922">💓</span> Heartbeat <span class="dim">every 15min</span></div>
+          <div><span style="color:#8b949e">📊</span> Settlement <span class="dim">every 4h :17</span></div>
+          <div><span style="color:#8b949e">🌐</span> Dashboard <span class="dim">every 4h :20</span></div>
+          <div><span style="color:#8b949e">🌤</span> GFS Update <span class="dim">02/08/14/20:30</span></div>
+          <div><span style="color:#8b949e">🧠</span> Learning <span class="dim">daily 9 PM</span></div>
+          <div><span style="color:#8b949e">📋</span> Summary <span class="dim">daily 9:30 PM</span></div>
+          <div><span style="color:#8b949e">⛽</span> EIA Window <span class="dim">Wed/Thu 10:31</span></div>
+          <div><span style="color:#8b949e">📈</span> Weekly Rpt <span class="dim">Sun 8 PM</span></div>
         </div>
       </div>
     </div><div style="margin-top:10px;padding:8px;background:#161b22;border-radius:6px"><div class="dim" style="font-size:11px;margin-bottom:6px">🧠 Learned Adjustments (auto-applied)</div><div style="font-size:11px;padding:3px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.miami</span> = <span style="color:#3fb950;font-weight:600">1.875</span> <span class="dim">· 2026-04-06</span></div><div style="font-size:11px;padding:3px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">forecast_bias_correction</span> = <span style="color:#3fb950;font-weight:600">4.4</span> <span class="dim">· 2026-04-06</span></div></div>
@@ -744,7 +736,7 @@
   
 
   <div class="footer">
-    Updated Apr 06, 06:59 AM ET · Auto-refreshes every 60s
+    Updated Apr 06, 08:04 AM ET · Auto-refreshes every 60s
   </div>
 </div>
 
@@ -783,7 +775,7 @@
     <ul class="trade-list" id="tradeList">
       
         <li class="trade-item open" data-bot="economics" data-status="open"
-            data-placed="2026-04-05T14:48:30.139501" data-pnl="-0.0950"
+            data-placed="2026-04-05T14:48:30.139501" data-pnl="-0.0850"
             data-edge="0.3746" data-target="2026-04-10"
             style="border-left-color:#bc8cff">
           <div class="trade-head" onclick="toggleTrade(this)">
@@ -800,10 +792,10 @@
             <div class="trade-row-prices">
               <div class="price-group">
                 <span><span class="price-label">Entry </span><span class="price-val">$0.51</span></span>
-                <span><span class="price-label">Now </span><span class="price-val">$0.41</span></span>
+                <span><span class="price-label">Now </span><span class="price-val">$0.42</span></span>
                 <span><span class="price-label">Edge </span><span class="price-val">37%</span></span>
               </div>
-              <span class="trade-pnl red">$-0.10</span>
+              <span class="trade-pnl red">$-0.09</span>
             </div>
             <div class="trade-row-details">
               <span><span class="price-label">Risked</span><span class="price-val">$0.51</span></span>
@@ -853,22 +845,22 @@
               <div class="detail-section-title">Current Value</div>
               <div class="detail-grid">
                 <span class="detail-label">Current Price</span>
-                <span class="detail-value">$0.41</span>
+                <span class="detail-value">$0.42</span>
                 <span class="detail-label">Payout if Win</span>
                 <span class="detail-value">$1.00</span>
                 <span class="detail-label">Resolves In</span>
                 <span class="detail-value">4.5d</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
-                  <circle cx="198.0" cy="38.0" r="2.5" fill="#f85149"/>
+                  <polyline points="2.0,38.0 67.3,38.0 132.7,38.0 198.0,2.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="198.0" cy="2.0" r="2.5" fill="#f85149"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
@@ -952,22 +944,22 @@
                 <span class="detail-value">4.5d</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,38.0 67.3,38.0 132.7,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="38.0" r="2.5" fill="#3fb950"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
           </div>
         </li>
         <li class="trade-item open" data-bot="economics" data-status="open"
-            data-placed="2026-04-05T14:48:29.866696" data-pnl="-0.2850"
+            data-placed="2026-04-05T14:48:29.866696" data-pnl="-0.3150"
             data-edge="0.5946" data-target="2026-04-10"
             style="border-left-color:#bc8cff">
           <div class="trade-head" onclick="toggleTrade(this)">
@@ -984,10 +976,10 @@
             <div class="trade-row-prices">
               <div class="price-group">
                 <span><span class="price-label">Entry </span><span class="price-val">$0.29</span></span>
-                <span><span class="price-label">Now </span><span class="price-val">$0.20</span></span>
+                <span><span class="price-label">Now </span><span class="price-val">$0.18</span></span>
                 <span><span class="price-label">Edge </span><span class="price-val">59%</span></span>
               </div>
-              <span class="trade-pnl red">$-0.28</span>
+              <span class="trade-pnl red">$-0.32</span>
             </div>
             <div class="trade-row-details">
               <span><span class="price-label">Risked</span><span class="price-val">$0.87</span></span>
@@ -1037,22 +1029,22 @@
               <div class="detail-section-title">Current Value</div>
               <div class="detail-grid">
                 <span class="detail-label">Current Price</span>
-                <span class="detail-value">$0.20</span>
+                <span class="detail-value">$0.18</span>
                 <span class="detail-label">Payout if Win</span>
                 <span class="detail-value">$3.00</span>
                 <span class="detail-label">Resolves In</span>
                 <span class="detail-value">4.5d</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,2.0 67.3,2.0 132.7,2.0 198.0,38.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="38.0" r="2.5" fill="#f85149"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
@@ -1136,15 +1128,15 @@
                 <span class="detail-value">4.5d</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,38.0 67.3,38.0 132.7,38.0 198.0,38.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="38.0" r="2.5" fill="#f85149"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
@@ -1228,15 +1220,15 @@
                 <span class="detail-value">4.5d</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,38.0 67.3,38.0 132.7,38.0 198.0,38.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="38.0" r="2.5" fill="#f85149"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
@@ -1317,18 +1309,18 @@
                 <span class="detail-label">Payout if Win</span>
                 <span class="detail-value">$4.00</span>
                 <span class="detail-label">Resolves In</span>
-                <span class="detail-value">13h</span>
+                <span class="detail-value">12h</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,38.0 67.3,38.0 132.7,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="38.0" r="2.5" fill="#3fb950"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
@@ -1409,18 +1401,18 @@
                 <span class="detail-label">Payout if Win</span>
                 <span class="detail-value">$7.00</span>
                 <span class="detail-label">Resolves In</span>
-                <span class="detail-value">13h</span>
+                <span class="detail-value">12h</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,38.0 67.3,38.0 132.7,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="38.0" r="2.5" fill="#3fb950"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
@@ -1501,18 +1493,18 @@
                 <span class="detail-label">Payout if Win</span>
                 <span class="detail-value">$93.00</span>
                 <span class="detail-label">Resolves In</span>
-                <span class="detail-value">13h</span>
+                <span class="detail-value">12h</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,38.0 67.3,38.0 132.7,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="38.0" r="2.5" fill="#3fb950"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
@@ -1593,18 +1585,18 @@
                 <span class="detail-label">Payout if Win</span>
                 <span class="detail-value">$28.00</span>
                 <span class="detail-label">Resolves In</span>
-                <span class="detail-value">13h</span>
+                <span class="detail-value">12h</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (3 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (4 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   
-                  <polyline points="2.0,38.0 100.0,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,38.0 67.3,38.0 132.7,38.0 198.0,38.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="38.0" r="2.5" fill="#3fb950"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-04-06 09:15</span>
-                  <span>2026-04-06 10:58</span>
+                  <span>2026-04-06 12:01</span>
                 </div>
               </div>
             </div>
@@ -2453,7 +2445,7 @@
     </ul>
   </div>
 
-  <div class="footer">Updated Apr 06, 06:59 AM ET</div>
+  <div class="footer">Updated Apr 06, 08:04 AM ET</div>
 </div>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -2848,7 +2840,7 @@
             <div class="dim" style="font-size:11px">scans markets → calculates edge → trades</div>
           </div>
         </div>
-        <div class="bot-status status-run" style="position:static;width:12px;height:12px"></div>
+        <div class="bot-status status-stop" style="position:static;width:12px;height:12px"></div>
       </div>
       <div class="stat-grid stat-grid-3">
         <div class="stat">
@@ -2856,7 +2848,7 @@
           <div class="stat-label">P&L</div>
         </div>
         <div class="stat">
-          <div class="stat-value stat-value-sm red">$-0.06</div>
+          <div class="stat-value stat-value-sm red">$-0.08</div>
           <div class="stat-label">Unrealized</div>
         </div>
         <div class="stat">
@@ -2942,7 +2934,7 @@
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           <span class="trade-badge badge-open" style="font-size:9px;padding:1px 5px">OPEN</span>
-          <span class="mono red" style="font-weight:600">$-0.10</span>
+          <span class="mono red" style="font-weight:600">$-0.09</span>
         </div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
@@ -2962,7 +2954,7 @@
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           <span class="trade-badge badge-open" style="font-size:9px;padding:1px 5px">OPEN</span>
-          <span class="mono red" style="font-weight:600">$-0.28</span>
+          <span class="mono red" style="font-weight:600">$-0.32</span>
         </div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
@@ -3157,7 +3149,7 @@
       <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
         <span>📊</span>
         <span style="font-weight:700;color:#bc8cff">Economics</span>
-        <span style="font-size:12px">🟢</span>
+        <span style="font-size:12px">🔴</span>
       </div>
       <div class="detail-grid" style="font-size:11px">
         <span class="detail-label">Min Edge</span>
@@ -3422,8 +3414,50 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-title">Markets Passed On (476)</div>
+    <div class="card-title">Markets Passed On (483)</div>
     <div class="card-subtitle">Markets the bots looked at but decided not to trade</div>
+    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#8b949e"></span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXCPI-26MAR-T0.9">KXCPI-26MAR-T0.9</span>
+      <span class="yellow" style="font-weight:600">insufficient_volume</span>
+      <span class="dim"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#8b949e"></span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXCPI-26MAR-T0.8">KXCPI-26MAR-T0.8</span>
+      <span class="yellow" style="font-weight:600">insufficient_volume</span>
+      <span class="dim"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#8b949e"></span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXCPI-26MAR-T0.7">KXCPI-26MAR-T0.7</span>
+      <span class="yellow" style="font-weight:600">insufficient_volume</span>
+      <span class="dim"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#8b949e"></span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXCPICORE-26MAR-T0.1">KXCPICORE-26MAR-T0.1</span>
+      <span class="yellow" style="font-weight:600">insufficient_volume</span>
+      <span class="dim"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#8b949e"></span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXCPI-26MAR-T0.8">KXCPI-26MAR-T0.8</span>
+      <span class="yellow" style="font-weight:600">insufficient_volume</span>
+      <span class="dim"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#8b949e"></span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXCPI-26MAR-T0.7">KXCPI-26MAR-T0.7</span>
+      <span class="yellow" style="font-weight:600">insufficient_volume</span>
+      <span class="dim"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#8b949e"></span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXCPICORE-26MAR-T0.1">KXCPICORE-26MAR-T0.1</span>
+      <span class="yellow" style="font-weight:600">insufficient_volume</span>
+      <span class="dim"></span>
+    </div>
     <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#8b949e"></span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXPAYROLLS-26APR-T100000">KXPAYROLLS-26APR-T100000</span>
@@ -3562,48 +3596,6 @@
       <span class="yellow" style="font-weight:600">too_far_out</span>
       <span class="dim"> · 1441.5h out</span>
     </div>
-    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#8b949e"></span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXPAYROLLS-26MAY-T100000">KXPAYROLLS-26MAY-T100000</span>
-      <span class="yellow" style="font-weight:600">too_far_out</span>
-      <span class="dim"> · 1441.5h out</span>
-    </div>
-    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#8b949e"></span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXPAYROLLS-26MAY-T125000">KXPAYROLLS-26MAY-T125000</span>
-      <span class="yellow" style="font-weight:600">too_far_out</span>
-      <span class="dim"> · 1441.5h out</span>
-    </div>
-    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#8b949e"></span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXPAYROLLS-26MAY-T90000">KXPAYROLLS-26MAY-T90000</span>
-      <span class="yellow" style="font-weight:600">too_far_out</span>
-      <span class="dim"> · 1441.5h out</span>
-    </div>
-    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#8b949e"></span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXPAYROLLS-26JUN-T0">KXPAYROLLS-26JUN-T0</span>
-      <span class="yellow" style="font-weight:600">too_far_out</span>
-      <span class="dim"> · 2089.5h out</span>
-    </div>
-    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#8b949e"></span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXPAYROLLS-26JUN-T90000">KXPAYROLLS-26JUN-T90000</span>
-      <span class="yellow" style="font-weight:600">too_far_out</span>
-      <span class="dim"> · 2089.5h out</span>
-    </div>
-    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#8b949e"></span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXPAYROLLS-26JUN-T50000">KXPAYROLLS-26JUN-T50000</span>
-      <span class="yellow" style="font-weight:600">too_far_out</span>
-      <span class="dim"> · 2089.5h out</span>
-    </div>
-    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#8b949e"></span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXPAYROLLS-26JUN-T30000">KXPAYROLLS-26JUN-T30000</span>
-      <span class="yellow" style="font-weight:600">too_far_out</span>
-      <span class="dim"> · 2089.5h out</span>
-    </div>
   </div>
 </div>
 
@@ -3722,7 +3714,7 @@ function switchBot(bot) {
 
 // ── Stale check ─────────────────────────────────────
 (function() {
-  var updated = new Date("2026-04-06T10:59:10Z");
+  var updated = new Date("2026-04-06T12:04:38Z");
   var now = new Date();
   var hoursOld = (now - updated) / (1000 * 60 * 60);
   if (hoursOld > 2) {
