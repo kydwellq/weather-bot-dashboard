@@ -528,7 +528,7 @@
     <span class="mode-badge" style="background:#f85149;color:#fff">STOPPED</span>
   </div>
   <div class="top-bar-right">
-    <span class="cycle-time">Last cycle 10m ago</span>
+    <span class="cycle-time">Last cycle 12m ago</span>
     <button class="pause-all-btn pause-all-run" onclick="killSwitch('resume_all')">Resume</button>
   </div>
 </div>
@@ -537,12 +537,12 @@
 <div class="status-banner">
   <span class="status-dot status-dot-err"></span>
   <span>Fleet is paused — no new trades will be placed</span>
-  <span style="margin-left:auto; opacity:0.5; font-size:0.82em;">Updated Apr 08, 06:20 PM ET</span>
+  <span style="margin-left:auto; opacity:0.5; font-size:0.82em;">Updated Apr 08, 07:20 PM ET</span>
 </div>
 
 <!-- ── Stale Banner ─────────────────────────────────── -->
 <div id="stale-banner">
-  <span class="stale-dot"></span>Dashboard may be stale — last updated Apr 08, 06:20 PM ET
+  <span class="stale-dot"></span>Dashboard may be stale — last updated Apr 08, 07:20 PM ET
 </div>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -555,26 +555,26 @@
     <div class="card-title">Account Balance</div>
     <div class="stat-grid">
       <div class="stat stat-full">
-        <div class="stat-value green" style="font-size:28px">$118.15</div>
+        <div class="stat-value green" style="font-size:28px">$118.23</div>
         <div class="stat-helper">total account value · <span style="color:#58a6ff">from Kalshi</span></div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm red">$-14.84</div>
+        <div class="stat-value stat-value-sm red">$-18.68</div>
         <div class="stat-label">Profit / Loss</div>
         <div class="stat-helper">settled trades</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm green">$+9.84</div>
+        <div class="stat-value stat-value-sm green">$+4.53</div>
         <div class="stat-label">Unrealized</div>
         <div class="stat-helper">if closed now</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm">$28.21</div>
+        <div class="stat-value stat-value-sm">$24.52</div>
         <div class="stat-label">Money at Risk</div>
         <div class="stat-helper">in open trades</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm red">-38.1%</div>
+        <div class="stat-value stat-value-sm red">-43.8%</div>
         <div class="stat-label">Return</div>
         <div class="stat-helper">on money risked</div>
       </div>
@@ -590,11 +590,11 @@
         <div class="stat-label">Won</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm red">25</div>
+        <div class="stat-value stat-value-sm red">26</div>
         <div class="stat-label">Lost</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm yellow">20</div>
+        <div class="stat-value stat-value-sm yellow">19</div>
         <div class="stat-label">Open</div>
       </div>
     </div>
@@ -662,17 +662,17 @@
       </div>
       <div class="bot-stats">
         <span class="bot-stat-label">Profit</span>
-        <span class="bot-stat-value dim">$+0.00</span>
+        <span class="bot-stat-value red">$-3.84</span>
         <span class="bot-stat-label">Unrealized</span>
-        <span class="bot-stat-value"><span class="green">$+5.31</span></span>
+        <span class="bot-stat-value"><span class="dim">—</span></span>
         <span class="bot-stat-label">At Risk</span>
-        <span class="bot-stat-value">$3.69</span>
+        <span class="bot-stat-value">$0.00</span>
         <span class="bot-stat-label">Record</span>
-        <span class="bot-stat-value">0W/0L <span class='dim'>(1p)</span></span>
+        <span class="bot-stat-value">0W/1L</span>
         <span class="bot-stat-label">Allocation</span>
         <span class="bot-stat-value">$100</span>
         <span class="bot-stat-label"><span class="tip" data-tip="Cumulative Kalshi trading fees eating into returns over time.">Fee Drag</span></span>
-        <span class="bot-stat-value dim">—</span>
+        <span class="bot-stat-value dim">4%</span>
       </div>
       <button class="kill-btn kill-btn-run" onclick="killSwitch('resume_bot', 'finance')">Resume</button>
     </div>
@@ -729,13 +729,13 @@
     <div class="card-title">Equity Curve</div>
     <div class="card-subtitle">6 trading days · 2026-04-06 → unknown</div>
     <svg width="280" height="60" viewBox="0 0 280 60" style="width:100%;height:60px;background:#0d1117;border-radius:8px">
-      <line x1="4" y1="4.5" x2="276" y2="4.5" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
-      <polyline points="4.0,4.0 58.4,11.5 112.8,56.0 167.2,56.0 221.6,56.0 276.0,56.0" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round"/>
+      <line x1="4" y1="4.4" x2="276" y2="4.4" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
+      <polyline points="4.0,4.0 58.4,9.9 112.8,56.0 167.2,56.0 221.6,56.0 276.0,56.0" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round"/>
       <circle cx="276.0" cy="56.0" r="3" fill="#f85149"/>
     </svg>
     <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:4px">
       <span>2026-04-06</span>
-      <span class="mono" style="color:#f85149;font-weight:600">$-14.84</span>
+      <span class="mono" style="color:#f85149;font-weight:600">$-18.68</span>
       <span>unknown</span>
     </div>
   </div>
@@ -773,6 +773,20 @@
       </div>
       <div class="dim" style="font-size:10px;text-align:right;margin-top:2px">11 settled trades</div>
     </div>
+    <div style="padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+        <span style="color:#79c0ff">📈</span>
+        <span style="font-weight:600;color:#79c0ff">Finance</span>
+        <span style="margin-left:auto;font-size:10px;padding:2px 6px;border-radius:6px;font-weight:600;background:#f8514920;color:#f85149">MISCALIBRATED</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4px;text-align:center">
+        <div><div class="dim" style="font-size:9px">CLAIMED</div><div class="mono" style="font-weight:600">34.4%</div></div>
+        <div><div class="dim" style="font-size:9px">WIN RATE</div><div class="mono" style="font-weight:600">0%</div></div>
+        <div><div class="dim" style="font-size:9px">REALIZED</div><div class="mono" style="font-weight:600">-42.0%</div></div>
+        <div><div class="dim" style="font-size:9px">GAP</div><div class="mono" style="font-weight:600;color:#f85149">+76.4%</div></div>
+      </div>
+      <div class="dim" style="font-size:10px;text-align:right;margin-top:2px">1 settled trades</div>
+    </div>
   </div>
 
   <!-- Road to Live -->
@@ -801,10 +815,10 @@
     <div style="padding:6px 0">
       <div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;margin-bottom:2px">
         <span><span style="color:#79c0ff">📈</span> <span style="font-weight:600;color:#79c0ff">Finance</span></span>
-        <span class="mono" style="font-size:11px;font-weight:600">0/50</span>
+        <span class="mono" style="font-size:11px;font-weight:600">1/50</span>
       </div>
       <div class="progress-bar">
-        <div class="progress-fill" style="width:0%;background:#79c0ff"></div>
+        <div class="progress-fill" style="width:2%;background:#79c0ff"></div>
       </div>
     </div>
     <div style="padding:6px 0">
@@ -854,6 +868,11 @@
       <div class="dim" style="font-size:10px;margin-bottom:4px;font-weight:600">WORST LOSSES</div>
       
         <div style="display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid #161b22;font-size:12px">
+          <span>📈</span>
+          <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">S&P 500 · $6,728 · Apr 08</span>
+          <span class="mono red" style="font-weight:700">$-3.84</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid #161b22;font-size:12px">
           <span>🌤</span>
           <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Miami high above 83°F · Apr 08 · Forecast 82°</span>
           <span class="mono red" style="font-weight:700">$-3.58</span>
@@ -862,11 +881,6 @@
           <span>🌤</span>
           <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Oklahoma City high NOT 75-76°F · Apr 08 · For</span>
           <span class="mono red" style="font-weight:700">$-3.40</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid #161b22;font-size:12px">
-          <span>🌤</span>
-          <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Dallas high NOT 78-79°F · Apr 08 · Forecast 7</span>
-          <span class="mono red" style="font-weight:700">$-2.74</span>
         </div>
     </div>
   </div>
@@ -877,11 +891,11 @@
     <div class="card-title"><span class="tip" data-tip="Largest peak-to-trough loss. How far below the account&#39;s high-water mark we currently are.">Drawdown</span></div>
     <div style="display:flex;justify-content:space-between;align-items:center">
       <div>
-        <div class="mono" style="font-size:20px;font-weight:700;color:#f85149">$14.99</div>
+        <div class="mono" style="font-size:20px;font-weight:700;color:#f85149">$18.83</div>
         <div class="dim" style="font-size:11px">below peak of $0.15</div>
       </div>
       <div style="text-align:right">
-        <div class="mono" style="font-size:16px;font-weight:700;color:#f85149">9927.5%</div>
+        <div class="mono" style="font-size:16px;font-weight:700;color:#f85149">12472.1%</div>
         <div class="dim" style="font-size:11px">drawdown</div>
       </div>
     </div>
@@ -915,7 +929,7 @@
 
         <div class="activity-row">
           <span class="activity-icon">⏰</span>
-          <span class="activity-text"><strong>14</strong> positions resolving today</span>
+          <span class="activity-text"><strong>13</strong> positions resolving today</span>
         </div>
 
         <div class="activity-row">
@@ -938,8 +952,8 @@
           <div class="dim" style="font-size:11px">Weather + Energy bots · scan → edge → rank → trade</div>
         </div>
         <div style="text-align:right">
-          <div class="mono" style="font-size:12px;color:#3fb950">10min ago</div>
-          <div class="dim" style="font-size:10px">Apr 08, 06:10 PM ET</div>
+          <div class="mono" style="font-size:12px;color:#3fb950">12min ago</div>
+          <div class="dim" style="font-size:10px">Apr 08, 07:08 PM ET</div>
         </div>
       </div>
     </div>
@@ -948,14 +962,14 @@
       <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:8px">
         <div>
           <div class="dim" style="font-size:10px">NEXT FLEET CYCLE</div>
-          <div class="mono" style="font-weight:600;color:#58a6ff">~6min</div>
+          <div class="mono" style="font-weight:600;color:#58a6ff">~4min</div>
         </div>
         <div style="text-align:center">
           <div class="dim" style="font-size:10px">LAST CYCLE</div>
           <div style="font-size:11px">
             <span class="dim">Signals</span> <span class="mono" style="font-weight:600">0</span>
             <span class="dim" style="margin-left:6px">Traded</span> <span class="mono" style="font-weight:600">0</span>
-            <span class="dim" style="margin-left:6px">Settled</span> <span class="mono" style="font-weight:600">0</span>
+            <span class="dim" style="margin-left:6px">Settled</span> <span class="mono" style="font-weight:600">1</span>
           </div>
           <div style="font-size:10px;color:#8b949e;margin-top:2px">
             
@@ -965,7 +979,7 @@
         </div>
         <div style="text-align:right">
           <div class="dim" style="font-size:10px">NEXT HEALTH CHECK</div>
-          <div class="mono" style="font-weight:600;color:#3fb950">~11min</div>
+          <div class="mono" style="font-weight:600;color:#3fb950">~9min</div>
         </div>
       </div>
 
@@ -980,7 +994,7 @@
               <span class="dim" style="font-size:10px"> · 0 signals, 0 trades, 0 settled</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">6:10 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">7:08 PM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">now</span>
@@ -991,10 +1005,10 @@
             <div>
               <span style="color:#3fb950;font-weight:500">Health Check</span>
               <span class="dim" style="font-size:10px;margin-left:4px">every 15min</span>
-              <span class="dim" style="font-size:10px"> · Fleet healthy — heartbeat age: 2.9m…</span>
+              <span class="dim" style="font-size:10px"> · Fleet healthy — heartbeat age: 4.9m…</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">6:13 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">7:13 PM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">now</span>
@@ -1008,7 +1022,7 @@
               <span class="dim" style="font-size:10px"> · Kalshi fleet alive — bankroll: $100…</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">6:08 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">7:08 PM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">now</span>
@@ -1050,7 +1064,7 @@
               <span class="dim" style="font-size:10px"> · OK</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">6:20 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">7:20 PM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">now</span>
@@ -1061,7 +1075,7 @@
             <div>
               <span style="color:#8b949e;font-weight:500">Model Freshness</span>
               <span class="dim" style="font-size:10px;margin-left:4px">02/08/14/20:30</span>
-              <span class="dim" style="font-size:10px"> · 19 cities stale >60m (atlanta,austi…</span>
+              <span class="dim" style="font-size:10px"> · 20 cities stale >60m (atlanta,austi…</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">11:08 AM</span>
@@ -1134,7 +1148,7 @@
   
   <div class="card">
     <div class="card-title">Last Scan Results</div>
-    <div class="card-subtitle">24 signals found · 23min ago · Apr 08, 05:57 PM ET</div>
+    <div class="card-subtitle">24 signals found · 83min ago · Apr 08, 05:57 PM ET</div>
     <div style="margin-top:8px">
       <div style="display:grid;grid-template-columns:auto auto 1fr auto auto auto;gap:6px;padding:4px 0;border-bottom:1px solid #30363d;font-size:9px;color:#8b949e">
         <div style="width:18px"></div>
@@ -1694,18 +1708,18 @@
   </div>
   <div class="card">
     <div class="card-title">Position Risk Summary</div>
-    <div class="card-subtitle">20 open positions</div>
+    <div class="card-subtitle">19 open positions</div>
     <div class="stat-grid stat-grid-3" style="margin-top:8px">
       <div class="stat">
-        <div class="stat-value stat-value-sm red">-$31.97</div>
+        <div class="stat-value stat-value-sm red">-$28.28</div>
         <div class="stat-label">Worst Case</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm green">+$55.03</div>
+        <div class="stat-value stat-value-sm green">+$49.72</div>
         <div class="stat-label">Best Case</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm">$31.97</div>
+        <div class="stat-value stat-value-sm">$28.28</div>
         <div class="stat-label">At Risk</div>
       </div>
     </div>
@@ -1721,10 +1735,10 @@
     <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
       <div>
         <div style="font-weight:600;color:#e6edf3">Today</div>
-        <div class="dim" style="font-size:11px">15 trades settling</div>
+        <div class="dim" style="font-size:11px">14 trades settling</div>
       </div>
       <div style="text-align:right">
-        <div style="color:#f85149;font-weight:600">$23.39 at risk</div>
+        <div style="color:#f85149;font-weight:600">$19.70 at risk</div>
       </div>
     </div>
     <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
@@ -1826,7 +1840,7 @@
         </div>
 
   <div class="footer">
-    Updated Apr 08, 06:20 PM ET · Auto-refreshes every 60s
+    Updated Apr 08, 07:20 PM ET · Auto-refreshes every 60s
   </div>
 </div>
 
@@ -3436,8 +3450,8 @@
             </div>
           </div>
         </li>
-        <li class="trade-item open" data-bot="finance" data-status="open"
-            data-placed="2026-04-08T15:13:09.402008" data-pnl="5.3100"
+        <li class="trade-item loss" data-bot="finance" data-status="loss"
+            data-placed="2026-04-08T15:13:09.402008" data-pnl="-3.8424"
             data-edge="0.3439" data-target="2026-04-08"
             style="border-left-color:#79c0ff">
           <div class="trade-head" onclick="toggleTrade(this)">
@@ -3449,7 +3463,7 @@
               <span style="display:flex;gap:4px;align-items:center;flex-shrink:0">
                 <span class="trade-badge badge-no">NO</span>
                 
-                <span class="trade-badge badge-open">OPEN</span>
+                <span class="trade-badge badge-loss">LOSS</span>
               </span>
             </div>
             <div class="trade-row-prices">
@@ -3458,15 +3472,14 @@
                 <span><span class="price-label">Now </span><span class="price-val">$1.00</span></span>
                 <span><span class="price-label"><span class="tip" data-tip="Our probability estimate minus the market price. Positive = we think it&#39;s underpriced.">Edge</span> </span><span class="price-val">34%</span></span>
               </div>
-              <span class="trade-pnl green">$+5.31</span>
+              <span class="trade-pnl red">$-3.84</span>
             </div>
             <div class="trade-row-details">
               <span><span class="price-label">Risked</span><span class="price-val">$3.69</span></span>
-              <span><span class="price-label">If Win</span><span class="price-val" style="color:#3fb950">+$5.31</span></span>
-              <span><span class="price-label">If Lose</span><span class="price-val" style="color:#f85149">-$3.69</span></span>
-              <span><span class="price-label">Settles</span><span class="price-val"><span class="countdown-timer" data-settles="2026-04-08T23:59:00-04:00"></span></span></span>
+              <span><span class="price-label">Result</span><span class="price-val" style="color:#f85149">Lost</span></span>
+              <span><span class="price-label">Net P&L</span><span class="price-val" style="color:#f85149">-$3.84</span></span>
+              <span><span class="price-label">Status</span><span class="price-val dim">Settled</span></span>
             </div>
-            <div style="padding:2px 0 0 0"><span class="dim" style="font-size:9px">3.1% of balance · 9 contracts</span></div>
             <div class="trade-expand-hint">tap for details ›</div>
           </div>          <div class="trade-detail">
             <div class="detail-section" style="background:#1a2332;border-radius:8px;padding:10px;margin-bottom:4px">
@@ -3615,26 +3628,31 @@
                 <span class="gate-detail">Rule-based: 34% edge, resolves in 5h.</span>
               </div></div>
             <div class="detail-section">
-              <div class="detail-section-title">Current Value</div>
+              <div class="detail-section-title">Resolution 💀</div>
               <div class="detail-grid">
-                <span class="detail-label">Current Price</span>
-                <span class="detail-value">$1.00</span>
-                <span class="detail-label">Payout if Win</span>
-                <span class="detail-value">$9.00</span>
-                <span class="detail-label">Resolves In</span>
-                <span class="detail-value">2h</span>
+                <span class="detail-label">Result</span>
+                <span class="detail-value red">LOSS</span>
+                <span class="detail-label">Net P&L</span>
+                <span class="detail-value red">$-3.84</span>
+                <span class="detail-label">Entry Fee</span>
+                <span class="detail-value dim">$0.1524</span>
+                <span class="detail-label">Settlement Fee</span>
+                <span class="detail-value dim">$0.0000</span>
+                <span class="detail-label">Settled At</span>
+                <span class="detail-value dim">2026-04-08 20:00</span>
               </div>
-              <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (28 snapshots)</div>
-                <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
-                  <line x1="2" y1="23.5" x2="198" y2="23.5" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
-                  <polyline points="2.0,26.0 9.3,28.7 16.5,31.5 23.8,33.1 31.0,32.0 38.3,33.5 45.6,35.1 52.8,35.1 60.1,34.2 67.3,33.5 74.6,31.6 81.9,36.7 89.1,32.5 96.4,33.1 103.6,31.3 110.9,28.0 118.1,30.0 125.4,36.7 132.7,38.0 139.9,2.0 147.2,2.0 154.4,2.0 161.7,2.0 169.0,2.0 176.2,2.0 183.5,2.0 190.7,2.0 198.0,2.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
-                  <circle cx="198.0" cy="2.0" r="2.5" fill="#3fb950"/>
-                </svg>
-                <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
-                  <span>2026-04-08 15:24</span>
-                  <span>2026-04-08 22:10</span>
-                </div>
+            </div>
+            <div class="detail-section" style="background:#1f0d0d;border:1px solid #f8514940;border-radius:8px;padding:10px;margin-bottom:4px">
+              <div class="detail-section-title" style="color:#f85149">🔍 Post-Mortem</div>
+              <div style="font-size:13px;font-weight:700;margin-bottom:8px;color:#f85149">❌ LOSS — $-3.84 (-104% ROI)</div>
+              
+              <div style="margin-bottom:4px">
+                <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.05em">What We Learned</div>
+                <div style="font-size:11px;color:#484f58">No lessons recorded yet</div>
+              </div>
+              <div>
+                <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.05em">What We Would Change</div>
+                <div style="font-size:11px;color:#484f58">No adjustments needed</div>
               </div>
             </div>
           </div>
@@ -12750,7 +12768,7 @@
     </ul>
   </div>
 
-  <div class="footer">Updated Apr 08, 06:20 PM ET</div>
+  <div class="footer">Updated Apr 08, 07:20 PM ET</div>
 </div>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -14187,23 +14205,23 @@
       </div>
       <div class="stat-grid stat-grid-3">
         <div class="stat">
-          <div class="stat-value stat-value-sm dim">$+0.00</div>
+          <div class="stat-value stat-value-sm red">$-3.84</div>
           <div class="stat-label"><span class="tip" data-tip="Profit &amp; Loss: total realized gains minus losses after fees.">P&amp;L</span></div>
         </div>
         <div class="stat">
-          <div class="stat-value stat-value-sm green">$+5.31</div>
+          <div class="stat-value stat-value-sm dim">$+0.00</div>
           <div class="stat-label">Unrealized</div>
         </div>
         <div class="stat">
-          <div class="stat-value stat-value-sm">$3.69</div>
+          <div class="stat-value stat-value-sm">$0.00</div>
           <div class="stat-label">Exposed</div>
         </div>
       </div>
       <div style="text-align:center;margin-top:10px;font-size:12px">
         <span class="dim">Record</span>
         <span class="green mono" style="font-weight:600;margin-left:6px">0W</span>
-        <span class="red mono" style="font-weight:600;margin-left:4px">0L</span>
-        <span class="yellow mono" style="font-weight:600;margin-left:4px">1P</span>
+        <span class="red mono" style="font-weight:600;margin-left:4px">1L</span>
+        <span class="yellow mono" style="font-weight:600;margin-left:4px">0P</span>
         <span class="dim" style="margin-left:12px">Allocation</span>
         <span class="mono" style="font-weight:600;margin-left:4px">$100</span>
         <span class="dim" style="margin-left:12px">Max Trades</span>
@@ -14255,8 +14273,8 @@
           <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">S&P 500</span>
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
-          <span class="trade-badge badge-open" style="font-size:9px;padding:1px 5px">OPEN</span>
-          <span class="mono green" style="font-weight:600">$+5.31</span>
+          <span class="trade-badge badge-loss" style="font-size:9px;padding:1px 5px">LOSS</span>
+          <span class="mono red" style="font-weight:600">$-3.84</span>
         </div>
       </div>
     </div>
@@ -14543,9 +14561,9 @@
       <span class="detail-label">Balance Source</span>
       <span class="detail-value">Kalshi API</span>
       <span class="detail-label">Kalshi Balance</span>
-      <span class="detail-value" style="color:#3fb950;font-weight:600">$118.15</span>
+      <span class="detail-value" style="color:#3fb950;font-weight:600">$118.23</span>
       <span class="detail-label">Kalshi Positions</span>
-      <span class="detail-value">19</span>
+      <span class="detail-value">18</span>
     </div>
   </div>
 
@@ -14554,7 +14572,7 @@
     <div class="card-subtitle">Tiered limits — tightens automatically as portfolio grows</div>
     <div class="detail-grid" style="font-size:12px">
       <span class="detail-label">Live Balance</span>
-      <span class="detail-value green" style="font-size:14px;font-weight:700">$118.15</span>
+      <span class="detail-value green" style="font-size:14px;font-weight:700">$118.23</span>
       <span class="detail-label">Starting Bankroll</span>
       <span class="detail-value dim">$100</span>
       <span class="detail-label">Risk Tier</span>
@@ -16934,8 +16952,60 @@
 <div class="screen" id="screen-decisions">
   
   <div class="card">
-    <div class="card-title">Scan History (219)</div>
+    <div class="card-title">Scan History (223)</div>
     <div class="card-subtitle">Each cycle: bots scan markets, find opportunities, and decide whether to trade</div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-04-08 23:08</span>
+        <span class="red" style="font-weight:700">STOPPED</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">1</span></span>
+        
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-04-08 22:53</span>
+        <span class="red" style="font-weight:700">STOPPED</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-04-08 22:38</span>
+        <span class="red" style="font-weight:700">STOPPED</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-04-08 22:23</span>
+        <span class="red" style="font-weight:700">STOPPED</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+      </div>
+    </div>
     <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
       <div style="display:flex;justify-content:space-between;align-items:center">
         <span class="dim mono" style="font-size:11px">2026-04-08 22:10</span>
@@ -17143,58 +17213,6 @@
         <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
         <span style="font-size:11px"><span style="color:#58a6ff">🌤 6</span> · <span style="color:#7ee2ff">❄ 8</span></span>
       </div><div style="color:#f85149;font-size:11px;margin-top:4px">⚠ order_failed:KXLOWTSATX-26APR08-B55.5:pre_trade_ga; order_failed:KXLOWTSEA-26APR08-B39.5:pre_trade_gat; order_failed:KXLOWTSFO-26APR08-B54.5:pre_trade_gat; order_failed:KXLOWTDC-26APR08-B34.5:pre_trade_gate</div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-04-08 18:12</span>
-        <span class="green" style="font-weight:700">1 TRADED</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">19</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">5</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">1</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 7</span> · <span style="color:#7ee2ff">❄ 6</span></span>
-      </div><div style="color:#f85149;font-size:11px;margin-top:4px">⚠ order_failed:KXLOWTSFO-26APR08-B54.5:pre_trade_gat; order_failed:KXLOWTLAX-26APR08-B58.5:pre_trade_gat; order_failed:KXLOWTNYC-26APR08-B27.5:pre_trade_gat</div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-04-08 17:57</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">14</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">5</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-      </div><div style="color:#f85149;font-size:11px;margin-top:4px">⚠ order_failed:KXHIGHAUS-26APR08-B82.5:pre_trade_gat; order_failed:KXLOWTLAX-26APR08-B58.5:pre_trade_gat; order_failed:KXLOWTNYC-26APR08-B27.5:pre_trade_gat</div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-04-08 17:42</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">16</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">5</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 7</span> · <span style="color:#7ee2ff">❄ 5</span></span>
-      </div><div style="color:#f85149;font-size:11px;margin-top:4px">⚠ order_failed:KXHIGHAUS-26APR08-B82.5:pre_trade_gat; order_failed:KXLOWTNYC-26APR08-B27.5:pre_trade_gat</div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-04-08 17:27</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">15</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">5</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 6</span> · <span style="color:#7ee2ff">❄ 6</span></span>
-      </div><div style="color:#f85149;font-size:11px;margin-top:4px">⚠ order_failed:KXHIGHAUS-26APR08-B82.5:pre_trade_gat; order_failed:KXLOWTNYC-26APR08-B27.5:pre_trade_gat</div>
     </div>
   </div>
   <div class="card">
@@ -17727,12 +17745,57 @@
     <div class="activity-row" data-type="health" data-bot="weather_low">
       <span class="activity-icon" style="color:#d29922">📊</span>
       <span class="activity-text" style="font-size:12px;color:#e6edf3">EXPOSURE: ❄ Weather LOW at 88% of cap ($3.53 / $4.00)</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 06:20 PM ET</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 07:20 PM ET</span>
     </div>
     <div class="activity-row" data-type="health" data-bot="">
       <span class="activity-icon" style="color:#f85149">📉</span>
       <span class="activity-text" style="font-size:12px;color:#e6edf3">DRAWDOWN: at 14.8% (limit 15%, 99% of limit)</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 06:20 PM ET</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 07:20 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="health" data-bot="">
+      <span class="activity-icon" style="color:#8b949e">⚠️</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">resume</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 07:10 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 07:08 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="health" data-bot="">
+      <span class="activity-icon" style="color:#8b949e">⚠️</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">resume</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 07:04 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="health" data-bot="">
+      <span class="activity-icon" style="color:#8b949e">⚠️</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">resume</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 07:03 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="health" data-bot="">
+      <span class="activity-icon" style="color:#8b949e">⚠️</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">resume</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 07:03 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="health" data-bot="">
+      <span class="activity-icon" style="color:#8b949e">⚠️</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">resume</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 07:03 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 06:53 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 06:38 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 06:23 PM ET</span>
     </div>
     <div class="activity-row" data-type="cycle" data-bot="">
       <span class="activity-icon" style="color:#58a6ff">📡</span>
@@ -17828,6 +17891,11 @@
       <span class="activity-icon" style="color:#58a6ff">📡</span>
       <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 17 signals found, 0 trades placed</span>
       <span class="activity-meta" style="white-space:nowrap">Apr 08, 04:12 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="settlement" data-bot="finance">
+      <span class="activity-icon" style="color:#f85149">💔</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SETTLED: 📈 KXINXU-26APR08H1600-T6749.9999 — LOST $-3.84</span>
+      <span class="activity-meta" style="white-space:nowrap">Apr 08, 04:00 PM ET</span>
     </div>
     <div class="activity-row" data-type="cycle" data-bot="">
       <span class="activity-icon" style="color:#58a6ff">📡</span>
@@ -18074,56 +18142,6 @@
       <span class="activity-text" style="font-size:12px;color:#e6edf3">TRADE: weather_low placed  — KXLOWTDAL-26APR08-T57 | Edge: 41% | $0.45</span>
       <span class="activity-meta" style="white-space:nowrap">Apr 08, 09:17 AM ET</span>
     </div>
-    <div class="activity-row" data-type="trade" data-bot="">
-      <span class="activity-icon" style="color:#7ee2ff">🎯</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">TRADE: weather_low placed  — KXLOWTOKC-26APR08-B43.5 | Edge: 69% | $0.26</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 09:17 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 11 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 09:04 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 3 signals found, 1 trade placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 09:00 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 12 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 08:58 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 3 signals found, 1 trade placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 08:55 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 11 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 08:51 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 11 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 08:47 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 11 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 08:38 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 9 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 08:23 AM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 9 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">Apr 08, 08:18 AM ET</span>
-    </div>
     </div>
   </div>
   <div class="card">
@@ -18265,7 +18283,7 @@ function switchBot(bot) {
 
 // ── Stale check ─────────────────────────────────────
 (function() {
-  var updated = new Date("2026-04-08T22:20:04Z");
+  var updated = new Date("2026-04-08T23:20:04Z");
   var now = new Date();
   var minsOld = (now - updated) / (1000 * 60);
   if (minsOld > 30) {
