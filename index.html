@@ -777,7 +777,7 @@
     
   </div>
   <div class="top-bar-right">
-    <span class="cycle-time">Last cycle 9m ago</span>
+    <span class="cycle-time">Last cycle 13m ago</span>
     <span class="cycle-time" style="margin-left:8px;font-size:10px"><span style="color:#3fb950" title="Step 0c reconciliation">Recon 11:36 PM ET — 0 matched, 0 discrepancies</span></span>
     <button class="pause-all-btn pause-all-stop" onclick="killSwitch('pause_all')">Pause All</button>
   </div>
@@ -786,13 +786,13 @@
 <!-- ── Status Banner ────────────────────────────────── -->
 <div class="status-banner">
   <span class="status-dot status-dot-warn"></span>
-  <span>3 of 4 bots running · Base Rate NO paused · 2 open trades</span>
-  <span style="margin-left:auto; opacity:0.5; font-size:0.82em;">Updated May 06, 05:20 AM ET</span>
+  <span>3 of 4 bots running · Base Rate NO paused · 3 open trades</span>
+  <span style="margin-left:auto; opacity:0.5; font-size:0.82em;">Updated May 06, 06:20 AM ET</span>
 </div>
 
 <!-- ── Stale Banner ─────────────────────────────────── -->
 <div id="stale-banner">
-  <span class="stale-dot"></span>Dashboard may be stale — last updated May 06, 05:20 AM ET
+  <span class="stale-dot"></span>Dashboard may be stale — last updated May 06, 06:20 AM ET
 </div>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -817,12 +817,12 @@
         <div class="stat-helper">settled trades</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm green">$+7.96</div>
+        <div class="stat-value stat-value-sm green">$+7.92</div>
         <div class="stat-label">Unrealized</div>
         <div class="stat-helper">if closed now</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm">$10.04</div>
+        <div class="stat-value stat-value-sm">$14.99</div>
         <div class="stat-label">Money at Risk</div>
         <div class="stat-helper">in open trades</div>
       </div>
@@ -843,7 +843,7 @@
         <div class="stat-value stat-value-sm dim">$+0.00</div>
         <div class="stat-label">Today (settled)</div>
         <div class="stat-helper">0 trades settled</div>
-        
+        <div style="font-size:10px;color:#8b949e;margin-top:2px">Unrealized: <span style="color:#f85149">$-0.05</span> (1 open)</div>
       </div>
       <div class="stat">
         <div class="stat-value stat-value-sm red">$-2.50</div>
@@ -871,7 +871,7 @@
         <div class="stat-label">Lost</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm yellow">2</div>
+        <div class="stat-value stat-value-sm yellow">3</div>
         <div class="stat-label">Open</div>
       </div>
     </div>
@@ -880,7 +880,7 @@
       <span><span class="dim" style="font-size:11px">Even </span><span class="dim mono" style="font-size:13px;font-weight:600">0</span></span>
       <span><span class="dim" style="font-size:11px">Fees (settled) </span><span class="red mono" style="font-size:13px;font-weight:600">$0.93</span></span>
     </div>
-    <div style="text-align:center;margin-top:4px;font-size:10px;color:#484f58">Win rate excludes 0 break-even trades · est. open fees $0.31</div>
+    <div style="text-align:center;margin-top:4px;font-size:10px;color:#484f58">Win rate excludes 0 break-even trades · est. open fees $0.49</div>
   </div>
 
   <!-- Your Bots -->
@@ -897,17 +897,17 @@
         <span style="margin-left:auto;font-size:10px;font-weight:700;padding:2px 6px;border-radius:6px;background:#f8514920;color:#f85149">Losing</span>
       </div>
       <div style="font-size:13px;font-weight:700;color:#f85149;margin-bottom:2px">$-1.97 realized</div>
-      <div style="font-size:11px;color:#8b949e;margin-bottom:8px">3W / 2L · $10.04 at risk</div>
+      <div style="font-size:11px;color:#8b949e;margin-bottom:8px">3W / 2L · $14.99 at risk</div>
       <div style="font-size:11px;color:#c9d1d9;background:#161b22;padding:6px 8px;border-radius:6px;margin-bottom:8px;font-style:italic">3W / 2L so far — still gathering calibration data.</div>
       <details>
         <summary style="font-size:10px;color:#484f58;cursor:pointer;list-style:none;margin-bottom:6px">Advanced ▸ fees &amp; allocation</summary>
         <div class="bot-stats" style="margin-top:6px">
           <span class="bot-stat-label">Unrealized</span>
-          <span class="bot-stat-value"><span class="green">$+7.96</span></span>
+          <span class="bot-stat-value"><span class="green">$+7.92</span></span>
           <span class="bot-stat-label">Allocation</span>
           <span class="bot-stat-value">$300</span>
           <span class="bot-stat-label"><span class="tip" data-tip="Total Kalshi trading fees paid by this bot (entry + settlement).">Fees Paid</span></span>
-          <span class="bot-stat-value red">$1.24</span>
+          <span class="bot-stat-value red">$1.42</span>
         </div>
       </details>
       <button class="kill-btn kill-btn-stop" onclick="killSwitch('pause_bot', 'weather')">Pause</button>
@@ -1003,7 +1003,7 @@
         <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;margin-bottom:6px">Validation gates</div>
         <div style="font-size:11px;line-height:1.7">
           <div><span style="color:#d29922">⏳</span> <span style="color:#c9d1d9">0 / 50 settled paper trades since 2026-04-26</span></div>
-          <div><span style="color:#d29922">⏳</span> <span style="color:#c9d1d9">74 errors in last 7d</span> <span style="color:#8b949e;font-size:10px">— last: 2026-05-06 02:12:28,266 [fleet.scheduler] ERROR: [gemini_health] state read failed: [Errno 2] No such file or directory:</span></div>
+          <div><span style="color:#d29922">⏳</span> <span style="color:#c9d1d9">80 errors in last 7d</span> <span style="color:#8b949e;font-size:10px">— last: 2026-05-06 03:10:40,647 [fleet.scheduler] ERROR: [energy_collector] snapshot failed: 'str' object has no attribute 'get'</span></div>
           <div><span style="color:#3fb950">✓</span> <span style="color:#c9d1d9">All cities producing forecasts</span></div>
           <div style="margin-top:6px;color:#8b949e;font-size:10px">Per-bucket realized WR (need ≥ 10 trades per bucket):</div>
           <div style="display:flex;justify-content:space-between;padding:3px 0;font-size:11px"><span style="color:#8b949e">P_win 0.75–0.85</span><span><span style="margin-right:6px">⏳</span><span style="color:#c9d1d9">0/10 trades — too few</span></span></div><div style="display:flex;justify-content:space-between;padding:3px 0;font-size:11px"><span style="color:#8b949e">P_win 0.85–0.95</span><span><span style="margin-right:6px">⏳</span><span style="color:#c9d1d9">0/10 trades — too few</span></span></div><div style="display:flex;justify-content:space-between;padding:3px 0;font-size:11px"><span style="color:#8b949e">P_win 0.95+</span><span><span style="margin-right:6px">⏳</span><span style="color:#c9d1d9">0/10 trades — too few</span></span></div>
@@ -1048,16 +1048,16 @@
   
   <div class="card">
     <div class="card-title">Equity Curve</div>
-    <div class="card-subtitle">3 trading days · 2026-05-03 → 2026-05-05</div>
+    <div class="card-subtitle">4 trading days · 2026-05-03 → 2026-05-06</div>
     <svg width="280" height="60" viewBox="0 0 280 60" style="width:100%;height:60px;background:#0d1117;border-radius:8px">
       
-      <polyline points="4.0,56.0 140.0,4.0 276.0,4.0" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round"/>
+      <polyline points="4.0,56.0 94.7,4.0 185.3,4.0 276.0,4.0" fill="none" stroke="#f85149" stroke-width="2" stroke-linejoin="round"/>
       <circle cx="276.0" cy="4.0" r="3" fill="#f85149"/>
     </svg>
     <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:4px">
       <span>2026-05-03</span>
       <span class="mono" style="color:#f85149;font-weight:600">$-1.19</span>
-      <span>2026-05-05</span>
+      <span>2026-05-06</span>
     </div>
   </div>
 
@@ -1175,11 +1175,11 @@
       </div>
       <div style="display:flex;justify-content:space-between;margin-bottom:3px">
         <span class="dim" style="font-size:11px">Money at risk (open)</span>
-        <span class="mono" style="font-size:11px">$10.04</span>
+        <span class="mono" style="font-size:11px">$14.99</span>
       </div>
       <div style="display:flex;justify-content:space-between;border-top:1px solid #21262d;padding-top:3px">
         <span class="dim" style="font-size:11px">Total equity</span>
-        <span class="mono" style="font-size:11px">$1008.07</span>
+        <span class="mono" style="font-size:11px">$1013.02</span>
       </div>
     </div>
     <div style="display:flex;justify-content:space-between;align-items:center">
@@ -1199,8 +1199,13 @@
     <div class="card-title">Today's Activity</div>
     
         <div class="activity-row">
-          <span class="activity-icon">💤</span>
-          <span class="activity-text dim">No activity today yet</span>
+          <span class="activity-icon">🎯</span>
+          <span class="activity-text"><strong>1</strong> trade placed today</span>
+        </div>
+
+        <div class="activity-row">
+          <span class="activity-icon">⏰</span>
+          <span class="activity-text"><strong>1</strong> position resolving today</span>
         </div>
   </div>
 
@@ -1247,19 +1252,19 @@
     <div style="display:flex;align-items:center;gap:12px;padding:10px;background:#161b22;border-radius:8px;margin-bottom:10px">
       <span style="font-size:28px">🟢</span>
       <div style="flex:1">
-        <div style="font-weight:700;font-size:14px;color:#3fb950">9min ago</div>
-        <div style="font-size:12px;color:#8b949e;margin-top:2px">Last check: May 06, 05:11 AM ET</div>
+        <div style="font-weight:700;font-size:14px;color:#3fb950">13min ago</div>
+        <div style="font-size:12px;color:#8b949e;margin-top:2px">Last check: May 06, 06:07 AM ET</div>
       </div>
       <div style="text-align:right;font-size:12px">
         <div class="dim">Next scan in</div>
-        <div class="mono" style="font-weight:700;color:#58a6ff;font-size:14px">~6min</div>
+        <div class="mono" style="font-weight:700;color:#58a6ff;font-size:14px">~3min</div>
       </div>
     </div>
 
     <div style="display:flex;gap:12px;font-size:12px;margin-bottom:8px">
       <div style="flex:1;padding:8px;background:#0d1117;border-radius:6px;border:1px solid #21262d">
         <div class="dim" style="font-size:10px;margin-bottom:3px">LAST CYCLE FOUND</div>
-        <div style="font-weight:700;color:#e6edf3">3 signals</div>
+        <div style="font-weight:700;color:#e6edf3">2 signals</div>
         <div class="dim" style="font-size:10px">0 traded · 0 settled</div>
       </div>
       <div style="flex:1;padding:8px;background:#0d1117;border-radius:6px;border:1px solid #21262d">
@@ -1278,10 +1283,10 @@
             <div>
               <span style="color:#58a6ff;font-weight:500">Fleet Cycle</span>
               <span class="dim" style="font-size:10px;margin-left:4px">every 15min</span>
-              <span class="dim" style="font-size:10px"> · 3 signals, 0 trades, 0 settled</span>
+              <span class="dim" style="font-size:10px"> · 2 signals, 0 trades, 0 settled</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:11 AM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">6:07 AM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
@@ -1295,7 +1300,7 @@
               <span class="dim" style="font-size:10px"> · Fleet healthy — heartbeat age: 4.5m…</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:15 AM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">6:11 AM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
@@ -1309,7 +1314,7 @@
               <span class="dim" style="font-size:10px"> · Kalshi fleet alive — bankroll: $100…</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:10 AM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">6:06 AM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
@@ -1323,10 +1328,10 @@
               <span class="dim" style="font-size:10px"> · OK</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">4:17 AM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:51 AM</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
+              <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">8:17 AM</span>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:14px 1fr auto auto;gap:6px;align-items:center;padding:4px 0;border-bottom:1px solid #161b22">
@@ -1337,7 +1342,7 @@
               
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">10:25 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:51 AM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
@@ -1351,10 +1356,10 @@
               <span class="dim" style="font-size:10px"> · OK</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:20 AM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">6:20 AM</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
+              <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">due</span>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:14px 1fr auto auto;gap:6px;align-items:center;padding:4px 0;border-bottom:1px solid #161b22">
@@ -1365,10 +1370,10 @@
               <span class="dim" style="font-size:10px"> · 21 cities stale >60m (atlanta,austi…</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">10:25 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:51 AM</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
+              <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">8:30 AM</span>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:14px 1fr auto auto;gap:6px;align-items:center;padding:4px 0;border-bottom:1px solid #161b22">
@@ -1379,7 +1384,7 @@
               <span class="dim" style="font-size:10px"> · ['warning', 'warning', 'warning', '…</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">10:25 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:51 AM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">9:00 PM</span>
@@ -1393,7 +1398,7 @@
               
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">10:25 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:51 AM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">9:30 PM</span>
@@ -1407,7 +1412,7 @@
               
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">10:25 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:51 AM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">10:31 AM</span>
@@ -1421,7 +1426,7 @@
               <span class="dim" style="font-size:10px"> · Not yet implemented — skipping</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">10:25 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">5:51 AM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">Sun 8:00 PM</span>
@@ -1443,7 +1448,7 @@
       <span style="font-size:16px">🌤</span>
       <div style="flex:1">
         <div style="font-size:13px;font-weight:600;color:#58a6ff">Weather HIGH — Last Scan</div>
-        <div style="font-size:11px;color:#8b949e">Scan May 06, 05:11 AM ET · 120 markets scanned · 3 signals · 0 traded</div>
+        <div style="font-size:11px;color:#8b949e">Scan May 06, 06:07 AM ET · 120 markets scanned · 2 signals · 0 traded</div>
       </div>
       <span style="color:#3fb950;font-size:9px;background:#0d2a1c;padding:1px 6px;border-radius:8px">ACTIVE</span>
     </div>
@@ -1456,25 +1461,10 @@
       <span style="font-weight:600">Minneapolis</span>
       <span style="color:#3fb950;font-family:monospace;font-weight:700">P_win 97%</span>
     </div>
-    <div style="color:#f85149;font-size:10px;margin-bottom:3px">⛔ entry $0.86 > $0.55 (skewed risk/reward</div>
+    <div style="color:#f85149;font-size:10px;margin-bottom:3px">⛔ entry $0.80 > $0.55 (skewed risk/reward</div>
     <div style="display:flex;gap:16px;color:#8b949e;flex-wrap:wrap">
-      <span>Market <span style="color:#e6edf3;font-family:monospace">$0.86</span></span>
-      <span>Gap <span style="color:#e6edf3;font-family:monospace">+11¢</span></span>
-      <span>P≥70% <span style="color:#3fb950">✓</span></span>
-    </div>
-  </div>
-  <div style="padding:8px;background:#2a2000;border-left:3px solid #d29922;border-radius:4px;margin:6px 0;font-size:11px">
-    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap">
-      <span>🟡</span>
-      <span style="color:#d29922;font-weight:700;font-size:12px">SIGNAL BLOCKED</span>
-      <span style="color:#f85149;font-weight:600;font-family:monospace">NO</span>
-      <span style="font-weight:600">Minneapolis</span>
-      <span style="color:#3fb950;font-family:monospace;font-weight:700">P_win 90%</span>
-    </div>
-    <div style="color:#f85149;font-size:10px;margin-bottom:3px">⛔ entry $0.63 > $0.55 (skewed risk/reward</div>
-    <div style="display:flex;gap:16px;color:#8b949e;flex-wrap:wrap">
-      <span>Market <span style="color:#e6edf3;font-family:monospace">$0.63</span></span>
-      <span>Gap <span style="color:#e6edf3;font-family:monospace">+27¢</span></span>
+      <span>Market <span style="color:#e6edf3;font-family:monospace">$0.80</span></span>
+      <span>Gap <span style="color:#e6edf3;font-family:monospace">+17¢</span></span>
       <span>P≥70% <span style="color:#3fb950">✓</span></span>
     </div>
   </div>
@@ -1486,31 +1476,31 @@
       <span style="font-weight:600">Houston</span>
       <span style="color:#3fb950;font-family:monospace;font-weight:700">P_win 86%</span>
     </div>
-    <div style="color:#f85149;font-size:10px;margin-bottom:3px">⛔ entry $0.63 > $0.55 (skewed risk/reward</div>
+    <div style="color:#f85149;font-size:10px;margin-bottom:3px">⛔ entry $0.68 > $0.55 (skewed risk/reward</div>
     <div style="display:flex;gap:16px;color:#8b949e;flex-wrap:wrap">
-      <span>Market <span style="color:#e6edf3;font-family:monospace">$0.63</span></span>
-      <span>Gap <span style="color:#e6edf3;font-family:monospace">+23¢</span></span>
+      <span>Market <span style="color:#e6edf3;font-family:monospace">$0.68</span></span>
+      <span>Gap <span style="color:#e6edf3;font-family:monospace">+18¢</span></span>
       <span>P≥70% <span style="color:#3fb950">✓</span></span>
     </div>
-  </div><div style="margin-top:8px"><div style="font-size:10px;font-weight:600;color:#8b949e;margin-bottom:2px">117 markets filtered this cycle</div><div style="margin:6px 0 2px"><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:57px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">v4_city_blocked</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">77% (90)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:5px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">forecast_margin_too_small</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">7% (8)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:3px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">model_disagreement</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">4% (5)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:3px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Neither YES nor NO side offers good risk/re…</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">4% (5)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Market is about to settle — too late to enter</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">3% (4)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">High model disagreement on a mid-range bracket</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">3% (3)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Not enough trading volume — order would mov…</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">1% (1)</span></div></div></div>
+  </div><div style="margin-top:8px"><div style="font-size:10px;font-weight:600;color:#8b949e;margin-bottom:2px">118 markets filtered this cycle</div><div style="margin:6px 0 2px"><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:57px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">v4_city_blocked</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">76% (90)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:5px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">forecast_margin_too_small</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">7% (8)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:3px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Neither YES nor NO side offers good risk/re…</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">5% (6)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:3px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">model_disagreement</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">4% (5)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Market is about to settle — too late to enter</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">3% (4)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">High model disagreement on a mid-range bracket</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">3% (3)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">already_held</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">1% (1)</span></div></div></div>
   </div>
   <div class="card" data-bot="weather_low" style="border-left:2px solid #7ee2ff">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
       <span style="font-size:16px">❄</span>
       <div style="flex:1">
         <div style="font-size:13px;font-weight:600;color:#7ee2ff">Weather LOW — Last Scan</div>
-        <div style="font-size:11px;color:#8b949e">Scan May 06, 05:11 AM ET · 240 markets scanned · 0 signals · 0 traded</div>
+        <div style="font-size:11px;color:#8b949e">Scan May 06, 06:07 AM ET · 240 markets scanned · 0 signals · 0 traded</div>
       </div>
       <span style="color:#3fb950;font-size:9px;background:#0d2a1c;padding:1px 6px;border-radius:8px">ACTIVE</span>
     </div>
-    <div style="color:#f85149;font-weight:600;font-size:12px;padding:4px 0">❌ NO SIGNALS — 240 markets filtered</div><div style="color:#8b949e;font-size:11px;margin:2px 0 6px">v4_low_city_blocked 120 · t2s_too_far 84 · Market is about to settle 20 · Not enough trading volume 16</div><details style="margin-top:8px"><summary style="cursor:pointer;list-style:none;font-size:10px;color:#8b949e">Today's full skip breakdown (500) ▸</summary><div style="margin:6px 0 2px"><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:36px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">v4_low_city_blocked</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">49% (246)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:26px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">t2s_too_far</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">35% (175)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:6px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Market is about to settle — too late to enter</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">9% (44)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:5px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Not enough trading volume — order would mov…</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">7% (35)</span></div></div></details>
+    <div style="color:#f85149;font-weight:600;font-size:12px;padding:4px 0">❌ NO SIGNALS — 240 markets filtered</div><div style="color:#8b949e;font-size:11px;margin:2px 0 6px">v4_low_city_blocked 120 · t2s_too_far 30 · Market is about to settle 28 · forecast_margin_too_small 26</div><div style="padding:6px 8px;background:#161b22;border-left:2px solid #30363d;border-radius:4px;font-size:11px;margin-top:4px"><span style="color:#8b949e">Closest to trading: </span><span style="color:#e6edf3;font-weight:500">KXLOWTDC-26MAY06-B59.5 (Washington Dc)</span> <span style="color:#d29922;font-family:monospace">+49% edge</span> — <span style="color:#8b949e">Neither YES nor NO side offers good risk/reward</span></div><details style="margin-top:8px"><summary style="cursor:pointer;list-style:none;font-size:10px;color:#8b949e">Today's full skip breakdown (500) ▸</summary><div style="margin:6px 0 2px"><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:36px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">v4_low_city_blocked</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">49% (246)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:14px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">t2s_too_far</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">19% (95)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:8px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Market is about to settle — too late to enter</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">11% (56)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:5px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">forecast_margin_too_small</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">8% (39)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:5px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Not enough trading volume — order would mov…</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">7% (34)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:4px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Neither YES nor NO side offers good risk/re…</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">6% (30)</span></div></div></details>
   </div>
   <div class="card" data-bot="base_rate_no" style="border-left:2px solid #3fb950">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
       <span style="font-size:16px">🎯</span>
       <div style="flex:1">
         <div style="font-size:13px;font-weight:600;color:#3fb950">Base Rate NO — Last Scan</div>
-        <div style="font-size:11px;color:#8b949e">Scan May 06, 05:11 AM ET · 0 markets scanned · 0 signals · 0 traded</div>
+        <div style="font-size:11px;color:#8b949e">Scan May 06, 06:07 AM ET · 0 markets scanned · 0 signals · 0 traded</div>
       </div>
       <span style="color:#f85149;font-size:9px;background:#3d1418;padding:1px 6px;border-radius:8px">PAUSED — V4 not applied to base_rate_no — paused 2026-</span>
     </div>
@@ -1525,7 +1515,7 @@
       <span style="font-size:16px">⛽</span>
       <div style="flex:1">
         <div style="font-size:13px;font-weight:600;color:#d29922">Energy — Last Scan</div>
-        <div style="font-size:11px;color:#8b949e">Scan May 06, 05:11 AM ET · 0 markets scanned · 0 signals · 0 traded</div>
+        <div style="font-size:11px;color:#8b949e">Scan May 06, 06:07 AM ET · 0 markets scanned · 0 signals · 0 traded</div>
       </div>
       <span style="color:#f85149;font-size:9px;background:#3d1418;padding:1px 6px;border-radius:8px">PAUSED — dashboard</span>
     </div>
@@ -1540,18 +1530,18 @@
       <span style="font-size:16px">🌧</span>
       <div style="flex:1">
         <div style="font-size:13px;font-weight:600;color:#54aeff">Rain — Last Scan</div>
-        <div style="font-size:11px;color:#8b949e">Scan May 06, 05:11 AM ET · 1 markets scanned · 0 signals · 0 traded</div>
+        <div style="font-size:11px;color:#8b949e">Scan May 06, 06:07 AM ET · 1 markets scanned · 0 signals · 0 traded</div>
       </div>
       <span style="color:#3fb950;font-size:9px;background:#0d2a1c;padding:1px 6px;border-radius:8px">ACTIVE</span>
     </div>
-    <div style="color:#f85149;font-weight:600;font-size:12px;padding:4px 0">❌ NO SIGNALS — 1 markets filtered</div><div style="color:#8b949e;font-size:11px;margin:2px 0 6px">kelly_undefined 1</div><details style="margin-top:8px"><summary style="cursor:pointer;list-style:none;font-size:10px;color:#8b949e">Today's full skip breakdown (60) ▸</summary><div style="margin:6px 0 2px"><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:45px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">kelly_undefined</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">60% (36)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:21px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">penny_entry</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">28% (17)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:6px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">low_model_agreement</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">8% (5)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">single_model_only</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">3% (2)</span></div></div></details>
+    <div style="color:#f85149;font-weight:600;font-size:12px;padding:4px 0">❌ NO SIGNALS — 1 markets filtered</div><div style="color:#8b949e;font-size:11px;margin:2px 0 6px">kelly_undefined 1</div><details style="margin-top:8px"><summary style="cursor:pointer;list-style:none;font-size:10px;color:#8b949e">Today's full skip breakdown (64) ▸</summary><div style="margin:6px 0 2px"><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:46px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">kelly_undefined</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">62% (40)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:19px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">penny_entry</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">27% (17)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:5px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">low_model_agreement</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">8% (5)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">single_model_only</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">3% (2)</span></div></div></details>
   </div>
   <div class="card" data-bot="crypto" style="border-left:2px solid #f7931a">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
       <span style="font-size:16px">₿</span>
       <div style="flex:1">
         <div style="font-size:13px;font-weight:600;color:#f7931a">Crypto (BTC) — Last Scan</div>
-        <div style="font-size:11px;color:#8b949e">Scan May 06, 05:11 AM ET · 0 markets scanned · 0 signals · 0 traded</div>
+        <div style="font-size:11px;color:#8b949e">Scan May 06, 06:07 AM ET · 0 markets scanned · 0 signals · 0 traded</div>
       </div>
       <span style="color:#f85149;font-size:9px;background:#3d1418;padding:1px 6px;border-radius:8px">PAUSED — dashboard</span>
     </div>
@@ -1569,6 +1559,94 @@
       </summary>
       <div style="margin-top:6px;max-height:500px;overflow-y:auto">
         
+              <details style="border-bottom:1px solid #161b22;padding:6px 0">
+                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
+                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 06:07 AM ET</span>
+                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 2</span></span>
+                  <span class="dim" style="font-size:10px">0 passed</span>
+                  
+                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +17%/+18%/+18%</span><span style="color:#484f58;font-size:10px">▸</span></span>
+                </summary>
+                
+                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
+              </details>
+              <details style="border-bottom:1px solid #161b22;padding:6px 0">
+                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
+                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 05:52 AM ET</span>
+                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 3</span></span>
+                  <span style="color:#3fb950;font-weight:600;font-size:10px">1 traded</span>
+                  
+                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +14%/+14%/+43%</span><span style="color:#484f58;font-size:10px">▸</span></span>
+                </summary>
+                <div style="font-size:9px;color:#8b949e;margin:2px 0 0 20px">Top skip: <span style="color:#d29922">entry $0.83 > $0.55 (skewed risk/reward)</span> (1×)</div>
+                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span><span class="dim" style="font-size:9px"> — entry $0.83 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">✅</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span><span class="dim" style="font-size:9px"> — entry $0.72 > $0.55 (skewed risk/reward</span></div></div>
+              </details>
+              <details style="border-bottom:1px solid #161b22;padding:6px 0">
+                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
+                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 05:52 AM ET</span>
+                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 3</span></span>
+                  <span class="dim" style="font-size:10px">0 passed</span>
+                  
+                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +14%/+14%/+43%</span><span style="color:#484f58;font-size:10px">▸</span></span>
+                </summary>
+                
+                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
+              </details>
+              <details style="border-bottom:1px solid #161b22;padding:6px 0">
+                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
+                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 05:40 AM ET</span>
+                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 2</span></span>
+                  <span class="dim" style="font-size:10px">2 passed</span>
+                  
+                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +11%/+14%/+14%</span><span style="color:#484f58;font-size:10px">▸</span></span>
+                </summary>
+                <div style="font-size:9px;color:#8b949e;margin:2px 0 0 20px">Top skip: <span style="color:#d29922">entry $0.86 > $0.55 (skewed risk/reward)</span> (1×)</div>
+                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span><span class="dim" style="font-size:9px"> — entry $0.86 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span><span class="dim" style="font-size:9px"> — entry $0.72 > $0.55 (skewed risk/reward</span></div></div>
+              </details>
+              <details style="border-bottom:1px solid #161b22;padding:6px 0">
+                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
+                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 05:40 AM ET</span>
+                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 2</span></span>
+                  <span class="dim" style="font-size:10px">0 passed</span>
+                  
+                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +11%/+14%/+14%</span><span style="color:#484f58;font-size:10px">▸</span></span>
+                </summary>
+                
+                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
+              </details>
+              <details style="border-bottom:1px solid #161b22;padding:6px 0">
+                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
+                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 05:25 AM ET</span>
+                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 3</span></span>
+                  <span class="dim" style="font-size:10px">3 passed</span>
+                  
+                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +12%/+20%/+34%</span><span style="color:#484f58;font-size:10px">▸</span></span>
+                </summary>
+                <div style="font-size:9px;color:#8b949e;margin:2px 0 0 20px">Top skip: <span style="color:#d29922">entry $0.85 > $0.55 (skewed risk/reward)</span> (1×)</div>
+                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span><span class="dim" style="font-size:9px"> — entry $0.85 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span><span class="dim" style="font-size:9px"> — entry $0.56 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span><span class="dim" style="font-size:9px"> — entry $0.66 > $0.55 (skewed risk/reward</span></div></div>
+              </details>
+              <details style="border-bottom:1px solid #161b22;padding:6px 0">
+                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
+                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 05:25 AM ET</span>
+                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 3</span></span>
+                  <span class="dim" style="font-size:10px">0 passed</span>
+                  
+                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +12%/+20%/+34%</span><span style="color:#484f58;font-size:10px">▸</span></span>
+                </summary>
+                
+                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
+              </details>
+              <details style="border-bottom:1px solid #161b22;padding:6px 0">
+                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
+                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 05:11 AM ET</span>
+                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 3</span></span>
+                  <span class="dim" style="font-size:10px">3 passed</span>
+                  
+                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +11%/+23%/+27%</span><span style="color:#484f58;font-size:10px">▸</span></span>
+                </summary>
+                <div style="font-size:9px;color:#8b949e;margin:2px 0 0 20px">Top skip: <span style="color:#d29922">entry $0.63 > $0.55 (skewed risk/reward)</span> (2×)</div>
+                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span><span class="dim" style="font-size:9px"> — entry $0.86 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span><span class="dim" style="font-size:9px"> — entry $0.63 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span><span class="dim" style="font-size:9px"> — entry $0.63 > $0.55 (skewed risk/reward</span></div></div>
+              </details>
               <details style="border-bottom:1px solid #161b22;padding:6px 0">
                 <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
                   <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 05:11 AM ET</span>
@@ -1734,123 +1812,44 @@
                 
                 <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
               </details>
-              <details style="border-bottom:1px solid #161b22;padding:6px 0">
-                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
-                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 03:10 AM ET</span>
-                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 3</span></span>
-                  <span class="dim" style="font-size:10px">3 passed</span>
-                  
-                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +20%/+21%/+32%</span><span style="color:#484f58;font-size:10px">▸</span></span>
-                </summary>
-                <div style="font-size:9px;color:#8b949e;margin:2px 0 0 20px">Top skip: <span style="color:#d29922">entry $0.76 > $0.55 (skewed risk/reward)</span> (1×)</div>
-                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span><span class="dim" style="font-size:9px"> — entry $0.76 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span><span class="dim" style="font-size:9px"> — entry $0.58 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span><span class="dim" style="font-size:9px"> — entry $0.66 > $0.55 (skewed risk/reward</span></div></div>
-              </details>
-              <details style="border-bottom:1px solid #161b22;padding:6px 0">
-                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
-                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 03:10 AM ET</span>
-                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 3</span></span>
-                  <span class="dim" style="font-size:10px">0 passed</span>
-                  
-                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +20%/+21%/+32%</span><span style="color:#484f58;font-size:10px">▸</span></span>
-                </summary>
-                
-                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 97%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
-              </details>
-              <details style="border-bottom:1px solid #161b22;padding:6px 0">
-                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
-                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 02:55 AM ET</span>
-                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 4</span></span>
-                  <span class="dim" style="font-size:10px">4 passed</span>
-                  
-                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +10%/+24%/+35%</span><span style="color:#484f58;font-size:10px">▸</span></span>
-                </summary>
-                <div style="font-size:9px;color:#8b949e;margin:2px 0 0 20px">Top skip: <span style="color:#d29922">entry $0.75 > $0.55 (skewed risk/reward)</span> (1×)</div>
-                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 98%</span><span class="dim" style="font-size:9px"> — entry $0.75 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 92%</span><span class="dim" style="font-size:9px"> — entry $0.57 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span><span class="dim" style="font-size:9px"> — entry $0.66 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Chicago</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span><span class="dim" style="font-size:9px"> — entry $0.76 > $0.55 (skewed risk/reward</span></div></div>
-              </details>
-              <details style="border-bottom:1px solid #161b22;padding:6px 0">
-                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
-                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 02:55 AM ET</span>
-                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 4</span></span>
-                  <span class="dim" style="font-size:10px">0 passed</span>
-                  
-                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +10%/+24%/+35%</span><span style="color:#484f58;font-size:10px">▸</span></span>
-                </summary>
-                
-                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 98%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 92%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Chicago</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
-              </details>
-              <details style="border-bottom:1px solid #161b22;padding:6px 0">
-                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
-                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 02:40 AM ET</span>
-                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 4</span></span>
-                  <span class="dim" style="font-size:10px">4 passed</span>
-                  
-                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +9%/+24%/+33%</span><span style="color:#484f58;font-size:10px">▸</span></span>
-                </summary>
-                <div style="font-size:9px;color:#8b949e;margin:2px 0 0 20px">Top skip: <span style="color:#d29922">entry $0.75 > $0.55 (skewed risk/reward)</span> (1×)</div>
-                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 98%</span><span class="dim" style="font-size:9px"> — entry $0.75 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 92%</span><span class="dim" style="font-size:9px"> — entry $0.59 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span><span class="dim" style="font-size:9px"> — entry $0.66 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Chicago</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span><span class="dim" style="font-size:9px"> — entry $0.77 > $0.55 (skewed risk/reward</span></div></div>
-              </details>
-              <details style="border-bottom:1px solid #161b22;padding:6px 0">
-                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
-                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 02:40 AM ET</span>
-                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 4</span></span>
-                  <span class="dim" style="font-size:10px">0 passed</span>
-                  
-                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +9%/+24%/+33%</span><span style="color:#484f58;font-size:10px">▸</span></span>
-                </summary>
-                
-                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 98%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 92%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Chicago</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
-              </details>
-              <details style="border-bottom:1px solid #161b22;padding:6px 0">
-                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
-                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 02:25 AM ET</span>
-                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 4</span></span>
-                  <span class="dim" style="font-size:10px">4 passed</span>
-                  
-                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +9%/+24%/+33%</span><span style="color:#484f58;font-size:10px">▸</span></span>
-                </summary>
-                <div style="font-size:9px;color:#8b949e;margin:2px 0 0 20px">Top skip: <span style="color:#d29922">entry $0.74 > $0.55 (skewed risk/reward)</span> (1×)</div>
-                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 98%</span><span class="dim" style="font-size:9px"> — entry $0.74 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 92%</span><span class="dim" style="font-size:9px"> — entry $0.59 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span><span class="dim" style="font-size:9px"> — entry $0.69 > $0.55 (skewed risk/reward</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Chicago</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span><span class="dim" style="font-size:9px"> — entry $0.77 > $0.55 (skewed risk/reward</span></div></div>
-              </details>
-              <details style="border-bottom:1px solid #161b22;padding:6px 0">
-                <summary style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:11px;list-style:none;flex-wrap:wrap">
-                  <span style="color:#8b949e;font-family:'JetBrains Mono',monospace;font-size:10px;min-width:90px">May 06, 02:25 AM ET</span>
-                  <span style="font-size:10px"><span style="color:#58a6ff">🌤 4</span></span>
-                  <span class="dim" style="font-size:10px">0 passed</span>
-                  
-                  <span style="margin-left:auto;display:flex;gap:6px;align-items:center"><span class="dim" style="font-size:9px;font-family:monospace">edge +9%/+24%/+33%</span><span style="color:#484f58;font-size:10px">▸</span></span>
-                </summary>
-                
-                <div style="padding:6px 0 2px 20px"><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 98%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Minneapolis</span><span class="mono" style="color:#3fb950;font-size:9px">P 92%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Houston</span><span class="mono" style="color:#3fb950;font-size:9px">P 90%</span></div><div style="display:flex;align-items:center;gap:4px;padding:1px 0;font-size:10px"><span style="font-size:9px">⏭️</span><span style="font-size:9px">🌤</span><span style="color:#f85149;font-weight:600;font-family:monospace;font-size:9px">NO</span><span>Chicago</span><span class="mono" style="color:#3fb950;font-size:9px">P 86%</span></div></div>
-              </details>
       </div>
     </details>
   </div>
   <div class="card">
     <div class="card-title">Position Risk Summary</div>
-    <div class="card-subtitle">2 open positions</div>
+    <div class="card-subtitle">3 open positions</div>
     <div class="stat-grid stat-grid-3" style="margin-top:8px">
       <div class="stat">
-        <div class="stat-value stat-value-sm red">-$10.04</div>
+        <div class="stat-value stat-value-sm red">-$14.99</div>
         <div class="stat-label">Worst Case</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm green">+$7.96</div>
+        <div class="stat-value stat-value-sm green">+$13.01</div>
         <div class="stat-label">Best Case</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm">$10.04</div>
+        <div class="stat-value stat-value-sm">$14.99</div>
         <div class="stat-label">At Risk</div>
       </div>
     </div>
     <div style="margin-top:10px;padding:8px;background:#161b22;border-radius:6px;font-size:11px">
       <span class="dim">Most Exposed</span>
       <span style="font-weight:600;margin-left:8px">Minneapolis</span>
-      <span class="dim" style="margin-left:4px">($5.13)</span>
+      <span class="dim" style="margin-left:4px">($10.08)</span>
     </div>
   </div>
   <div class="card">
     <div class="card-title">What's Coming Up</div>
-    <div class="card-subtitle">Open trades settling in the next 7 days</div><div style="margin-top:10px"><div class="dim" style="font-size:10px;font-weight:600;margin-bottom:6px">KNOWN DATA RELEASES</div>
+    <div class="card-subtitle">Open trades settling in the next 7 days</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div>
+        <div style="font-weight:600;color:#e6edf3">Today</div>
+        <div class="dim" style="font-size:11px">1 trade settling</div>
+      </div>
+      <div style="text-align:right">
+        <div style="color:#f85149;font-weight:600">$4.95 at risk</div>
+      </div>
+    </div><div style="margin-top:10px"><div class="dim" style="font-size:10px;font-weight:600;margin-bottom:6px">KNOWN DATA RELEASES</div>
     <div style="display:flex;align-items:center;gap:8px;font-size:11px;padding:4px 0">
       <span style="color:#d29922;font-size:14px">📅</span>
       <div>
@@ -1890,7 +1889,7 @@
         </div>
 
   <div class="footer">
-    Updated May 06, 05:20 AM ET · Auto-refreshes every 60s · <span style="color:#3fb950">Data verified ✓</span>
+    Updated May 06, 06:20 AM ET · Auto-refreshes every 60s · <span style="color:#3fb950">Data verified ✓</span>
   </div>
 </div>
 
@@ -1902,12 +1901,12 @@
   
   <div style="background:#0d1117;border:1px solid #21262d;border-radius:10px;padding:12px 14px;margin-bottom:10px">
     <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:700;color:#e6edf3">2 open trades</span>
-      <span style="font-size:11px"><span style="color:#d29922;font-weight:700">2 close calls</span> <span class="dim" style="font-size:10px">(live — not settled)</span></span>
+      <span style="font-size:13px;font-weight:700;color:#e6edf3">3 open trades</span>
+      <span style="font-size:11px"><span style="color:#d29922;font-weight:700">3 close calls</span> <span class="dim" style="font-size:10px">(live — not settled)</span></span>
     </div>
     <div style="display:flex;gap:16px;font-size:12px;flex-wrap:wrap">
-      <span>Potential gain <span style="color:#3fb950;font-weight:700;font-family:'SF Mono',monospace">+$7.96</span></span>
-      <span>At risk <span style="color:#f85149;font-weight:700;font-family:'SF Mono',monospace">-$10.04</span></span>
+      <span>Potential gain <span style="color:#3fb950;font-weight:700;font-family:'SF Mono',monospace">+$13.01</span></span>
+      <span>At risk <span style="color:#f85149;font-weight:700;font-family:'SF Mono',monospace">-$14.99</span></span>
     </div>
   </div>
   <div class="card">
@@ -1917,34 +1916,38 @@
       
       <div style="flex:1;min-width:150px;background:#0d1117;border:1px solid #21262d;border-radius:6px;padding:10px">
         <div style="font-size:11px;color:#58a6ff;font-weight:700;margin-bottom:6px">TODAY</div>
-        <div class="dim" style="font-size:11px">No trades</div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Trades</span><span class="mono" style="font-weight:600">1</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Settled</span><span class="mono">0</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Win rate</span><span class="mono" style="font-weight:700;color:#8b949e">0%</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Net P&amp;L</span><span class="mono" style="font-weight:700;color:#8b949e">$+0.00</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px"><span class="dim">Avg edge</span><span class="mono">42.6%</span></div>
       </div>
       
       <div style="flex:1;min-width:150px;background:#0d1117;border:1px solid #21262d;border-radius:6px;padding:10px">
         <div style="font-size:11px;color:#79c0ff;font-weight:700;margin-bottom:6px">LAST 7 DAYS</div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Trades</span><span class="mono" style="font-weight:600">7</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Trades</span><span class="mono" style="font-weight:600">8</span></div>
         <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Settled</span><span class="mono">5</span></div>
         <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Win rate</span><span class="mono" style="font-weight:700;color:#3fb950">60%</span></div>
         <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Net P&amp;L</span><span class="mono" style="font-weight:700;color:#f85149">$-1.97</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:11px"><span class="dim">Avg edge</span><span class="mono">27.7%</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px"><span class="dim">Avg edge</span><span class="mono">29.5%</span></div>
       </div>
       
       <div style="flex:1;min-width:150px;background:#0d1117;border:1px solid #21262d;border-radius:6px;padding:10px">
         <div style="font-size:11px;color:#bc8cff;font-weight:700;margin-bottom:6px">ALL TIME</div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Trades</span><span class="mono" style="font-weight:600">7</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Trades</span><span class="mono" style="font-weight:600">8</span></div>
         <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Settled</span><span class="mono">5</span></div>
         <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Win rate</span><span class="mono" style="font-weight:700;color:#3fb950">60%</span></div>
         <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Net P&amp;L</span><span class="mono" style="font-weight:700;color:#f85149">$-1.97</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:11px"><span class="dim">Avg edge</span><span class="mono">27.7%</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px"><span class="dim">Avg edge</span><span class="mono">29.5%</span></div>
       </div>
     </div>
     <div style="padding:10px;background:#0d1117;border:1px solid #21262d;border-radius:6px">
       <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px">
         <span style="font-size:11px;color:#8b949e;font-weight:700">LIVE EXPOSURE</span>
-        <span class="mono" style="font-size:13px;font-weight:700;color:#e6edf3">$10.04 <span class="dim" style="font-weight:400;font-size:11px">· 2 open</span></span>
+        <span class="mono" style="font-size:13px;font-weight:700;color:#e6edf3">$14.99 <span class="dim" style="font-weight:400;font-size:11px">· 3 open</span></span>
       </div>
-      <div style="font-size:11px;margin-top:4px"><span><span class="dim">🌤</span> <span class="mono">$10</span></span></div>
-      <div style="font-size:11px;color:#8b949e;margin-top:3px"><span><span class="dim">Minneapolis</span> <span class="mono">$5</span></span> · <span><span class="dim">Miami</span> <span class="mono">$5</span></span></div>
+      <div style="font-size:11px;margin-top:4px"><span><span class="dim">🌤</span> <span class="mono">$15</span></span></div>
+      <div style="font-size:11px;color:#8b949e;margin-top:3px"><span><span class="dim">Minneapolis</span> <span class="mono">$10</span></span> · <span><span class="dim">Miami</span> <span class="mono">$5</span></span></div>
     </div>
   </div>
   <div class="card">
@@ -1987,7 +1990,7 @@
             </tr>
             <tr style="border-bottom:1px solid #21262d">
               <td style="padding:4px 6px;font-family:monospace">40–50%</td>
-              <td style="padding:4px 6px;text-align:right;font-family:monospace">1/1</td>
+              <td style="padding:4px 6px;text-align:right;font-family:monospace">1/2</td>
               <td style="padding:4px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:700">0%</td>
               
               <td style="padding:4px 6px;text-align:right;font-family:monospace;color:#f85149;font-weight:600">$-5.61</td>
@@ -2016,7 +2019,7 @@
             <tbody>
             <tr style="border-bottom:1px solid #21262d">
               <td style="padding:4px 6px;font-family:monospace">0–55%</td>
-              <td style="padding:4px 6px;text-align:right;font-family:monospace">4/6</td>
+              <td style="padding:4px 6px;text-align:right;font-family:monospace">4/7</td>
               <td style="padding:4px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:700">50%</td>
               <td style="padding:4px 6px;text-align:right;font-family:monospace;color:#f85149;font-weight:700">+22</td>
               <td style="padding:4px 6px;text-align:right;font-family:monospace;color:#f85149;font-weight:600">$-3.24</td>
@@ -2060,7 +2063,7 @@
             </tr>
             <tr style="border-bottom:1px solid #21262d">
               <td style="padding:3px 6px;color:#c9d1d9">Minneapolis</td>
-              <td style="padding:3px 6px;text-align:right;font-family:monospace">1/2</td>
+              <td style="padding:3px 6px;text-align:right;font-family:monospace">1/3</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:700">100%</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#3fb950;font-weight:600">$+0.52</td>
             </tr>
@@ -2086,7 +2089,7 @@
             <tbody>
             <tr style="border-bottom:1px solid #21262d">
               <td style="padding:3px 6px;color:#c9d1d9">weather</td>
-              <td style="padding:3px 6px;text-align:right;font-family:monospace">3/5</td>
+              <td style="padding:3px 6px;text-align:right;font-family:monospace">3/6</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:700">67%</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#f85149;font-weight:600">$-1.19</td>
             </tr>
@@ -2112,7 +2115,7 @@
             <tbody>
             <tr style="border-bottom:1px solid #21262d">
               <td style="padding:3px 6px;color:#c9d1d9">NO</td>
-              <td style="padding:3px 6px;text-align:right;font-family:monospace">5/7</td>
+              <td style="padding:3px 6px;text-align:right;font-family:monospace">5/8</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#3fb950;font-weight:700">60%</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#f85149;font-weight:600">$-1.97</td>
             </tr></tbody>
@@ -2132,7 +2135,7 @@
             <tbody>
             <tr style="border-bottom:1px solid #21262d">
               <td style="padding:3px 6px;color:#c9d1d9">range</td>
-              <td style="padding:3px 6px;text-align:right;font-family:monospace">2/4</td>
+              <td style="padding:3px 6px;text-align:right;font-family:monospace">2/5</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:700">50%</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#f85149;font-weight:600">$-1.71</td>
             </tr>
@@ -2164,7 +2167,7 @@
             <tbody>
             <tr style="border-bottom:1px solid #21262d">
               <td style="padding:3px 6px;color:#c9d1d9">single</td>
-              <td style="padding:3px 6px;text-align:right;font-family:monospace">5/7</td>
+              <td style="padding:3px 6px;text-align:right;font-family:monospace">5/8</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#3fb950;font-weight:700">60%</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#f85149;font-weight:600">$-1.97</td>
             </tr></tbody>
@@ -2202,6 +2205,26 @@
             </tr>
             <tr style="border-bottom:1px solid #21262d">
               <td style="padding:3px 6px;color:#c9d1d9">3°+</td>
+              <td style="padding:3px 6px;text-align:right;font-family:monospace">0/2</td>
+              <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:700">—</td>
+              <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:600">$+0.00</td>
+            </tr></tbody>
+          </table>
+        </div>
+        <div style="flex:1;min-width:240px">
+          <div style="font-size:11px;color:#8b949e;font-weight:700;margin-bottom:4px">BY HOURS TO SETTLE</div>
+          <table style="width:100%;font-size:11px;border-collapse:collapse">
+            <thead>
+              <tr style="border-bottom:1px solid #30363d;color:#8b949e;text-align:left;font-size:10px">
+                <th style="padding:3px 6px"></th>
+                <th style="padding:3px 6px;text-align:right">n</th>
+                <th style="padding:3px 6px;text-align:right">Win%</th>
+                <th style="padding:3px 6px;text-align:right">P&amp;L</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr style="border-bottom:1px solid #21262d">
+              <td style="padding:3px 6px;color:#c9d1d9">12–24h</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace">0/1</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:700">—</td>
               <td style="padding:3px 6px;text-align:right;font-family:monospace;color:#8b949e;font-weight:600">$+0.00</td>
@@ -2221,7 +2244,7 @@
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
         <div style="flex:1;min-width:180px;padding:10px;background:#0d1117;border:1px solid #21262d;border-radius:6px">
           <div style="font-size:11px;color:#58a6ff;font-weight:700;margin-bottom:6px">AI APPROVED</div>
-          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Placed</span><span class="mono">5</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Placed</span><span class="mono">6</span></div>
           <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Settled</span><span class="mono">3</span></div>
           <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Win rate</span><span class="mono" style="font-weight:700;color:#8b949e">67%</span></div>
           <div style="display:flex;justify-content:space-between;font-size:11px"><span class="dim">Net P&amp;L</span><span class="mono" style="font-weight:700;color:#f85149">$-1.19</span></div>
@@ -2259,7 +2282,7 @@
   </div>
 
   <div class="card">
-    <div class="card-title">All Trades (7)</div>
+    <div class="card-title">All Trades (8)</div>
     <div class="card-subtitle">Tap any trade to see full details</div>
 
     <div class="status-filters" id="statusFilters">
@@ -2289,6 +2312,262 @@
 
     <ul class="trade-list" id="tradeList">
       
+        <li id="trade-KXHIGHTMIN-26MAY06-B50.5" class="trade-item open" data-bot="weather" data-status="open" data-track="close"
+            data-placed="2026-05-06T09:52:34.809756" data-pnl="4.8750"
+            data-edge="0.4256" data-target="2026-05-06"
+            style="border-left-color:#58a6ff">
+          <div class="trade-head trade-compact-head" onclick="toggleTrade(this)">
+            <div class="trade-compact-row">
+              <div class="trade-compact-left">
+                <div class="trade-compact-title">
+                  <span class="trade-compact-city">Minneapolis</span>
+                  <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff;font-size:9px;padding:1px 5px">🌤</span>
+                  <span class="trade-badge badge-no">NO</span>
+                  <span class="trade-badge" style="background:rgba(210,153,34,0.2);color:#d29922">Close</span>
+                </div>
+                <div class="trade-compact-meta">
+                  <span class="mono">@50¢</span>
+                  <span class="dim">·</span>
+                  <span>Today</span>
+                  <span class="dim">·</span>
+                  <span class="tip" data-tip="Our probability estimate minus the market price. Positive = we think this is underpriced.">43% mispriced</span>
+                  <span title="Health U · Minimal — not enough live data to trust weights&#10;Weights: only 0 live NWS settlements (need 5); cli_graded 0% — backfill dominates weights | Quality: Insufficient data (1 trades, need 10)" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#484f58;flex-shrink:0;cursor:help;margin-left:2px" aria-label="Health U"></span>
+                </div>
+              </div>
+              <div class="trade-compact-right">
+                <div class="trade-compact-pnl mono" style="color:#3fb950">$+4.88 <span style="font-size:9px;font-weight:500;color:#8b949e">CLI</span></div>
+                <div class="trade-compact-actions">
+                  <a href="https://kalshi.com/markets/kxhightmin/minneapolis-daily-high-temperature/KXHIGHTMIN-26MAY06?market_ticker=KXHIGHTMIN-26MAY06-B50.5" target="_blank" rel="noopener noreferrer" class="kalshi-link" title="Open KXHIGHTMIN-26MAY06-B50.5 on Kalshi" onclick="event.stopPropagation()">↗</a>
+                  <span class="trade-compact-chevron">›</span>
+                </div>
+              </div>
+            </div>
+          </div>          <div class="trade-detail">
+            <div class="trade-detail-lead">
+              
+      <div class="entry-exit-flow">
+        
+        <div class="flow-side">
+          <div class="flow-label">ENTRY</div>
+          <div class="flow-line">
+            <span class="flow-side-tag" style="color:#f85149;border-color:#f8514955">NO</span>
+            <span class="mono" style="color:#e6edf3">$0.49</span>
+            <span class="dim">×</span>
+            <span class="mono">10c</span>
+          </div>
+          <div class="flow-sub mono">$4.95 risked</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-side flow-side-result">
+          <div class="flow-label" style="color:#d29922">LIVE</div>
+          <div class="flow-line">
+            <span class="flow-side-tag" style="color:#d29922;border-color:#d2992255">MARK</span><span class="mono" style="color:#e6edf3">$0.49</span> <span class="mono" style="color:#f85149;font-size:10px">-0.01</span>
+          </div>
+          <div class="flow-sub mono" style="color:#f85149;font-weight:700">$-0.05 unrealized <span class="dim">· 53°F now</span></div>
+        </div>
+      </div>
+              <div style="display:flex;gap:16px;padding:6px 0 2px;font-size:11px;color:#8b949e;flex-wrap:wrap">
+                <span>NWS settled <span style="color:#3fb950;font-weight:700">WON +$4.88</span></span>
+                <span><span class="dim">obs high</span> <span style="font-family:'SF Mono',monospace">53°F</span></span>
+                <span class="dim" style="font-size:10px;margin-left:auto">awaiting Kalshi reconciliation</span>
+              </div>
+              
+            <div style="padding:5px 8px;margin:4px 0 2px;background:#161b22;border-radius:6px;border-left:2px solid #3fb950">
+              <div style="display:flex;align-items:center;gap:8px">
+                <span style="font-size:10px;color:#8b949e">High so far</span>
+                <span style="font-size:14px;font-weight:700;color:#3fb950;font-family:'JetBrains Mono',monospace">53°F</span>
+                <span style="font-size:9px;font-weight:700;color:#3fb950">CLI</span>
+                <span style="font-size:10px;color:#484f58"> · Forecast 47°F</span>
+                <span style="color:#3fb950;font-weight:600;font-size:10px;margin-left:auto">On track</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;margin-top:2px"><span style="font-size:9px;font-weight:600;color:#8b949e;font-family:'SF Mono',monospace">KMSP</span> <span style="font-size:9px;font-weight:700;color:#d29922;background:rgba(210,153,34,0.15);padding:1px 5px;border-radius:8px">Close (2.0°F)</span></div>
+            </div>
+            </div>
+            <div class="detail-section" style="margin-bottom:4px">
+              <div class="detail-section-title">Health at Entry</div>
+              <div style="margin:4px 0;padding:8px;background:#484f5811;border-left:2px solid #484f58;border-radius:4px">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+    <span style="font-size:10px;font-weight:700;color:#484f58">HEALTH AT ENTRY: U</span>
+    <span style="font-size:9px;color:#f85149">confidence: Minimal</span>
+  </div>
+  <div style="display:flex;gap:12px;font-size:10px;color:#8b949e">
+    <span>Models: <span style="color:#e6edf3">B</span></span>
+    <span>Weights: <span style="color:#e6edf3">I</span></span>
+    <span>Quality: <span style="color:#e6edf3">U</span></span>
+  </div>
+  <div style="font-size:9px;color:#8b949e;margin-top:3px">Weights: only 0 live NWS settlements (need 5); cli_graded 0% — backfill dominates weights | Quality: Insufficient data (</div>
+</div>
+            </div>
+            <div class="detail-section" style="background:#1a2332;border-radius:8px;padding:10px;margin-bottom:4px">
+              <div class="detail-section-title" style="color:#58a6ff">Trade Explained</div>
+              <div style="font-size:12px;line-height:1.7">
+                <div style="font-size:13px;font-weight:600;color:#e6edf3;margin-bottom:8px">We paid $4.95 betting that Minneapolis's high temperature will settle outside 50–51°F.</div>
+                <div style="margin-bottom:8px">
+                  <span style="font-size:10px;font-weight:700;color:#3fb950;text-transform:uppercase;letter-spacing:.05em">Why We Think We're Right</span>
+                  <div style="color:#c9d1d9;margin-top:3px">GFS (49°F) and ECMWF (44°F) disagree — 30 GFS ensemble members average 51°F (17% GFS / 35% ECMWF). HRRR (3km local model) shows 49°F. Blended forecast: 47°F. Market prices our winning scenario at 47%; we calculate 90% — 43% mispriced. Live temp is 53°F — only 2.0°F from the boundary.</div>
+                </div>
+                <div style="margin-top:8px">
+                  <span style="font-size:10px;font-weight:700;color:#f85149;text-transform:uppercase;letter-spacing:.05em">What Could Go Wrong</span>
+                  <div style="color:#c9d1d9;margin-top:3px">Models are 4°F apart — if the losing model is right, the trade loses. We lose $4.95.</div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-section">
+              <div class="detail-section-title">Market</div>
+              <div class="detail-grid">
+                <span class="detail-label">Ticker</span>
+                <span class="detail-value"><a href="https://kalshi.com/markets/kxhightmin/minneapolis-daily-high-temperature/KXHIGHTMIN-26MAY06?market_ticker=KXHIGHTMIN-26MAY06-B50.5" target="_blank" rel="noopener noreferrer" style="color:#58a6ff;text-decoration:none;font-size:11px" title="Open on Kalshi">KXHIGHTMIN-26MAY06-B50.5 ↗</a></span>
+                <span class="detail-label">Asset</span>
+                <span class="detail-value">Minneapolis</span>
+                <span class="detail-label">Target Date</span>
+                <span class="detail-value">2026-05-06</span>
+                <span class="detail-label">Bot</span>
+                <span class="detail-value" style="color:#58a6ff">🌤 Weather (HIGH)</span>
+                <span class="detail-label">Settlement</span>
+                <span class="detail-value" style="font-size:11px;color:#8b949e">NWS Daily Climate Report (high)</span>
+                <span class="detail-label">High So Far</span><span class="detail-value" style="color:#58a6ff">53°F<span style="font-size:9px;font-weight:700;color:#3fb950;margin-left:4px">CLI</span></span><span class="detail-label">Station</span><span class="detail-value" style="font-family:'SF Mono',monospace;font-size:11px">KMSP</span><span class="detail-label">CLI Status</span><span class="detail-value" style="color:#3fb950;font-size:11px">Published (official)</span>
+              </div>
+            </div>
+            <div class="detail-section">
+              <div class="detail-section-title">Your Position</div>
+              <div class="detail-grid">
+                
+                <span class="detail-label">We bought</span>
+                <span class="detail-value">10 <span style="color:#f85149;font-weight:700">NO</span> contracts @ $0.49</span>
+                <span class="detail-label">Total Cost</span>
+                <span class="detail-value">$4.95</span>
+                <span class="detail-label"><span class="tip" data-tip="Real-world condition that pays out for our side. Our trade wins $1.00 per contract if this happens; loses the entry price otherwise.">Pays out if</span></span>
+                <span class="detail-value">high temp settles outside 50-51°F</span>
+                <span class="detail-label">Forecast</span>
+                <span class="detail-value" style="font-size:11px;color:#8b949e">forecast 46.6°F (bracket 50-51°F)</span>
+                <span class="detail-label"><span class="tip" data-tip="Our model's probability that OUR side wins (not the YES side).">Our chance to win</span></span>
+                <span class="detail-value" style="font-weight:700">90%</span>
+                <span class="detail-label"><span class="tip" data-tip="Market's implied probability that OUR side wins, derived from the price we paid.">Market's estimate</span></span>
+                <span class="detail-value">47%</span>
+                <span class="detail-label"><span class="tip" data-tip="Our chance to win minus the market's price. Positive = we think we're more likely to win than the market does.">Our edge</span></span>
+                <span class="detail-value" style="color:#3fb950;font-weight:700">+43pp</span>
+                <span class="detail-label">If we win</span>
+                <span class="detail-value" style="color:#3fb950">+$5.05 profit (+102% return)</span>
+                <span class="detail-label">If we lose</span>
+                <span class="detail-value" style="color:#f85149">−$4.95</span>
+                <span class="detail-label"><span class="tip" data-tip="Which forecasting models were used to generate this signal.">Data Sources</span></span>
+                <span class="detail-value" style="font-size:11px">GFS+ECMWF+GEFS+HRRR+ICON</span>
+                <span class="detail-label"><span class="tip" data-tip="How much the models disagree (°F). Lower = more agreement = higher confidence.">Model Spread</span></span>
+                <span class="detail-value">4.1°F</span>
+                <span class="detail-label"><span class="tip" data-tip="Auto-audit run immediately after the fill: cost math, side polarity, P_ENTER gate, forecast direction, and bracket classification vs Kalshi.">Trade audit</span></span><span class="detail-value" style="color:#d29922;font-weight:700"><span class="tip" data-tip="<span style='color:#d29922'>⚠</span> cost_math: $4.95 ≈ 10 × $0.49 = $4.95<br><span style='color:#d29922'>⚠</span> side_polarity: p_win 0.896 matches 1−P(YES) = 0.896<br><span style='color:#d29922'>⚠</span> fees_correct: entry_fee $0.1750 ≈ 0.07 × $0.49 × $0.51 × 10 = $0.1750<br><span style='color:#d29922'>⚠</span> contract_cap: 10 contracts ≤ cap 200<br><span style='color:#d29922'>⚠</span> kelly_sizing: $4.95 ≤ per-bot cap $30.00 (3.0% bankroll)<br><span style='color:#d29922'>⚠</span> p_enter_gate: p_win 0.896 ≥ P_ENTER 0.75<br><span style='color:#d29922'>⚠</span> volume_floor: volume not recorded on trade<br><span style='color:#d29922'>⚠</span> spread_max: NO spread 0.000 ≤ 0.15<br><span style='color:#d29922'>⚠</span> bracket_dead_zone: forecast 3.4°F from nearest bracket edge<br><span style='color:#d29922'>⚠</span> forecast_direction: forecast 46.6°F outside 50-51°F → NO side aligned<br><span style='color:#d29922'>⚠</span> bracket_classification: bracket_type=range matches Kalshi (strike_type=between)<br><span style='color:#d29922'>⚠</span> sigma_in_range: σ 2.69°F within [0.5, 4.0]<br><span style='color:#d29922'>⚠</span> trade_record_complete: all 10 required fields present<br><span style='color:#d29922'>⚠</span> forecast_freshness: placed 0.0h after live obs<br><span style='color:#d29922'>⚠</span> duplicate_position: only this position open on KXHIGHTMIN-26MAY06-B50.5">⚠ WARN — 1 check flagged</span></span>
+                <span class="detail-label">Placed</span>
+                <span class="detail-value dim">May 06, 05:52 AM ET</span>
+              </div>
+            </div>
+            <div class="detail-section" style="background:#111820;border:1px solid #21262d;border-radius:8px;padding:10px;margin-bottom:4px">
+              <div class="detail-section-title" style="color:#d29922">📐 Show the Math</div>
+
+              <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.05em;margin-top:8px">Step 1 · Model Forecasts</div>
+              <div style="font-size:11px;margin:4px 0 8px"><div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #21262d"><span style="color:#58a6ff">GFS <span class="dim" style="font-size:9px">(bias +1.5)</span></span><span class="mono">47.1°F</span><span class="dim">17% weight</span></div><div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #21262d"><span style="color:#bc8cff">ECMWF <span class="dim" style="font-size:9px">(bias -0.6)</span></span><span class="mono">45.1°F</span><span class="dim">35% weight</span></div><div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #21262d"><span style="color:#d29922">HRRR <span class="dim" style="font-size:9px">(bias +1.7)</span></span><span class="mono">46.9°F</span><span class="dim">20% weight</span></div><div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #21262d"><span style="color:#7ee787">ICON <span class="dim" style="font-size:9px">(bias +1.0)</span></span><span class="mono">47.8°F</span><span class="dim">28% weight</span></div><div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff">GEFS Ensemble</span><span class="mono">51.2°F</span><span class="dim">30 members</span></div></div>
+              <div style="padding:4px 8px;background:#161b22;border-radius:4px;font-size:11px;margin-bottom:8px">
+                <span class="dim">Blended Forecast →</span> <span class="mono" style="font-weight:700;color:#e6edf3">46.6°F</span>
+                
+              </div>
+
+              <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.05em">Step 2 · Uncertainty (σ)</div>
+              <div style="padding:4px 8px;background:#161b22;border-radius:4px;font-size:11px;margin:4px 0 8px">
+                <span class="dim">σ =</span> <span class="mono" style="font-weight:700">2.69°F</span>
+                <div class="dim" style="font-size:9px;margin-top:2px">base 4.50 → disruption ×1.07</div>
+              </div>
+
+              <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.05em">Step 3 · Probability</div>
+              <div style="padding:4px 8px;background:#161b22;border-radius:4px;font-size:11px;margin:4px 0 8px">
+                <div>Bracket: <span class="mono" style="color:#e6edf3">50–51°F</span></div>
+                
+                <div style="margin-top:2px"><span class="dim">P(YES)</span> = <span class="mono" style="color:#3fb950;font-weight:600">10.4%</span> &nbsp;·&nbsp; <span class="dim">P(NO)</span> = <span class="mono" style="color:#f85149;font-weight:600">89.6%</span></div>
+              </div>
+
+              <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.05em">Step 4 · Edge vs Market</div>
+              <div style="padding:4px 8px;background:#161b22;border-radius:4px;font-size:11px;margin:4px 0 8px">
+                <div><span class="dim">YES ask:</span> <span class="mono">$0.56</span> &nbsp;·&nbsp; <span class="dim">NO ask:</span> <span class="mono">$0.47</span></div>
+                <div style="margin-top:2px"><span class="dim">YES edge:</span> <span class="mono">-45.6%</span> &nbsp;·&nbsp; <span class="dim">NO edge:</span> <span class="mono">+42.6%</span></div>
+                <div style="margin-top:4px;padding-top:4px;border-top:1px solid #21262d">
+                  <span style="color:#d29922;font-weight:600">→ NO selected</span>
+                  <span class="dim"> at $0.47 with </span>
+                  <span style="color:#3fb950;font-weight:700">43% edge</span>
+                </div>
+              </div>
+
+              <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.05em">Step 5 · Kelly Sizing</div>
+              <div style="padding:4px 8px;background:#161b22;border-radius:4px;font-size:11px;margin:4px 0">
+                <div><span class="dim">Raw Kelly f =</span> <span class="mono">0.94%</span> <span class="dim">× 0.125 (quarter-Kelly)</span> <span class="dim">→</span> <span class="mono">0.12%</span> <span class="dim">of bankroll</span></div>
+                <div style="margin-top:2px"><span class="dim">Bet:</span> <span class="mono" style="font-weight:700;color:#e6edf3">$5.00</span> <span class="dim">= 10 contracts × $0.47</span></div>
+              </div>
+            </div>
+            <div class="detail-section">
+              <div class="detail-section-title">Why This Trade</div>
+              <div style="margin-bottom:8px;display:flex;align-items:center;gap:6px">
+                <span class="consensus-badge consensus-single">SINGLE</span>
+                <span style="font-size:11px;color:#8b949e">
+                  1 bot agreed
+                </span>
+              </div><div style="margin-bottom:8px">
+                <div style="display:flex;align-items:center;gap:6px;font-size:12px;padding:3px 0;border-bottom:1px solid #21262d">
+                  <span style="color:#58a6ff">🌤</span>
+                  <span style="color:#58a6ff;font-weight:600">weather</span>
+                  <span class="trade-badge badge-no" style="font-size:10px;padding:1px 5px">NO</span>
+                  <span style="color:#8b949e;margin-left:auto">Edge: 43% · Prob: 10%</span>
+                </div></div><ul class="gate-list">
+                  <li class="gate-item">
+                    <span class="gate-icon">✅</span>
+                    <span class="gate-name">Kill Switch</span>
+                    <span class="gate-detail">ok</span>
+                  </li>
+                  <li class="gate-item">
+                    <span class="gate-icon">✅</span>
+                    <span class="gate-name">Position Cap</span>
+                    <span class="gate-detail">$5.00 ≤ $40.00</span>
+                  </li>
+                  <li class="gate-item">
+                    <span class="gate-icon">✅</span>
+                    <span class="gate-name">Penny Bracket</span>
+                    <span class="gate-detail">price $0.47 ok</span>
+                  </li>
+                  <li class="gate-item">
+                    <span class="gate-icon">✅</span>
+                    <span class="gate-name">Duplicate Check</span>
+                    <span class="gate-detail">no duplicate</span>
+                  </li>
+                  <li class="gate-item">
+                    <span class="gate-icon">✅</span>
+                    <span class="gate-name">Allocation Cap</span>
+                    <span class="gate-detail">portfolio $10.04 + $5.00 ≤ $400.00 (test</span>
+                  </li>
+                  <li class="gate-item">
+                    <span class="gate-icon">✅</span>
+                    <span class="gate-name">Bot Allocation Cap</span>
+                    <span class="gate-detail">weather $10.04 + $5.00 ≤ $300.00</span>
+                  </li>
+                  <li class="gate-item">
+                    <span class="gate-icon">✅</span>
+                    <span class="gate-name">Market Resolved</span>
+                    <span class="gate-detail">market active (live status=active)</span>
+                  </li></ul>
+              <div style="margin-top:6px;font-size:12px;display:flex;align-items:center;gap:6px">
+                <span class="gate-icon">✅</span>
+                <span class="gate-name">AI Validation</span>
+                <span style="color:#58a6ff;font-weight:600">[VERY_HIGH]</span>
+                <span class="gate-detail">Rule-based: 43% edge, resolves in 19h.</span>
+              </div></div>
+            <div class="detail-section">
+              <div class="detail-section-title">Current Value</div>
+              <div class="detail-grid">
+                <span class="detail-label">Current Price</span>
+                <span class="detail-value">$0.49</span>
+                <span class="detail-label">Payout if Win</span>
+                <span class="detail-value">$10.00</span>
+                <span class="detail-label">Resolves In</span>
+                <span class="detail-value">19h</span>
+              </div>
+            </div>
+          </div>
+        </li>
         <li id="trade-KXHIGHTMIN-26MAY05-B52.5" class="trade-item open" data-bot="weather" data-status="open" data-track="close"
             data-placed="2026-05-05T06:55:26.203307" data-pnl="-5.2844"
             data-edge="0.3346" data-target="2026-05-05"
@@ -2543,15 +2822,15 @@
                 <span class="detail-value">—</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (118 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (122 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   <line x1="2" y1="17.6" x2="198" y2="17.6" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
-                  <polyline points="2.0,18.9 3.7,18.9 5.4,18.9 7.0,18.7 8.7,18.9 10.4,18.9 12.1,18.9 13.7,18.9 15.4,18.9 17.1,18.9 18.8,18.9 20.4,18.9 22.1,18.2 23.8,17.8 25.5,17.8 27.1,17.8 28.8,17.8 30.5,18.2 32.2,18.9 33.8,18.9 35.5,19.5 37.2,19.8 38.9,20.4 40.5,19.6 42.2,19.3 43.9,19.3 45.6,21.6 47.2,22.2 48.9,22.4 50.6,22.4 52.3,22.2 53.9,22.2 55.6,21.5 57.3,21.5 59.0,21.5 60.6,20.4 62.3,20.0 64.0,20.0 65.7,20.0 67.3,20.0 69.0,19.6 70.7,19.5 72.4,19.5 74.0,20.0 75.7,19.8 77.4,19.3 79.1,19.8 80.7,21.8 82.4,21.8 84.1,21.5 85.8,19.3 87.4,19.8 89.1,17.8 90.8,26.0 92.5,28.7 94.1,30.2 95.8,22.7 97.5,24.0 99.2,24.5 100.8,26.4 102.5,30.9 104.2,32.2 105.9,32.7 107.5,34.7 109.2,34.9 110.9,36.2 112.6,36.7 114.2,37.1 115.9,37.5 117.6,38.0 119.3,37.6 120.9,37.6 122.6,38.0 124.3,38.0 126.0,38.0 127.6,38.0 129.3,38.0 131.0,38.0 132.7,38.0 134.3,38.0 136.0,38.0 137.7,38.0 139.4,38.0 141.0,38.0 142.7,38.0 144.4,38.0 146.1,38.0 147.7,38.0 149.4,38.0 151.1,38.0 152.8,38.0 154.4,38.0 156.1,38.0 157.8,38.0 159.5,38.0 161.1,38.0 162.8,38.0 164.5,38.0 166.2,38.0 167.8,38.0 169.5,38.0 171.2,38.0 172.9,38.0 174.5,38.0 176.2,38.0 177.9,2.0 179.6,2.0 181.2,2.0 182.9,2.0 184.6,2.0 186.3,2.0 187.9,2.0 189.6,2.0 191.3,2.0 193.0,2.0 194.6,2.0 196.3,2.0 198.0,2.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,18.9 3.6,18.9 5.2,18.9 6.9,18.7 8.5,18.9 10.1,18.9 11.7,18.9 13.3,18.9 15.0,18.9 16.6,18.9 18.2,18.9 19.8,18.9 21.4,18.2 23.1,17.8 24.7,17.8 26.3,17.8 27.9,17.8 29.5,18.2 31.2,18.9 32.8,18.9 34.4,19.5 36.0,19.8 37.6,20.4 39.3,19.6 40.9,19.3 42.5,19.3 44.1,21.6 45.7,22.2 47.4,22.4 49.0,22.4 50.6,22.2 52.2,22.2 53.8,21.5 55.5,21.5 57.1,21.5 58.7,20.4 60.3,20.0 61.9,20.0 63.6,20.0 65.2,20.0 66.8,19.6 68.4,19.5 70.0,19.5 71.7,20.0 73.3,19.8 74.9,19.3 76.5,19.8 78.1,21.8 79.8,21.8 81.4,21.5 83.0,19.3 84.6,19.8 86.2,17.8 87.9,26.0 89.5,28.7 91.1,30.2 92.7,22.7 94.3,24.0 96.0,24.5 97.6,26.4 99.2,30.9 100.8,32.2 102.4,32.7 104.0,34.7 105.7,34.9 107.3,36.2 108.9,36.7 110.5,37.1 112.1,37.5 113.8,38.0 115.4,37.6 117.0,37.6 118.6,38.0 120.2,38.0 121.9,38.0 123.5,38.0 125.1,38.0 126.7,38.0 128.3,38.0 130.0,38.0 131.6,38.0 133.2,38.0 134.8,38.0 136.4,38.0 138.1,38.0 139.7,38.0 141.3,38.0 142.9,38.0 144.5,38.0 146.2,38.0 147.8,38.0 149.4,38.0 151.0,38.0 152.6,38.0 154.3,38.0 155.9,38.0 157.5,38.0 159.1,38.0 160.7,38.0 162.4,38.0 164.0,38.0 165.6,38.0 167.2,38.0 168.8,38.0 170.5,38.0 172.1,2.0 173.7,2.0 175.3,2.0 176.9,2.0 178.6,2.0 180.2,2.0 181.8,2.0 183.4,2.0 185.0,2.0 186.7,2.0 188.3,2.0 189.9,2.0 191.5,2.0 193.1,2.0 194.8,2.0 196.4,2.0 198.0,2.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="2.0" r="2.5" fill="#3fb950"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-05-05 07:09</span>
-                  <span>2026-05-06 09:10</span>
+                  <span>2026-05-06 10:06</span>
                 </div>
               </div>
             </div>
@@ -2811,15 +3090,15 @@
                 <span class="detail-value">—</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (143 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (147 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   <line x1="2" y1="26.6" x2="198" y2="26.6" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
-                  <polyline points="2.0,27.7 3.4,27.4 4.8,26.6 6.1,27.7 7.5,25.0 8.9,26.1 10.3,27.4 11.7,26.6 13.0,27.2 14.4,26.9 15.8,26.1 17.2,22.8 18.6,24.5 19.9,25.5 21.3,25.5 22.7,26.1 24.1,25.5 25.5,25.0 26.8,25.5 28.2,25.0 29.6,25.5 31.0,25.5 32.4,25.5 33.7,23.1 35.1,20.9 36.5,21.8 37.9,22.0 39.3,21.2 40.6,22.3 42.0,23.9 43.4,24.2 44.8,30.2 46.2,28.0 47.5,28.3 48.9,28.0 50.3,28.8 51.7,27.7 53.1,25.0 54.5,25.0 55.8,25.0 57.2,25.0 58.6,25.0 60.0,25.0 61.4,26.1 62.7,25.8 64.1,27.2 65.5,27.7 66.9,31.0 68.3,30.2 69.6,27.7 71.0,31.0 72.4,30.4 73.8,30.4 75.2,28.3 76.5,28.3 77.9,29.3 79.3,29.9 80.7,29.3 82.1,28.3 83.4,29.3 84.8,23.9 86.2,25.8 87.6,31.0 89.0,38.0 90.3,28.0 91.7,18.5 93.1,2.3 94.5,2.3 95.9,2.3 97.2,2.3 98.6,2.3 100.0,2.3 101.4,2.3 102.8,2.3 104.1,2.3 105.5,2.3 106.9,2.3 108.3,2.3 109.7,2.3 111.0,2.3 112.4,2.3 113.8,2.3 115.2,2.3 116.6,2.3 117.9,2.3 119.3,2.3 120.7,2.3 122.1,2.3 123.5,2.3 124.8,2.3 126.2,2.3 127.6,2.3 129.0,2.3 130.4,2.3 131.7,2.3 133.1,2.3 134.5,2.3 135.9,2.3 137.3,2.3 138.6,2.3 140.0,2.3 141.4,2.3 142.8,2.3 144.2,2.3 145.5,2.3 146.9,2.3 148.3,2.3 149.7,2.3 151.1,2.3 152.5,2.3 153.8,2.3 155.2,2.3 156.6,2.3 158.0,2.3 159.4,2.3 160.7,2.3 162.1,2.3 163.5,2.3 164.9,2.3 166.3,2.3 167.6,2.3 169.0,2.3 170.4,2.3 171.8,2.3 173.2,2.3 174.5,2.0 175.9,2.0 177.3,2.0 178.7,2.0 180.1,2.0 181.4,2.0 182.8,2.0 184.2,2.0 185.6,2.0 187.0,2.0 188.3,2.0 189.7,2.0 191.1,2.0 192.5,2.0 193.9,2.0 195.2,2.0 196.6,2.0 198.0,2.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
+                  <polyline points="2.0,27.7 3.3,27.4 4.7,26.6 6.0,27.7 7.4,25.0 8.7,26.1 10.1,27.4 11.4,26.6 12.7,27.2 14.1,26.9 15.4,26.1 16.8,22.8 18.1,24.5 19.5,25.5 20.8,25.5 22.1,26.1 23.5,25.5 24.8,25.0 26.2,25.5 27.5,25.0 28.8,25.5 30.2,25.5 31.5,25.5 32.9,23.1 34.2,20.9 35.6,21.8 36.9,22.0 38.2,21.2 39.6,22.3 40.9,23.9 42.3,24.2 43.6,30.2 45.0,28.0 46.3,28.3 47.6,28.0 49.0,28.8 50.3,27.7 51.7,25.0 53.0,25.0 54.4,25.0 55.7,25.0 57.0,25.0 58.4,25.0 59.7,26.1 61.1,25.8 62.4,27.2 63.8,27.7 65.1,31.0 66.4,30.2 67.8,27.7 69.1,31.0 70.5,30.4 71.8,30.4 73.2,28.3 74.5,28.3 75.8,29.3 77.2,29.9 78.5,29.3 79.9,28.3 81.2,29.3 82.5,23.9 83.9,25.8 85.2,31.0 86.6,38.0 87.9,28.0 89.3,18.5 90.6,2.3 91.9,2.3 93.3,2.3 94.6,2.3 96.0,2.3 97.3,2.3 98.7,2.3 100.0,2.3 101.3,2.3 102.7,2.3 104.0,2.3 105.4,2.3 106.7,2.3 108.1,2.3 109.4,2.3 110.7,2.3 112.1,2.3 113.4,2.3 114.8,2.3 116.1,2.3 117.5,2.3 118.8,2.3 120.1,2.3 121.5,2.3 122.8,2.3 124.2,2.3 125.5,2.3 126.8,2.3 128.2,2.3 129.5,2.3 130.9,2.3 132.2,2.3 133.6,2.3 134.9,2.3 136.2,2.3 137.6,2.3 138.9,2.3 140.3,2.3 141.6,2.3 143.0,2.3 144.3,2.3 145.6,2.3 147.0,2.3 148.3,2.3 149.7,2.3 151.0,2.3 152.4,2.3 153.7,2.3 155.0,2.3 156.4,2.3 157.7,2.3 159.1,2.3 160.4,2.3 161.8,2.3 163.1,2.3 164.4,2.3 165.8,2.3 167.1,2.3 168.5,2.3 169.8,2.0 171.2,2.0 172.5,2.0 173.8,2.0 175.2,2.0 176.5,2.0 177.9,2.0 179.2,2.0 180.5,2.0 181.9,2.0 183.2,2.0 184.6,2.0 185.9,2.0 187.3,2.0 188.6,2.0 189.9,2.0 191.3,2.0 192.6,2.0 194.0,2.0 195.3,2.0 196.7,2.0 198.0,2.0" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
                   <circle cx="198.0" cy="2.0" r="2.5" fill="#3fb950"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-05-05 01:09</span>
-                  <span>2026-05-06 09:10</span>
+                  <span>2026-05-06 10:06</span>
                 </div>
               </div>
             </div>
@@ -4144,7 +4423,7 @@
     </ul>
   </div>
 
-  <div class="footer">Updated May 06, 05:20 AM ET</div>
+  <div class="footer">Updated May 06, 06:20 AM ET</div>
 </div>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -4185,11 +4464,11 @@
           <div class="stat-label"><span class="tip" data-tip="Profit &amp; Loss: total realized gains minus losses after fees.">P&amp;L</span></div>
         </div>
         <div class="stat">
-          <div class="stat-value stat-value-sm green">$+7.96</div>
+          <div class="stat-value stat-value-sm green">$+7.92</div>
           <div class="stat-label">Unrealized</div>
         </div>
         <div class="stat">
-          <div class="stat-value stat-value-sm">$10.04</div>
+          <div class="stat-value stat-value-sm">$14.99</div>
           <div class="stat-label">Exposed</div>
         </div>
       </div>
@@ -4197,7 +4476,7 @@
         <span class="dim">Record</span>
         <span class="green mono" style="font-weight:600;margin-left:6px">3W</span>
         <span class="red mono" style="font-weight:600;margin-left:4px">2L</span>
-        <span class="yellow mono" style="font-weight:600;margin-left:4px">2P</span>
+        <span class="yellow mono" style="font-weight:600;margin-left:4px">3P</span>
         <span class="dim" style="margin-left:12px">Allocation</span>
         <span class="mono" style="font-weight:600;margin-left:4px">$300</span>
         <span class="dim" style="margin-left:12px">Max Trades</span>
@@ -6096,7 +6375,17 @@
       </table>
     </div>
     <div class="card">
-      <div class="card-title">Recent Trades (7 total)</div>
+      <div class="card-title">Recent Trades (8 total)</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
+        <div style="display:flex;align-items:center;gap:6px;min-width:0;flex:1">
+          <span class="trade-badge badge-no" style="font-size:10px;padding:1px 5px">NO</span>
+          <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Minneapolis</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+          <span class="trade-badge badge-open" style="font-size:9px;padding:1px 5px">OPEN</span>
+          <span class="mono red" style="font-weight:600">$-0.05</span>
+        </div>
+      </div>
       <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
         <div style="display:flex;align-items:center;gap:6px;min-width:0;flex:1">
           <span class="trade-badge badge-no" style="font-size:10px;padding:1px 5px">NO</span>
@@ -6135,16 +6424,6 @@
         <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           <span class="trade-badge badge-win" style="font-size:9px;padding:1px 5px">WIN</span>
           <span class="mono green" style="font-weight:600">$+1.27</span>
-        </div>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
-        <div style="display:flex;align-items:center;gap:6px;min-width:0;flex:1">
-          <span class="trade-badge badge-no" style="font-size:10px;padding:1px 5px">NO</span>
-          <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">-26May041015-15</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
-          <span class="trade-badge badge-loss" style="font-size:9px;padding:1px 5px">LOSS</span>
-          <span class="mono red" style="font-weight:600">$-2.05</span>
         </div>
       </div>
     </div>
@@ -7480,13 +7759,13 @@
         <div style="color:#8b949e;margin-bottom:4px">Data Freshness</div>
         <div style="color:#3fb950;font-weight:700">0.2h ago</div>
         <div style="color:#8b949e;font-size:10px;margin-top:2px">snapshot every 30 min</div>
-        <div style="color:#8b949e;font-size:10px">240 brackets cached</div>
+        <div style="color:#8b949e;font-size:10px">259 brackets cached</div>
       </div>
       <div style="padding:8px;background:#161b22;border:1px solid #21262d;border-radius:6px;font-size:11px">
         <div style="color:#8b949e;margin-bottom:4px">WTI Crude</div>
-        <div style="color:#e6edf3;font-weight:700">$94.70/bbl</div>
+        <div style="color:#e6edf3;font-weight:700">$93.51/bbl</div>
         <div style="color:#f85149;font-size:10px">
-          -9.9% 1w
+          -11.0% 1w
         </div>
       </div>
       <div style="padding:8px;background:#161b22;border:1px solid #21262d;border-radius:6px;font-size:11px">
@@ -7496,7 +7775,7 @@
       </div>
       <div style="padding:8px;background:#161b22;border:1px solid #21262d;border-radius:6px;font-size:11px">
         <div style="color:#8b949e;margin-bottom:4px">Crack Spread</div>
-        <div style="color:#e6edf3;font-weight:700">$50.3/bbl</div>
+        <div style="color:#e6edf3;font-weight:700">$50.1/bbl</div>
         <div style="color:#8b949e;font-size:10px">
           Δ +0.0
         </div>
@@ -8007,6 +8286,26 @@
         </thead>
         <tbody>
           <tr style="border-bottom:1px solid #21262d">
+            <td style="padding:4px 6px;color:#8b949e">2026-05-06T10:07</td>
+            <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
+            <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
+          </tr>
+          <tr style="border-bottom:1px solid #21262d">
+            <td style="padding:4px 6px;color:#8b949e">2026-05-06T09:52</td>
+            <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
+            <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
+          </tr>
+          <tr style="border-bottom:1px solid #21262d">
+            <td style="padding:4px 6px;color:#8b949e">2026-05-06T09:40</td>
+            <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
+            <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
+          </tr>
+          <tr style="border-bottom:1px solid #21262d">
+            <td style="padding:4px 6px;color:#8b949e">2026-05-06T09:25</td>
+            <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
+            <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
+          </tr>
+          <tr style="border-bottom:1px solid #21262d">
             <td style="padding:4px 6px;color:#8b949e">2026-05-06T09:11</td>
             <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
             <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
@@ -8033,26 +8332,6 @@
           </tr>
           <tr style="border-bottom:1px solid #21262d">
             <td style="padding:4px 6px;color:#8b949e">2026-05-06T07:55</td>
-            <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
-            <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
-          </tr>
-          <tr style="border-bottom:1px solid #21262d">
-            <td style="padding:4px 6px;color:#8b949e">2026-05-06T07:40</td>
-            <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
-            <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
-          </tr>
-          <tr style="border-bottom:1px solid #21262d">
-            <td style="padding:4px 6px;color:#8b949e">2026-05-06T07:25</td>
-            <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
-            <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
-          </tr>
-          <tr style="border-bottom:1px solid #21262d">
-            <td style="padding:4px 6px;color:#8b949e">2026-05-06T07:10</td>
-            <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
-            <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
-          </tr>
-          <tr style="border-bottom:1px solid #21262d">
-            <td style="padding:4px 6px;color:#8b949e">2026-05-06T06:55</td>
             <td style="padding:4px 6px;font-family:monospace;color:#c9d1d9">KXRAINNYC-26MAY06-T0</td>
             <td style="padding:4px 6px;color:#54aeff">kelly_undefined</td>
           </tr>
@@ -10496,7 +10775,7 @@
           <span class="dim">Net P&amp;L</span><span class="mono" style="font-weight:700;color:#f85149">$-1.19</span>
         </div>
         <div style="display:flex;justify-content:space-between;font-size:11px">
-          <span class="dim">Avg edge</span><span class="mono">36.6%</span>
+          <span class="dim">Avg edge</span><span class="mono">37.6%</span>
         </div>
       </div>
     </div>
@@ -10515,6 +10794,62 @@
   <div class="card">
     <div class="card-title">Scan History (1000)</div>
     <div class="card-subtitle">Each cycle: bots scan markets, find opportunities, and decide whether to trade</div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-05-06 10:07</span>
+        <span class="dim">NO TRADES</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">2</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+        <span style="font-size:11px"><span style="color:#58a6ff">🌤 2</span></span>
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-05-06 09:52</span>
+        <span class="green" style="font-weight:700">1 TRADED</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">3</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">1</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">1</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+        <span style="font-size:11px"><span style="color:#58a6ff">🌤 3</span></span>
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-05-06 09:40</span>
+        <span class="dim">NO TRADES</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">2</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+        <span style="font-size:11px"><span style="color:#58a6ff">🌤 2</span></span>
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-05-06 09:25</span>
+        <span class="dim">NO TRADES</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">3</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+        <span style="font-size:11px"><span style="color:#58a6ff">🌤 3</span></span>
+      </div>
+    </div>
     <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
       <div style="display:flex;justify-content:space-between;align-items:center">
         <span class="dim mono" style="font-size:11px">2026-05-06 09:11</span>
@@ -10739,62 +11074,6 @@
         <span style="font-size:11px"><span style="color:#58a6ff">🌤 4</span></span>
       </div>
     </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-05-06 05:10</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">4</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 4</span></span>
-      </div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-05-06 05:06</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">4</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 4</span></span>
-      </div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-05-06 04:55</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">5</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 5</span></span>
-      </div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-05-06 04:40</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">5</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 5</span></span>
-      </div>
-    </div>
   </div>
   <div class="card">
     <div class="card-title">Markets Passed On (4000)</div>
@@ -10811,32 +11090,23 @@
     </div>
     <div style="padding:8px;background:#161b22;border-radius:6px;margin-bottom:10px;font-size:11px;color:#8b949e;line-height:1.6">
       <div class="dim" style="font-size:10px;font-weight:600;margin-bottom:4px">SKIP REASONS</div>
-      Market resolves too far in the future — forecast accuracy drops: <span class="mono" style="font-weight:600">793</span> · Trading is paused: <span class="mono" style="font-weight:600">480</span> · Market is about to settle — too late to enter: <span class="mono" style="font-weight:600">403</span> · v4_city_blocked: <span class="mono" style="font-weight:600">391</span> · Neither YES nor NO side offers good risk/reward: <span class="mono" style="font-weight:600">360</span> · v4_low_city_blocked: <span class="mono" style="font-weight:600">246</span> · gas_bracket_too_close: <span class="mono" style="font-weight:600">235</span> · t2s_too_far: <span class="mono" style="font-weight:600">175</span>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY06-B54.5">KXLOWTSFO-26MAY06-B54.5</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 21.7h out</span>
-        
-      </div>
+      Market resolves too far in the future — forecast accuracy drops: <span class="mono" style="font-weight:600">793</span> · Trading is paused: <span class="mono" style="font-weight:600">480</span> · Market is about to settle — too late to enter: <span class="mono" style="font-weight:600">414</span> · Neither YES nor NO side offers good risk/reward: <span class="mono" style="font-weight:600">392</span> · v4_city_blocked: <span class="mono" style="font-weight:600">390</span> · v4_low_city_blocked: <span class="mono" style="font-weight:600">246</span> · gas_bracket_too_close: <span class="mono" style="font-weight:600">235</span> · kelly_undefined: <span class="mono" style="font-weight:600">171</span>
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY06-B52.5">KXLOWTSFO-26MAY06-B52.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 21.7h out</span>
+        <span class="dim" style="font-size:10px"> · 20.7h out</span>
         
       </div>
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY06-T55">KXLOWTSFO-26MAY06-T55</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY06-B54.5">KXLOWTSFO-26MAY06-B54.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 21.7h out</span>
+        <span class="dim" style="font-size:10px"> · 20.7h out</span>
         
       </div>
     </div>
@@ -10860,18 +11130,18 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY06-B48.5">KXLOWTSFO-26MAY06-B48.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY06-T55">KXLOWTSFO-26MAY06-T55</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
-        <span class="dim" style="font-size:10px"></span>
+        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
+        <span class="dim" style="font-size:10px"> · 20.7h out</span>
         
       </div>
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY06-B50.5">KXLOWTSEA-26MAY06-B50.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY06-B48.5">KXLOWTSFO-26MAY06-B48.5</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
+        <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
         <span class="dim" style="font-size:10px"></span>
         
       </div>
@@ -10887,7 +11157,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY06-T53">KXLOWTSEA-26MAY06-T53</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY06-B50.5">KXLOWTSEA-26MAY06-B50.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
         <span class="dim" style="font-size:10px"></span>
@@ -10896,7 +11166,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY06-B48.5">KXLOWTSEA-26MAY06-B48.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY06-T53">KXLOWTSEA-26MAY06-T53</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
         <span class="dim" style="font-size:10px"></span>
@@ -10923,10 +11193,55 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY06-B48.5">KXLOWTSEA-26MAY06-B48.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-B72.5">KXLOWTSATX-26MAY06-B72.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" >forecast_margin_too_small</span>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-T68">KXLOWTSATX-26MAY06-T68</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" title="Neither YES nor NO side offers good risk/reward">Neither YES nor NO side offers good risk/reward</span><div style="font-size:10px;color:#484f58;margin-top:1px">no_viable_side</div>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-B74.5">KXLOWTSATX-26MAY06-B74.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" >forecast_margin_too_small</span>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-B68.5">KXLOWTSATX-26MAY06-B68.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" title="Neither YES nor NO side offers good risk/reward">Neither YES nor NO side offers good risk/reward</span><div style="font-size:10px;color:#484f58;margin-top:1px">no_viable_side</div>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-B70.5">KXLOWTSATX-26MAY06-B70.5</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 18.7h out</span>
+        <span class="yellow" style="font-weight:600;cursor:help" title="Neither YES nor NO side offers good risk/reward">Neither YES nor NO side offers good risk/reward</span><div style="font-size:10px;color:#484f58;margin-top:1px">no_viable_side</div>
+        <span class="dim" style="font-size:10px"></span>
         
       </div>
     </div>
@@ -10941,46 +11256,19 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-B72.5">KXLOWTSATX-26MAY06-B72.5</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 18.7h out</span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-T68">KXLOWTSATX-26MAY06-T68</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 18.7h out</span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-B74.5">KXLOWTSATX-26MAY06-B74.5</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 18.7h out</span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY06-B68.5">KXLOWTSATX-26MAY06-B68.5</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 18.7h out</span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTPHX-26MAY06-T59">KXLOWTPHX-26MAY06-T59</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 21.7h out</span>
+        <span class="dim" style="font-size:10px"> · 20.7h out</span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTPHX-26MAY06-B56.5">KXLOWTPHX-26MAY06-B56.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
+        <span class="dim" style="font-size:10px"> · 20.7h out</span>
         
       </div>
     </div>
@@ -10998,7 +11286,7 @@
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTPHX-26MAY06-B54.5">KXLOWTPHX-26MAY06-B54.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 21.7h out</span>
+        <span class="dim" style="font-size:10px"> · 20.7h out</span>
         
       </div>
     </div>
@@ -11022,19 +11310,10 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTPHX-26MAY06-B56.5">KXLOWTPHX-26MAY06-B56.5</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 21.7h out</span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTOKC-26MAY06-T48">KXLOWTOKC-26MAY06-T48</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 18.7h out</span>
+        <span class="yellow" style="font-weight:600;cursor:help" >forecast_margin_too_small</span>
+        <span class="dim" style="font-size:10px"></span>
         
       </div>
     </div>
@@ -11042,16 +11321,7 @@
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTOKC-26MAY06-B47.5">KXLOWTOKC-26MAY06-B47.5</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 18.7h out</span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTOKC-26MAY06-B45.5">KXLOWTOKC-26MAY06-B45.5</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
+        <span class="yellow" style="font-weight:600;cursor:help" >forecast_margin_too_small</span>
         <span class="dim" style="font-size:10px"></span>
         
       </div>
@@ -11067,7 +11337,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTOKC-26MAY06-B41.5">KXLOWTOKC-26MAY06-B41.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTOKC-26MAY06-B45.5">KXLOWTOKC-26MAY06-B45.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
         <span class="dim" style="font-size:10px"></span>
@@ -11083,10 +11353,38 @@
         
       </div>
     </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTOKC-26MAY06-B41.5">KXLOWTOKC-26MAY06-B41.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
   </div>
   <div class="card">
-    <div class="card-title">Trade Decision Trails (7)</div>
+    <div class="card-title">Trade Decision Trails (8)</div>
     <div class="card-subtitle">Click a row to jump to the full trade card. Forecast vs Actual surfaces model error.</div>
+    <div onclick="switchScreen('positions', document.querySelector('.nav-tab[onclick*=positions]')); setTimeout(function(){var el=document.getElementById('trade-KXHIGHTMIN-26MAY06-B50.5');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.outline='2px solid #58a6ff';setTimeout(function(){el.style.outline='';},2000);}},100);" style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px;cursor:pointer" onmouseover="this.style.background='#0d1117'" onmouseout="this.style.background=''">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span>
+          <span style="color:#58a6ff">🌤</span>
+          <span style="font-weight:600;margin-left:4px">GHTMIN-26MAY06-B50.5</span>
+          <span class="trade-badge badge-no" style="font-size:9px;padding:1px 4px;margin-left:4px">NO</span>
+        </span>
+        <span class="dim mono" style="font-size:10px">2026-05-06 09:52</span>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <span><span class="dim">Signals</span> <span class="mono" style="font-weight:600">1</span></span>
+        <span><span class="dim">Consensus</span> <span class="consensus-badge consensus-single" style="margin-left:2px">SINGLE</span></span>
+        <span><span class="dim">Gates</span> <span class="mono" style="font-weight:600">7/7</span></span>
+        <span><span class="dim">AI</span> ✅</span>
+        <span><span class="dim">Cost</span> <span class="mono" style="font-weight:600">$4.70</span></span>
+        
+      </div>
+      
+    </div>
     <div onclick="switchScreen('positions', document.querySelector('.nav-tab[onclick*=positions]')); setTimeout(function(){var el=document.getElementById('trade-KXHIGHTMIN-26MAY05-B52.5');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.outline='2px solid #58a6ff';setTimeout(function(){el.style.outline='';},2000);}},100);" style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px;cursor:pointer" onmouseover="this.style.background='#0d1117'" onmouseout="this.style.background=''">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
         <span>
@@ -11249,6 +11547,31 @@
       <button class="filter-tab" onclick="filterActivity(this,'type:autotune')" style="font-size:10px;padding:3px 8px">Tuning</button>
     </div>
     <div id="activityList">
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 2 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">May 06, 06:07 AM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 3 signals found, 1 trade placed</span>
+      <span class="activity-meta" style="white-space:nowrap">May 06, 05:52 AM ET</span>
+    </div>
+    <div class="activity-row" data-type="trade" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">🎯</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">TRADE: weather placed  — KXHIGHTMIN-26MAY06-B50.5 | Edge: 43% | $4.95</span>
+      <span class="activity-meta" style="white-space:nowrap">May 06, 05:52 AM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 2 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">May 06, 05:40 AM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 3 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">May 06, 05:25 AM ET</span>
+    </div>
     <div class="activity-row" data-type="cycle" data-bot="">
       <span class="activity-icon" style="color:#58a6ff">📡</span>
       <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 3 signals found, 0 trades placed</span>
@@ -11624,31 +11947,6 @@
       <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 5 signals found, 0 trades placed</span>
       <span class="activity-meta" style="white-space:nowrap">May 05, 03:40 PM ET</span>
     </div>
-    <div class="activity-row" data-type="skip" data-bot="rain">
-      <span class="activity-icon" style="color:#54aeff">🌧</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">RAIN FILTER: 🌧 1 market filtered (new york city)</span>
-      <span class="activity-meta" style="white-space:nowrap">May 05, 03:40 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 5 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">May 05, 03:25 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="skip" data-bot="rain">
-      <span class="activity-icon" style="color:#54aeff">🌧</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">RAIN FILTER: 🌧 1 market filtered (new york city)</span>
-      <span class="activity-meta" style="white-space:nowrap">May 05, 03:25 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 5 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">May 05, 03:10 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="skip" data-bot="rain">
-      <span class="activity-icon" style="color:#54aeff">🌧</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">RAIN FILTER: 🌧 1 market filtered (new york city)</span>
-      <span class="activity-meta" style="white-space:nowrap">May 05, 03:10 PM ET</span>
-    </div>
     </div>
   </div>
   <div class="card">
@@ -11757,7 +12055,7 @@ function switchBot(bot) {
 
 // ── Stale check ─────────────────────────────────────
 (function() {
-  var updated = new Date("2026-05-06T09:20:18Z");
+  var updated = new Date("2026-05-06T10:20:18Z");
   var now = new Date();
   var minsOld = (now - updated) / (1000 * 60);
   if (minsOld > 30) {
