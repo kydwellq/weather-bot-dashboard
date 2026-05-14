@@ -777,8 +777,8 @@
     
   </div>
   <div class="top-bar-right">
-    <span class="cycle-time">Last cycle 11m ago</span>
-    <span class="cycle-time" style="margin-left:8px;font-size:10px"><span style="color:#3fb950" title="Step 0c reconciliation">Recon 12:08 PM ET — 1 matched, 0 discrepancies</span></span>
+    <span class="cycle-time">Last cycle 10m ago</span>
+    <span class="cycle-time" style="margin-left:8px;font-size:10px"><span style="color:#3fb950" title="Step 0c reconciliation">Recon 1:08 PM ET — 1 matched, 0 discrepancies</span></span>
     <button class="pause-all-btn pause-all-stop" onclick="killSwitch('pause_all')">Pause All</button>
   </div>
 </div>
@@ -787,12 +787,12 @@
 <div class="status-banner">
   <span class="status-dot status-dot-warn"></span>
   <span>2 of 4 bots running · Rain, Base Rate NO paused · 1 open trade</span>
-  <span style="margin-left:auto; opacity:0.5; font-size:0.82em;">Updated May 14, 12:20 PM ET</span>
+  <span style="margin-left:auto; opacity:0.5; font-size:0.82em;">Updated May 14, 01:20 PM ET</span>
 </div>
 
 <!-- ── Stale Banner ─────────────────────────────────── -->
 <div id="stale-banner">
-  <span class="stale-dot"></span>Dashboard may be stale — last updated May 14, 12:20 PM ET
+  <span class="stale-dot"></span>Dashboard may be stale — last updated May 14, 01:20 PM ET
 </div>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -808,7 +808,7 @@
     <div class="card-title">Account Balance</div>
     <div class="stat-grid">
       <div class="stat stat-full">
-        <div class="stat-value red" style="font-size:28px">$342.36</div>
+        <div class="stat-value red" style="font-size:28px">$342.31</div>
         <div class="stat-helper">total account value · <span style="color:#58a6ff">from Kalshi</span></div>
       </div>
       <div class="stat">
@@ -817,7 +817,7 @@
         <div class="stat-helper">settled trades</div>
       </div>
       <div class="stat">
-        <div class="stat-value stat-value-sm green">$+0.10</div>
+        <div class="stat-value stat-value-sm red">$-0.17</div>
         <div class="stat-label">Unrealized</div>
         <div class="stat-helper">if closed now</div>
       </div>
@@ -843,7 +843,7 @@
         <div class="stat-value stat-value-sm dim">$+0.00</div>
         <div class="stat-label">Today (settled)</div>
         <div class="stat-helper">0 trades settled</div>
-        <div style="font-size:10px;color:#8b949e;margin-top:2px">Unrealized: <span style="color:#3fb950">$+0.10</span> (1 open)</div>
+        <div style="font-size:10px;color:#8b949e;margin-top:2px">Unrealized: <span style="color:#f85149">$-0.17</span> (1 open)</div>
       </div>
       <div class="stat">
         <div class="stat-value stat-value-sm dim">$+0.00</div>
@@ -903,7 +903,7 @@
         <summary style="font-size:10px;color:#484f58;cursor:pointer;list-style:none;margin-bottom:6px">Advanced ▸ fees &amp; allocation</summary>
         <div class="bot-stats" style="margin-top:6px">
           <span class="bot-stat-label">Unrealized</span>
-          <span class="bot-stat-value"><span class="green">$+0.10</span></span>
+          <span class="bot-stat-value"><span class="red">$-0.17</span></span>
           <span class="bot-stat-label">Allocation</span>
           <span class="bot-stat-value">$102</span>
           <span class="bot-stat-label"><span class="tip" data-tip="Total Kalshi trading fees paid by this bot (entry + settlement).">Fees Paid</span></span>
@@ -1003,7 +1003,7 @@
         <div style="font-size:10px;font-weight:700;color:#8b949e;text-transform:uppercase;margin-bottom:6px">Validation gates</div>
         <div style="font-size:11px;line-height:1.7">
           <div><span style="color:#d29922">⏳</span> <span style="color:#c9d1d9">0 / 50 settled paper trades since 2026-04-26</span></div>
-          <div><span style="color:#d29922">⏳</span> <span style="color:#c9d1d9">188 errors in last 7d</span> <span style="color:#8b949e;font-size:10px">— last: 2026-05-14 10:05:47,287 [fleet.scheduler] ERROR: [whale_settlement] failed: no such table: whale_live_trades</span></div>
+          <div><span style="color:#d29922">⏳</span> <span style="color:#c9d1d9">204 errors in last 7d</span> <span style="color:#8b949e;font-size:10px">— last: Traceback (most recent call last):</span></div>
           <div><span style="color:#3fb950">✓</span> <span style="color:#c9d1d9">All cities producing forecasts</span></div>
           <div style="margin-top:6px;color:#8b949e;font-size:10px">Per-bucket realized WR (need ≥ 10 trades per bucket):</div>
           <div style="display:flex;justify-content:space-between;padding:3px 0;font-size:11px"><span style="color:#8b949e">P_win 0.75–0.85</span><span><span style="margin-right:6px">⏳</span><span style="color:#c9d1d9">0/10 trades — too few</span></span></div><div style="display:flex;justify-content:space-between;padding:3px 0;font-size:11px"><span style="color:#8b949e">P_win 0.85–0.95</span><span><span style="margin-right:6px">⏳</span><span style="color:#c9d1d9">0/10 trades — too few</span></span></div><div style="display:flex;justify-content:space-between;padding:3px 0;font-size:11px"><span style="color:#8b949e">P_win 0.95+</span><span><span style="margin-right:6px">⏳</span><span style="color:#c9d1d9">0/10 trades — too few</span></span></div>
@@ -1201,7 +1201,7 @@
       </div>
       <div style="display:flex;justify-content:space-between;border-top:1px solid #21262d;padding-top:3px">
         <span class="dim" style="font-size:11px">Total equity</span>
-        <span class="mono" style="font-size:11px">$345.06</span>
+        <span class="mono" style="font-size:11px">$345.01</span>
       </div>
     </div>
     <div style="font-size:12px;color:#3fb950;font-weight:600">Positive P&amp;L · $+11.13</div>
@@ -1309,12 +1309,12 @@
     <div style="display:flex;align-items:center;gap:12px;padding:10px;background:#161b22;border-radius:8px;margin-bottom:10px">
       <span style="font-size:28px">🟢</span>
       <div style="flex:1">
-        <div style="font-weight:700;font-size:14px;color:#3fb950">11min ago</div>
-        <div style="font-size:12px;color:#8b949e;margin-top:2px">Last check: May 14, 12:09 PM ET</div>
+        <div style="font-weight:700;font-size:14px;color:#3fb950">10min ago</div>
+        <div style="font-size:12px;color:#8b949e;margin-top:2px">Last check: May 14, 01:10 PM ET</div>
       </div>
       <div style="text-align:right;font-size:12px">
         <div class="dim">Next scan in</div>
-        <div class="mono" style="font-weight:700;color:#58a6ff;font-size:14px">~5min</div>
+        <div class="mono" style="font-weight:700;color:#58a6ff;font-size:14px">~6min</div>
       </div>
     </div>
 
@@ -1343,7 +1343,7 @@
               <span class="dim" style="font-size:10px"> · 0 signals, 0 trades, 0 settled</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">12:09 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">1:10 PM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
@@ -1354,10 +1354,10 @@
             <div>
               <span style="color:#3fb950;font-weight:500">Health Check</span>
               <span class="dim" style="font-size:10px;margin-left:4px">every 15min</span>
-              <span class="dim" style="font-size:10px"> · Fleet healthy — heartbeat age: 4.5m…</span>
+              <span class="dim" style="font-size:10px"> · Fleet healthy — heartbeat age: 3.7m…</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">12:13 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">1:13 PM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
@@ -1371,7 +1371,7 @@
               <span class="dim" style="font-size:10px"> · Kalshi fleet alive — bankroll: $339…</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">12:08 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">1:08 PM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
@@ -1413,7 +1413,7 @@
               <span class="dim" style="font-size:10px"> · OK</span>
             </div>
             <div style="text-align:right">
-              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">12:20 PM</span>
+              <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">1:20 PM</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">next </span><span class="mono" style="font-size:11px;color:#58a6ff">—</span>
@@ -1424,7 +1424,7 @@
             <div>
               <span style="color:#8b949e;font-weight:500">Model Freshness</span>
               <span class="dim" style="font-size:10px;margin-left:4px">02/08/14/20:30</span>
-              <span class="dim" style="font-size:10px"> · 21 cities stale >60m (atlanta,austi…</span>
+              <span class="dim" style="font-size:10px"> · 7 cities stale >60m (austin,boston,…</span>
             </div>
             <div style="text-align:right">
               <span class="dim" style="font-size:10px">last </span><span class="mono" style="font-size:11px">11:53 PM</span>
@@ -1496,7 +1496,7 @@
   <div class="card">
     <div class="card-title">🧠 Learned Adjustments</div>
     <div class="card-subtitle">Auto-applied by the learning loop</div>
-    <div style="margin-top:6px"><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.miami</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Miami winning only 33% (3W/6L). Widen sigma from 2.00 to 2.0</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.denver</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Denver winning only 25% (2W/6L). Widen sigma from 2.00 to 2.</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.los angeles</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Los Angeles winning only 0% (0W/6L). Widen sigma from 2.00 t</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.austin</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Austin winning only 20% (1W/4L). Widen sigma from 2.00 to 2.</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.chicago</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Chicago winning only 0% (0W/3L). Widen sigma from 2.00 to 2.</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.atlanta</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-10</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Atlanta winning only 33% (1W/2L). Widen sigma from 2.00 to 2</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.boston</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Boston winning only 0% (0W/4L). Widen sigma from 2.00 to 2.0</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.dallas</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Dallas winning only 0% (0W/7L). Widen sigma from 2.00 to 2.0</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.phoenix</span> = <span style="color:#3fb950;font-weight:600">1.4375</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Phoenix winning only 33% (3W/6L). Widen sigma from 1.15 to 1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.philadelphia</span> = <span style="color:#3fb950;font-weight:600">1.4375</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Philadelphia winning only 33% (1W/2L). Widen sigma from 1.15</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.chicago</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=+1.33°F sem=0.55 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.denver</span> = <span style="color:#3fb950;font-weight:600">-2.0</span> <span class="dim">· 2026-04-27</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.67°F sem=0.89 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.los angeles</span> = <span style="color:#3fb950;font-weight:600">-2.0</span> <span class="dim">· 2026-04-27</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=-1.08°F sem=0.66 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.minneapolis</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-29</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=+2.53°F sem=0.59 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.philadelphia</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-28</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=+2.10°F sem=0.55 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.phoenix</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-05-10</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=+1.08°F sem=0.20 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.san antonio</span> = <span style="color:#3fb950;font-weight:600">1.63</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.san francisco</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-26</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.11°F sem=0.78 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.seattle</span> = <span style="color:#3fb950;font-weight:600">-0.062</span> <span class="dim">· 2026-05-11</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.68°F sem=0.84 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.miami</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+1.62°F sem=0.48 n=35 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.new york city</span> = <span style="color:#3fb950;font-weight:600">1.179</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+0.49°F sem=0.48 n=36 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.oklahoma city</span> = <span style="color:#3fb950;font-weight:600">-1.086</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.38°F sem=0.55 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.51</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 calibration fix: post-existing-correction bias wa</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.dallas</span> = <span style="color:#3fb950;font-weight:600">-0.584</span> <span class="dim">· 2026-05-09</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.11°F sem=0.87 n=35 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.new orleans</span> = <span style="color:#3fb950;font-weight:600">-0.178</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+0.72°F sem=0.51 n=36 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.las vegas</span> = <span style="color:#3fb950;font-weight:600">-0.248</span> <span class="dim">· 2026-05-04</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=+0.27°F sem=0.30 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.washington dc</span> = <span style="color:#3fb950;font-weight:600">-0.102</span> <span class="dim">· 2026-04-30</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=+0.33°F sem=0.74 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">min_conviction</span> = <span style="color:#3fb950;font-weight:600">0.65</span> <span class="dim">· 2026-05-10</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">50-60% conviction trades winning only 39%. Raise min_convict</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.austin</span> = <span style="color:#3fb950;font-weight:600">-0.241</span> <span class="dim">· 2026-05-08</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.08°F sem=0.83 n=35 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.houston</span> = <span style="color:#3fb950;font-weight:600">0.612</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+0.80°F sem=0.56 n=36 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.boston</span> = <span style="color:#3fb950;font-weight:600">0.4</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+1.10°F sem=0.87 n=35 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.phoenix</span> = <span style="color:#3fb950;font-weight:600">0.28</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.las vegas</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.phoenix</span> = <span style="color:#3fb950;font-weight:600">360</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.phoenix</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.las vegas</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.las vegas</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.phoenix</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.phoenix</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.las vegas</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.las vegas</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.new york city</span> = <span style="color:#3fb950;font-weight:600">0.28</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 12-24h overnight window, 28% edge threshold,</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.new york city</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 12-24h overnight window, 28% edge threshold,</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.new york city</span> = <span style="color:#3fb950;font-weight:600">1080</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit: 18-24h band was -$0.03 (break-even noise). Narrowi</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.new york city</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 12-24h overnight window, 28% edge threshold,</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.new york city</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 12-24h overnight window, 28% edge threshold,</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.miami</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.miami</span> = <span style="color:#3fb950;font-weight:600">360</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.miami</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.miami</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.miami</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.chicago</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-24h window, 25% edge, quarter-Kelly @ 15% </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.chicago</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-24h window, 25% edge, quarter-Kelly @ 15% </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.chicago</span> = <span style="color:#3fb950;font-weight:600">1080</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit: 18-24h band was 1 trade +$0.36 (token). Narrowing </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.chicago</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-24h window, 25% edge, quarter-Kelly @ 15% </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.chicago</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-24h window, 25% edge, quarter-Kelly @ 15% </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.phoenix</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.las vegas</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.new york city</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.miami</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.chicago</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.2</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.atlanta</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.atlanta</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit: 12-24h portion adds 11 trades for +$4 only — noisy</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.washington dc</span> = <span style="color:#3fb950;font-weight:600">0.2</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.washington dc</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.washington dc</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 verification: 92% of backtest P&L came from 4-8h </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.washington dc</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.washington dc</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.washington dc</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.san antonio</span> = <span style="color:#3fb950;font-weight:600">0.28</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 verification: at 20% threshold, 6-8h band had 4 t</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.san antonio</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.san antonio</span> = <span style="color:#3fb950;font-weight:600">1080</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit: 18-24h band was 4 trades +$1.59 at 28% threshold. </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.san antonio</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.san antonio</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.san antonio</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.houston</span> = <span style="color:#3fb950;font-weight:600">0.2</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): 3-12h, 20% edge, N</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.houston</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): 3-12h, 20% edge, N</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.houston</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): 3-12h, 20% edge, N</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.houston</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): quarter-Kelly. Hou</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.houston</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): 15% Kelly cap. Hou</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.houston</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override (matched to atlanta): unblock cheap NO </div></div></div></div>
+    <div style="margin-top:6px"><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.miami</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Miami winning only 33% (3W/6L). Widen sigma from 2.00 to 2.0</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.denver</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Denver winning only 25% (2W/6L). Widen sigma from 2.00 to 2.</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.los angeles</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Los Angeles winning only 0% (0W/6L). Widen sigma from 2.00 t</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.austin</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Austin winning only 20% (1W/4L). Widen sigma from 2.00 to 2.</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.chicago</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Chicago winning only 0% (0W/3L). Widen sigma from 2.00 to 2.</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.atlanta</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-10</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Atlanta winning only 33% (1W/2L). Widen sigma from 2.00 to 2</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.boston</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Boston winning only 0% (0W/4L). Widen sigma from 2.00 to 2.0</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.dallas</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Dallas winning only 0% (0W/7L). Widen sigma from 2.00 to 2.0</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.phoenix</span> = <span style="color:#3fb950;font-weight:600">1.4375</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Phoenix winning only 33% (3W/6L). Widen sigma from 1.15 to 1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_sigma_multipliers.philadelphia</span> = <span style="color:#3fb950;font-weight:600">1.4375</span> <span class="dim">· 2026-04-12</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">Philadelphia winning only 33% (1W/2L). Widen sigma from 1.15</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.chicago</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=+1.33°F sem=0.55 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.denver</span> = <span style="color:#3fb950;font-weight:600">-2.0</span> <span class="dim">· 2026-04-27</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.67°F sem=0.89 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.los angeles</span> = <span style="color:#3fb950;font-weight:600">-2.0</span> <span class="dim">· 2026-04-27</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=-1.08°F sem=0.66 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.minneapolis</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-29</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=+2.53°F sem=0.59 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.philadelphia</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-28</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=+2.10°F sem=0.55 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.phoenix</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-05-10</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 delta_below_floor: ewm_err=+1.08°F sem=0.20 n=36 prop</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.san antonio</span> = <span style="color:#3fb950;font-weight:600">1.63</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.san francisco</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-04-26</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.11°F sem=0.78 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.seattle</span> = <span style="color:#3fb950;font-weight:600">-0.062</span> <span class="dim">· 2026-05-11</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.68°F sem=0.84 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.miami</span> = <span style="color:#3fb950;font-weight:600">2.0</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+1.62°F sem=0.48 n=35 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.new york city</span> = <span style="color:#3fb950;font-weight:600">1.179</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+0.49°F sem=0.48 n=36 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.oklahoma city</span> = <span style="color:#3fb950;font-weight:600">-1.086</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.38°F sem=0.55 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.51</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 calibration fix: post-existing-correction bias wa</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.dallas</span> = <span style="color:#3fb950;font-weight:600">-0.584</span> <span class="dim">· 2026-05-09</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.11°F sem=0.87 n=35 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.new orleans</span> = <span style="color:#3fb950;font-weight:600">-0.178</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+0.72°F sem=0.51 n=36 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.las vegas</span> = <span style="color:#3fb950;font-weight:600">-0.248</span> <span class="dim">· 2026-05-04</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=+0.27°F sem=0.30 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.washington dc</span> = <span style="color:#3fb950;font-weight:600">-0.102</span> <span class="dim">· 2026-04-30</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=+0.33°F sem=0.74 n=36 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">min_conviction</span> = <span style="color:#3fb950;font-weight:600">0.65</span> <span class="dim">· 2026-05-10</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">50-60% conviction trades winning only 39%. Raise min_convict</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.austin</span> = <span style="color:#3fb950;font-weight:600">-0.241</span> <span class="dim">· 2026-05-08</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 not_significant: ewm_err=-0.08°F sem=0.83 n=35 (accum</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.houston</span> = <span style="color:#3fb950;font-weight:600">0.612</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+0.80°F sem=0.56 n=36 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_bias_corrections.boston</span> = <span style="color:#3fb950;font-weight:600">0.4</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">TRACK1 forecast accuracy: ewm_err=+1.10°F sem=0.87 n=35 → Δ+</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.phoenix</span> = <span style="color:#3fb950;font-weight:600">0.28</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.las vegas</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.phoenix</span> = <span style="color:#3fb950;font-weight:600">360</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.phoenix</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.las vegas</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.las vegas</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.phoenix</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.phoenix</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 28% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.las vegas</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.las vegas</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.new york city</span> = <span style="color:#3fb950;font-weight:600">0.28</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 12-24h overnight window, 28% edge threshold,</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.new york city</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 12-24h overnight window, 28% edge threshold,</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.new york city</span> = <span style="color:#3fb950;font-weight:600">1080</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit: 18-24h band was -$0.03 (break-even noise). Narrowi</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.new york city</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 12-24h overnight window, 28% edge threshold,</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.new york city</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 12-24h overnight window, 28% edge threshold,</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.miami</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.miami</span> = <span style="color:#3fb950;font-weight:600">360</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.miami</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.miami</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.miami</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 6-12h window, 25% edge threshold, quarter-Ke</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.chicago</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-24h window, 25% edge, quarter-Kelly @ 15% </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.chicago</span> = <span style="color:#3fb950;font-weight:600">360</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit 2026-05-14: tightened from 180 (3h) to 360 (6h). 3-</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.chicago</span> = <span style="color:#3fb950;font-weight:600">900</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit 2026-05-14: tightened from 1080 (18h) to 900 (15h).</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.chicago</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-24h window, 25% edge, quarter-Kelly @ 15% </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.chicago</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 locked spec: 3-24h window, 25% edge, quarter-Kelly @ 15% </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.phoenix</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.las vegas</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.new york city</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.miami</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.chicago</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override: V4's $0.35 floor was calibrated for al</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.2</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.atlanta</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.atlanta</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit: 12-24h portion adds 11 trades for +$4 only — noisy</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.atlanta</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.03/29t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.washington dc</span> = <span style="color:#3fb950;font-weight:600">0.2</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.washington dc</span> = <span style="color:#3fb950;font-weight:600">180</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.washington dc</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 verification: 92% of backtest P&L came from 4-8h </div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.washington dc</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.washington dc</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.washington dc</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$43.70/18t/1</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.san antonio</span> = <span style="color:#3fb950;font-weight:600">0.28</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 verification: at 20% threshold, 6-8h band had 4 t</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.san antonio</span> = <span style="color:#3fb950;font-weight:600">360</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit 2026-05-14: tightened from 180 (3h) to 360 (6h). 3-</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.san antonio</span> = <span style="color:#3fb950;font-weight:600">900</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit 2026-05-14: tightened from 1080 (18h) to 900 (15h).</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.san antonio</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.san antonio</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.san antonio</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2: 3-24h, 20% edge, NO-only. Backtest +$33.22/37t/9</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_edge_thresholds.houston</span> = <span style="color:#3fb950;font-weight:600">0.2</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): 3-12h, 20% edge, N</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_min_minutes.houston</span> = <span style="color:#3fb950;font-weight:600">360</span> <span class="dim">· 2026-05-14</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 audit 2026-05-14: tightened from 180 (3h) to 360 (6h). 3-</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_entry_window_max_minutes.houston</span> = <span style="color:#3fb950;font-weight:600">720</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): 3-12h, 20% edge, N</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_fraction.houston</span> = <span style="color:#3fb950;font-weight:600">0.25</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): quarter-Kelly. Hou</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_kelly_cap_pct.houston</span> = <span style="color:#3fb950;font-weight:600">0.15</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 Stage 2 baseline (matched to atlanta): 15% Kelly cap. Hou</div></div><div style="font-size:11px;padding:4px 0;border-bottom:1px solid #21262d"><span style="color:#79c0ff;font-family:monospace">city_no_price_floor.houston</span> = <span style="color:#3fb950;font-weight:600">0.02</span> <span class="dim">· 2026-05-13</span><div style="font-size:10px;color:#8b949e;margin-top:1px;margin-left:8px">V5 NO floor override (matched to atlanta): unblock cheap NO </div></div></div></div>
 
   <!-- Last Scan Results -->
   
@@ -1535,7 +1535,7 @@
       </div>
       <span style="color:#3fb950;font-size:9px;background:#0d2a1c;padding:1px 6px;border-radius:8px">ACTIVE</span>
     </div>
-    <div style="color:#8b949e;font-size:12px;padding:4px 0">No scan data for this cycle</div><details style="margin-top:8px"><summary style="cursor:pointer;list-style:none;font-size:10px;color:#8b949e">Today's full skip breakdown (500) ▸</summary><div style="margin:6px 0 2px"><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:40px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">v4_low_city_blocked</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">54% (272)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:14px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Not enough trading volume — order would mov…</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">20% (99)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:11px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Market is about to settle — too late to enter</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">15% (76)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:5px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">past_peak_cutoff_low</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">8% (39)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:2px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">t2s_too_far</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">3% (14)</span></div></div></details>
+    <div style="color:#8b949e;font-size:12px;padding:4px 0">No scan data for this cycle</div><details style="margin-top:8px"><summary style="cursor:pointer;list-style:none;font-size:10px;color:#8b949e">Today's full skip breakdown (500) ▸</summary><div style="margin:6px 0 2px"><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:40px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">v4_low_city_blocked</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">54% (272)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:14px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Market is about to settle — too late to enter</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">19% (95)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:11px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Not enough trading volume — order would mov…</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">16% (78)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:5px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">past_peak_cutoff_low</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">7% (34)</span></div><div style="display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px"><div style="width:3px;height:5px;background:#30363d;border-radius:2px;flex-shrink:0"></div><span style="color:#8b949e;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">t2s_too_far</span><span style="color:#e6edf3;font-family:monospace;font-size:10px;white-space:nowrap">4% (21)</span></div></div></details>
   </div>
   <div class="card" data-bot="base_rate_no" style="border-left:2px solid #3fb950">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
@@ -1923,12 +1923,12 @@
                 <div class="live-city">New York City<span style="font-size:9px;font-weight:600;color:#8b949e;background:#21262d;padding:1px 5px;border-radius:4px;margin-left:4px;font-family:'SF Mono',monospace">KNYC</span></div>
                 <div class="live-forecast">Forecast: 68°F · <span style="color:#58a6ff">High So Far</span><span style="font-size:9px;font-weight:700;color:#58a6ff;background:rgba(88,166,255,0.12);padding:1px 6px;border-radius:8px;margin-left:5px">METAR</span><span style="font-size:9px;color:#3fb950;margin-left:4px">29m ago</span></div>
               </div>
-              <div class="live-temp-val blue">60°F</div>
+              <div class="live-temp-val blue">61°F</div>
             </div>
         </div>
 
   <div class="footer">
-    Updated May 14, 12:20 PM ET · Auto-refreshes every 60s · <span style="color:#3fb950">Data verified ✓</span>
+    Updated May 14, 01:20 PM ET · Auto-refreshes every 60s · <span style="color:#3fb950">Data verified ✓</span>
   </div>
 </div>
 
@@ -1941,7 +1941,7 @@
   <div style="background:#0d1117;border:1px solid #21262d;border-radius:10px;padding:12px 14px;margin-bottom:10px">
     <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;margin-bottom:6px">
       <span style="font-size:13px;font-weight:700;color:#e6edf3">1 open trade</span>
-      <span style="font-size:11px"><span style="color:#3fb950;font-weight:700">1 on track</span> <span class="dim" style="font-size:10px">(live — not settled)</span></span>
+      <span style="font-size:11px"><span style="color:#d29922;font-weight:700">1 close call</span> <span class="dim" style="font-size:10px">(live — not settled)</span></span>
     </div>
     <div style="display:flex;gap:16px;font-size:12px;flex-wrap:wrap">
       <span>Potential gain <span style="color:#3fb950;font-weight:700;font-family:'SF Mono',monospace">+$2.30</span></span>
@@ -1964,11 +1964,11 @@
       
       <div style="flex:1;min-width:150px;background:#0d1117;border:1px solid #21262d;border-radius:6px;padding:10px">
         <div style="font-size:11px;color:#79c0ff;font-weight:700;margin-bottom:6px">LAST 7 DAYS</div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Trades</span><span class="mono" style="font-weight:600">7</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Settled</span><span class="mono">6</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Win rate</span><span class="mono" style="font-weight:700;color:#f85149">33%</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Net P&amp;L</span><span class="mono" style="font-weight:700;color:#3fb950">$+3.49</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:11px"><span class="dim">Avg edge</span><span class="mono">20.8%</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Trades</span><span class="mono" style="font-weight:600">6</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Settled</span><span class="mono">5</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Win rate</span><span class="mono" style="font-weight:700;color:#f85149">20%</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span class="dim">Net P&amp;L</span><span class="mono" style="font-weight:700;color:#f85149">$-1.23</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px"><span class="dim">Avg edge</span><span class="mono">18.0%</span></div>
       </div>
       
       <div style="flex:1;min-width:150px;background:#0d1117;border:1px solid #21262d;border-radius:6px;padding:10px">
@@ -2395,7 +2395,7 @@
 
     <ul class="trade-list" id="tradeList">
       
-        <li id="trade-KXHIGHNY-26MAY14-B63.5" class="trade-item open" data-bot="weather" data-status="open" data-track="on_track"
+        <li id="trade-KXHIGHNY-26MAY14-B63.5" class="trade-item open" data-bot="weather" data-status="open" data-track="close"
             data-placed="2026-05-14T10:09:14.495346" data-pnl="2.2131"
             data-edge="0.3547" data-target="2026-05-14"
             style="border-left-color:#58a6ff">
@@ -2406,7 +2406,7 @@
                   <span class="trade-compact-city">New York City</span>
                   <span class="badge-bot" style="background:#58a6ff20;color:#58a6ff;font-size:9px;padding:1px 5px">🌤</span>
                   <span class="trade-badge badge-no">NO</span>
-                  <span class="trade-badge" style="background:rgba(63,185,80,0.2);color:#3fb950">On Track</span>
+                  <span class="trade-badge" style="background:rgba(210,153,34,0.2);color:#d29922">Close</span>
                 </div>
                 <div class="trade-compact-meta">
                   <span class="mono">@54¢</span>
@@ -2445,9 +2445,9 @@
         <div class="flow-side flow-side-result">
           <div class="flow-label" style="color:#d29922">LIVE</div>
           <div class="flow-line">
-            <span class="flow-side-tag" style="color:#d29922;border-color:#d2992255">MARK</span><span class="mono" style="color:#e6edf3">$0.56</span> <span class="mono" style="color:#3fb950;font-size:10px">+0.02</span>
+            <span class="flow-side-tag" style="color:#d29922;border-color:#d2992255">MARK</span><span class="mono" style="color:#e6edf3">$0.51</span> <span class="mono" style="color:#f85149;font-size:10px">-0.04</span>
           </div>
-          <div class="flow-sub mono" style="color:#3fb950;font-weight:700">$+0.10 unrealized <span class="dim">· 60°F now</span></div>
+          <div class="flow-sub mono" style="color:#f85149;font-weight:700">$-0.17 unrealized <span class="dim">· 61°F now</span></div>
         </div>
       </div>
               <div style="display:flex;gap:16px;padding:6px 0 2px;font-size:11px;color:#8b949e;flex-wrap:wrap">
@@ -2459,12 +2459,12 @@
             <div style="padding:5px 8px;margin:4px 0 2px;background:#161b22;border-radius:6px;border-left:2px solid #3fb950">
               <div style="display:flex;align-items:center;gap:8px">
                 <span style="font-size:10px;color:#8b949e">High so far</span>
-                <span style="font-size:14px;font-weight:700;color:#3fb950;font-family:'JetBrains Mono',monospace">60°F</span>
+                <span style="font-size:14px;font-weight:700;color:#3fb950;font-family:'JetBrains Mono',monospace">61°F</span>
                 <span style="font-size:9px;font-weight:700;color:#58a6ff">METAR</span>
                 <span style="font-size:10px;color:#484f58"> · Forecast 68°F</span>
                 <span style="color:#3fb950;font-weight:600;font-size:10px;margin-left:auto">On track</span>
               </div>
-              <div style="display:flex;align-items:center;gap:6px;margin-top:2px"><span style="font-size:9px;font-weight:600;color:#8b949e;font-family:'SF Mono',monospace">KNYC</span> <span style="font-size:9px;color:#3fb950">29m ago</span> <span style="font-size:9px;font-weight:700;color:#d29922;background:rgba(210,153,34,0.15);padding:1px 5px;border-radius:8px">Close (2.9°F)</span></div>
+              <div style="display:flex;align-items:center;gap:6px;margin-top:2px"><span style="font-size:9px;font-weight:600;color:#8b949e;font-family:'SF Mono',monospace">KNYC</span> <span style="font-size:9px;color:#3fb950">29m ago</span> <span style="font-size:9px;font-weight:700;color:#d29922;background:rgba(210,153,34,0.15);padding:1px 5px;border-radius:8px">Close (2.0°F)</span></div>
             </div>
             </div>
             <div class="detail-section" style="margin-bottom:4px">
@@ -2488,7 +2488,7 @@
                 <div style="font-size:13px;font-weight:600;color:#e6edf3;margin-bottom:8px">We paid $2.70 betting that New York City's high temperature will settle outside 63–64°F.</div>
                 <div style="margin-bottom:8px">
                   <span style="font-size:10px;font-weight:700;color:#3fb950;text-transform:uppercase;letter-spacing:.05em">Why We Think We're Right</span>
-                  <div style="color:#c9d1d9;margin-top:3px">GFS (68°F) and ECMWF (66°F) are close — 30 GFS ensemble members average 66°F (20% GFS / 36% ECMWF). HRRR (3km local model) shows 68°F. Blended forecast: 68°F. Market prices our winning scenario at 54%; we calculate 89% — 35% mispriced. Live temp is 60°F (2.9°F cushion).</div>
+                  <div style="color:#c9d1d9;margin-top:3px">GFS (68°F) and ECMWF (66°F) are close — 30 GFS ensemble members average 66°F (20% GFS / 36% ECMWF). HRRR (3km local model) shows 68°F. Blended forecast: 68°F. Market prices our winning scenario at 54%; we calculate 89% — 35% mispriced. Live temp is 61°F — only 2.0°F from the boundary.</div>
                 </div>
                 <div style="margin-top:8px">
                   <span style="font-size:10px;font-weight:700;color:#f85149;text-transform:uppercase;letter-spacing:.05em">What Could Go Wrong</span>
@@ -2509,7 +2509,7 @@
                 <span class="detail-value" style="color:#58a6ff">🌤 Weather (HIGH)</span>
                 <span class="detail-label">Settlement</span>
                 <span class="detail-value" style="font-size:11px;color:#8b949e">NWS Daily Climate Report (high)</span>
-                <span class="detail-label">High So Far</span><span class="detail-value" style="color:#58a6ff">60°F<span style="font-size:9px;font-weight:700;color:#58a6ff;margin-left:4px">METAR</span></span><span class="detail-label">Station</span><span class="detail-value" style="font-family:'SF Mono',monospace;font-size:11px">KNYC</span><span class="detail-label">Reading Age</span><span class="detail-value" style="color:#3fb950">29m ago</span><span class="detail-label">CLI Status</span><span class="detail-value" style="color:#d29922;font-size:11px">Pending — publishes tomorrow AM</span>
+                <span class="detail-label">High So Far</span><span class="detail-value" style="color:#58a6ff">61°F<span style="font-size:9px;font-weight:700;color:#58a6ff;margin-left:4px">METAR</span></span><span class="detail-label">Station</span><span class="detail-value" style="font-family:'SF Mono',monospace;font-size:11px">KNYC</span><span class="detail-label">Reading Age</span><span class="detail-value" style="color:#3fb950">29m ago</span><span class="detail-label">CLI Status</span><span class="detail-value" style="color:#d29922;font-size:11px">Pending — publishes tomorrow AM</span>
               </div>
             </div>
             <div class="detail-section">
@@ -2647,22 +2647,22 @@
               <div class="detail-section-title">Current Value</div>
               <div class="detail-grid">
                 <span class="detail-label">Current Price</span>
-                <span class="detail-value">$0.56</span>
+                <span class="detail-value">$0.51</span>
                 <span class="detail-label">Payout if Win</span>
                 <span class="detail-value">$5.00</span>
                 <span class="detail-label">Resolves In</span>
-                <span class="detail-value">12h</span>
+                <span class="detail-value">11h</span>
               </div>
               <div style="margin-top:8px">
-                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (25 snapshots)</div>
+                <div style="font-size:11px;color:#8b949e;margin-bottom:4px">Price History (29 snapshots)</div>
                 <svg width="200" height="40" viewBox="0 0 200 40" style="width:100%;height:40px;background:#161b22;border-radius:6px">
                   <line x1="2" y1="22.7" x2="198" y2="22.7" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
-                  <polyline points="2.0,18.9 10.2,14.3 18.3,14.3 26.5,14.3 34.7,8.9 42.8,14.3 51.0,17.3 59.2,11.2 67.3,8.1 75.5,9.7 83.7,2.0 91.8,4.3 100.0,14.3 108.2,10.4 116.3,10.4 124.5,12.0 132.7,17.3 140.8,17.3 149.0,18.9 157.2,18.9 165.3,26.5 173.5,38.0 181.7,32.6 189.8,23.4 198.0,19.6" fill="none" stroke="#3fb950" stroke-width="1.5" stroke-linejoin="round"/>
-                  <circle cx="198.0" cy="19.6" r="2.5" fill="#3fb950"/>
+                  <polyline points="2.0,18.9 9.0,14.3 16.0,14.3 23.0,14.3 30.0,8.9 37.0,14.3 44.0,17.3 51.0,11.2 58.0,8.1 65.0,9.7 72.0,2.0 79.0,4.3 86.0,14.3 93.0,10.4 100.0,10.4 107.0,12.0 114.0,17.3 121.0,17.3 128.0,18.9 135.0,18.9 142.0,26.5 149.0,38.0 156.0,32.6 163.0,23.4 170.0,19.6 177.0,34.9 184.0,32.6 191.0,24.2 198.0,28.0" fill="none" stroke="#f85149" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="198.0" cy="28.0" r="2.5" fill="#f85149"/>
                 </svg>
                 <div style="display:flex;justify-content:space-between;font-size:10px;color:#484f58;margin-top:2px">
                   <span>2026-05-14 10:23</span>
-                  <span>2026-05-14 16:08</span>
+                  <span>2026-05-14 17:08</span>
                 </div>
               </div>
             </div>
@@ -6360,7 +6360,7 @@
     </ul>
   </div>
 
-  <div class="footer">Updated May 14, 12:20 PM ET</div>
+  <div class="footer">Updated May 14, 01:20 PM ET</div>
 </div>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -6401,7 +6401,7 @@
           <div class="stat-label"><span class="tip" data-tip="Profit &amp; Loss: total realized gains minus losses after fees.">P&amp;L</span></div>
         </div>
         <div class="stat">
-          <div class="stat-value stat-value-sm green">$+0.10</div>
+          <div class="stat-value stat-value-sm red">$-0.17</div>
           <div class="stat-label">Unrealized</div>
         </div>
         <div class="stat">
@@ -8320,7 +8320,7 @@
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
           <span class="trade-badge badge-open" style="font-size:9px;padding:1px 5px">OPEN</span>
-          <span class="mono green" style="font-weight:600">$+0.10</span>
+          <span class="mono red" style="font-weight:600">$-0.17</span>
         </div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:12px">
@@ -8876,7 +8876,7 @@
       <span class="detail-label" title="Real cash sitting in your Kalshi account, regardless of paper/live mode">Kalshi Cash (real)</span>
       <span class="detail-value" style="color:#3fb950;font-weight:600">$339.81</span>
       <span class="detail-label" title="Cash + open Kalshi position value">Kalshi Total</span>
-      <span class="detail-value" style="color:#3fb950;font-weight:600">$342.36</span>
+      <span class="detail-value" style="color:#3fb950;font-weight:600">$342.31</span>
       <span class="detail-label" title="Bankroll the paper sim uses for Kelly sizing — independent of real Kalshi cash">Paper Bankroll</span>
       <span class="detail-value" style="color:#d29922;font-weight:600">$339.81</span>
       <span class="detail-label">Kalshi Positions</span>
@@ -8907,7 +8907,7 @@
     <div class="card-subtitle">Tiered limits — tightens automatically as portfolio grows</div>
     <div class="detail-grid" style="font-size:12px">
       <span class="detail-label">Live Balance</span>
-      <span class="detail-value green" style="font-size:14px;font-weight:700">$342.36</span>
+      <span class="detail-value green" style="font-size:14px;font-weight:700">$342.31</span>
       <span class="detail-label">Starting Bankroll</span>
       <span class="detail-value dim">$340</span>
       <span class="detail-label">Risk Tier</span>
@@ -9332,7 +9332,7 @@
               <td style="padding:6px 8px;text-align:center;color:#8b949e;font-family:monospace">KMDW</td>
               <td style="padding:6px 8px;text-align:center;color:#3fb950;font-weight:700">A</td>
               <td style="padding:6px 8px;text-align:center;color:#bc8cff;font-weight:700">V5</td>
-              <td style="padding:6px 8px;text-align:center;color:#c9d1d9;font-family:monospace">3-18h</td>
+              <td style="padding:6px 8px;text-align:center;color:#c9d1d9;font-family:monospace">6-15h</td>
               <td style="padding:6px 8px;text-align:center;color:#58a6ff">0.18</td>
               <td style="padding:6px 8px;text-align:center;color:#bc8cff">0.36</td>
               <td style="padding:6px 8px;text-align:center;color:#3fb950">0.22</td>
@@ -9377,7 +9377,7 @@
               <td style="padding:6px 8px;text-align:center;color:#8b949e;font-family:monospace">KHOU</td>
               <td style="padding:6px 8px;text-align:center;color:#3fb950;font-weight:700">B</td>
               <td style="padding:6px 8px;text-align:center;color:#bc8cff;font-weight:700">V5</td>
-              <td style="padding:6px 8px;text-align:center;color:#c9d1d9;font-family:monospace">3-12h</td>
+              <td style="padding:6px 8px;text-align:center;color:#c9d1d9;font-family:monospace">6-12h</td>
               <td style="padding:6px 8px;text-align:center;color:#58a6ff">0.23</td>
               <td style="padding:6px 8px;text-align:center;color:#bc8cff">0.32</td>
               <td style="padding:6px 8px;text-align:center;color:#3fb950">0.23</td>
@@ -9527,7 +9527,7 @@
               <td style="padding:6px 8px;text-align:center;color:#8b949e;font-family:monospace">KSAT</td>
               <td style="padding:6px 8px;text-align:center;color:#3fb950;font-weight:700">B</td>
               <td style="padding:6px 8px;text-align:center;color:#bc8cff;font-weight:700">V5</td>
-              <td style="padding:6px 8px;text-align:center;color:#c9d1d9;font-family:monospace">3-18h</td>
+              <td style="padding:6px 8px;text-align:center;color:#c9d1d9;font-family:monospace">6-15h</td>
               <td style="padding:6px 8px;text-align:center;color:#58a6ff">0.18</td>
               <td style="padding:6px 8px;text-align:center;color:#bc8cff">0.38</td>
               <td style="padding:6px 8px;text-align:center;color:#3fb950">0.18</td>
@@ -9889,11 +9889,11 @@
         <div style="color:#8b949e;margin-bottom:4px">Data Freshness</div>
         <div style="color:#3fb950;font-weight:700">0.2h ago</div>
         <div style="color:#8b949e;font-size:10px;margin-top:2px">snapshot every 30 min</div>
-        <div style="color:#8b949e;font-size:10px">435 brackets cached</div>
+        <div style="color:#8b949e;font-size:10px">520 brackets cached</div>
       </div>
       <div style="padding:8px;background:#161b22;border:1px solid #21262d;border-radius:6px;font-size:11px">
         <div style="color:#8b949e;margin-bottom:4px">WTI Crude</div>
-        <div style="color:#e6edf3;font-weight:700">$101.03/bbl</div>
+        <div style="color:#e6edf3;font-weight:700">$101.01/bbl</div>
         <div style="color:#3fb950;font-size:10px">
           +5.9% 1w
         </div>
@@ -9905,7 +9905,7 @@
       </div>
       <div style="padding:8px;background:#161b22;border:1px solid #21262d;border-radius:6px;font-size:11px">
         <div style="color:#8b949e;margin-bottom:4px">Crack Spread</div>
-        <div style="color:#e6edf3;font-weight:700">$42.9/bbl</div>
+        <div style="color:#e6edf3;font-weight:700">$43.7/bbl</div>
         <div style="color:#8b949e;font-size:10px">
           Δ +0.0
         </div>
@@ -12902,6 +12902,62 @@
     <div class="card-subtitle">Each cycle: bots scan markets, find opportunities, and decide whether to trade</div>
     <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
       <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-05-14 17:10</span>
+        <span class="dim">NO TRADES</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+        
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-05-14 16:54</span>
+        <span class="dim">NO TRADES</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+        
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-05-14 16:39</span>
+        <span class="dim">NO TRADES</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+        
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="dim mono" style="font-size:11px">2026-05-14 16:24</span>
+        <span class="dim">NO TRADES</span>
+      </div>
+      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
+        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
+        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
+        
+        
+      </div>
+    </div>
+    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
         <span class="dim mono" style="font-size:11px">2026-05-14 16:09</span>
         <span class="dim">NO TRADES</span>
       </div>
@@ -13124,62 +13180,6 @@
         <span style="font-size:11px"><span style="color:#58a6ff">🌤 1</span></span>
       </div>
     </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-05-14 12:09</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">1</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 1</span></span>
-      </div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-05-14 11:54</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">1</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-        <span style="font-size:11px"><span style="color:#58a6ff">🌤 1</span></span>
-      </div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-05-14 11:39</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-        
-      </div>
-    </div>
-    <div style="padding:10px 0;border-bottom:1px solid #21262d;font-size:12px">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="dim mono" style="font-size:11px">2026-05-14 11:24</span>
-        <span class="dim">NO TRADES</span>
-      </div>
-      <div style="margin-top:4px;display:flex;gap:16px;flex-wrap:wrap">
-        <span><span class="dim">Found</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Picked</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Traded</span> <span class="mono" style="font-weight:600">0</span></span>
-        <span><span class="dim">Settled</span> <span class="mono" style="font-weight:600">0</span></span>
-        
-        
-      </div>
-    </div>
   </div>
   <div class="card">
     <div class="card-title">Markets Passed On (4000)</div>
@@ -13196,16 +13196,7 @@
     </div>
     <div style="padding:8px;background:#161b22;border-radius:6px;margin-bottom:10px;font-size:11px;color:#8b949e;line-height:1.6">
       <div class="dim" style="font-size:10px;font-weight:600;margin-bottom:4px">SKIP REASONS</div>
-      Market resolves too far in the future — forecast accuracy drops: <span class="mono" style="font-weight:600">793</span> · Trading is paused: <span class="mono" style="font-weight:600">480</span> · Market is about to settle — too late to enter: <span class="mono" style="font-weight:600">436</span> · Neither YES nor NO side offers good risk/reward: <span class="mono" style="font-weight:600">345</span> · v4_city_blocked: <span class="mono" style="font-weight:600">284</span> · v4_low_city_blocked: <span class="mono" style="font-weight:600">272</span> · gas_bracket_too_close: <span class="mono" style="font-weight:600">235</span> · Not enough trading volume — order would move the market: <span class="mono" style="font-weight:600">205</span>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY15-T55">KXLOWTSFO-26MAY15-T55</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
-        <span class="dim" style="font-size:10px"></span>
-        
-      </div>
+      Market resolves too far in the future — forecast accuracy drops: <span class="mono" style="font-weight:600">793</span> · Trading is paused: <span class="mono" style="font-weight:600">480</span> · Market is about to settle — too late to enter: <span class="mono" style="font-weight:600">463</span> · Neither YES nor NO side offers good risk/reward: <span class="mono" style="font-weight:600">349</span> · v4_city_blocked: <span class="mono" style="font-weight:600">288</span> · v4_low_city_blocked: <span class="mono" style="font-weight:600">272</span> · gas_bracket_too_close: <span class="mono" style="font-weight:600">235</span> · Not enough trading volume — order would move the market: <span class="mono" style="font-weight:600">178</span>
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
@@ -13227,7 +13218,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY15-B48.5">KXLOWTSFO-26MAY15-B48.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY15-B50.5">KXLOWTSFO-26MAY15-B50.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
         <span class="dim" style="font-size:10px"></span>
@@ -13236,7 +13227,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY15-B50.5">KXLOWTSFO-26MAY15-B50.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY15-T55">KXLOWTSFO-26MAY15-T55</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
         <span class="dim" style="font-size:10px"></span>
@@ -13248,7 +13239,16 @@
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY15-B54.5">KXLOWTSFO-26MAY15-B54.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 38.7h out</span>
+        <span class="dim" style="font-size:10px"> · 37.7h out</span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY15-B48.5">KXLOWTSFO-26MAY15-B48.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
+        <span class="dim" style="font-size:10px"></span>
         
       </div>
     </div>
@@ -13256,7 +13256,7 @@
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY14-B48.5">KXLOWTSFO-26MAY14-B48.5</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >past_peak_cutoff_low</span>
+        <span class="yellow" style="font-weight:600;cursor:help" title="Market is about to settle — too late to enter">Market is about to settle — too late to enter</span><div style="font-size:10px;color:#484f58;margin-top:1px">near_settled</div>
         <span class="dim" style="font-size:10px"></span>
         
       </div>
@@ -13265,16 +13265,7 @@
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY14-B46.5">KXLOWTSFO-26MAY14-B46.5</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >past_peak_cutoff_low</span>
-        <span class="dim" style="font-size:10px"></span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY14-B50.5">KXLOWTSFO-26MAY14-B50.5</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >past_peak_cutoff_low</span>
+        <span class="yellow" style="font-weight:600;cursor:help" title="Market is about to settle — too late to enter">Market is about to settle — too late to enter</span><div style="font-size:10px;color:#484f58;margin-top:1px">near_settled</div>
         <span class="dim" style="font-size:10px"></span>
         
       </div>
@@ -13284,6 +13275,15 @@
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY14-T46">KXLOWTSFO-26MAY14-T46</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" title="Market is about to settle — too late to enter">Market is about to settle — too late to enter</span><div style="font-size:10px;color:#484f58;margin-top:1px">near_settled</div>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSFO-26MAY14-B50.5">KXLOWTSFO-26MAY14-B50.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" >past_peak_cutoff_low</span>
         <span class="dim" style="font-size:10px"></span>
         
       </div>
@@ -13308,15 +13308,6 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY15-T41">KXLOWTSEA-26MAY15-T41</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
-        <span class="dim" style="font-size:10px"></span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY15-B41.5">KXLOWTSEA-26MAY15-B41.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
@@ -13327,15 +13318,6 @@
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY15-B43.5">KXLOWTSEA-26MAY15-B43.5</span>
-      <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
-        <span class="dim" style="font-size:10px"></span>
-        
-      </div>
-    </div>
-    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
-      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY15-B45.5">KXLOWTSEA-26MAY15-B45.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
         <span class="dim" style="font-size:10px"></span>
@@ -13362,7 +13344,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY14-T50">KXLOWTSEA-26MAY14-T50</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY15-B45.5">KXLOWTSEA-26MAY15-B45.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
         <span class="dim" style="font-size:10px"></span>
@@ -13371,7 +13353,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY14-B49.5">KXLOWTSEA-26MAY14-B49.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY15-T41">KXLOWTSEA-26MAY15-T41</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
         <span class="dim" style="font-size:10px"></span>
@@ -13389,6 +13371,15 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY14-B43.5">KXLOWTSEA-26MAY14-B43.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY14-B47.5">KXLOWTSEA-26MAY14-B47.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
@@ -13398,7 +13389,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY14-B43.5">KXLOWTSEA-26MAY14-B43.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY14-B49.5">KXLOWTSEA-26MAY14-B49.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
         <span class="dim" style="font-size:10px"></span>
@@ -13416,16 +13407,25 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY15-T69">KXLOWTSATX-26MAY15-T69</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSEA-26MAY14-T50">KXLOWTSEA-26MAY14-T50</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
-        <span class="dim" style="font-size:10px"> · 35.7h out</span>
+        <span class="yellow" style="font-weight:600;cursor:help" >v4_low_city_blocked</span>
+        <span class="dim" style="font-size:10px"></span>
         
       </div>
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
       <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY15-B62.5">KXLOWTSATX-26MAY15-B62.5</span>
+      <div style="text-align:right;flex-shrink:0">
+        <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
+        <span class="dim" style="font-size:10px"></span>
+        
+      </div>
+    </div>
+    <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
+      <span style="color:#7ee2ff;flex-shrink:0">❄</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY15-T62">KXLOWTSATX-26MAY15-T62</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
         <span class="dim" style="font-size:10px"></span>
@@ -13443,10 +13443,10 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY15-B64.5">KXLOWTSATX-26MAY15-B64.5</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY15-T69">KXLOWTSATX-26MAY15-T69</span>
       <div style="text-align:right;flex-shrink:0">
-        <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
-        <span class="dim" style="font-size:10px"></span>
+        <span class="yellow" style="font-weight:600;cursor:help" >t2s_too_far</span>
+        <span class="dim" style="font-size:10px"> · 34.7h out</span>
         
       </div>
     </div>
@@ -13461,7 +13461,7 @@
     </div>
     <div class="skip-row" data-bot="weather_low" style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #161b22;font-size:11px">
       <span style="color:#7ee2ff;flex-shrink:0">❄</span>
-      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY15-T62">KXLOWTSATX-26MAY15-T62</span>
+      <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="KXLOWTSATX-26MAY15-B64.5">KXLOWTSATX-26MAY15-B64.5</span>
       <div style="text-align:right;flex-shrink:0">
         <span class="yellow" style="font-weight:600;cursor:help" title="Not enough trading volume — order would move the market">Not enough trading volume — order would move the market</span><div style="font-size:10px;color:#484f58;margin-top:1px">insufficient_volume</div>
         <span class="dim" style="font-size:10px"></span>
@@ -13758,6 +13758,51 @@
       <button class="filter-tab" onclick="filterActivity(this,'type:autotune')" style="font-size:10px;padding:3px 8px">Tuning</button>
     </div>
     <div id="activityList">
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 01:10 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="autotune" data-bot="">
+      <span class="activity-icon" style="color:#bc8cff">🧠</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_entry_window_min_minutes.chicago adjusted to 360 — V5 audit 2026-05-14: tightened from 180 (3h) to 36</span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 01:08 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="autotune" data-bot="">
+      <span class="activity-icon" style="color:#bc8cff">🧠</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_entry_window_max_minutes.chicago adjusted to 900 — V5 audit 2026-05-14: tightened from 1080 (18h) to </span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 01:08 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="autotune" data-bot="">
+      <span class="activity-icon" style="color:#bc8cff">🧠</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_entry_window_min_minutes.san antonio adjusted to 360 — V5 audit 2026-05-14: tightened from 180 (3h) to 36</span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 01:08 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="autotune" data-bot="">
+      <span class="activity-icon" style="color:#bc8cff">🧠</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_entry_window_max_minutes.san antonio adjusted to 900 — V5 audit 2026-05-14: tightened from 1080 (18h) to </span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 01:08 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="autotune" data-bot="">
+      <span class="activity-icon" style="color:#bc8cff">🧠</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_entry_window_min_minutes.houston adjusted to 360 — V5 audit 2026-05-14: tightened from 180 (3h) to 36</span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 01:08 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 12:54 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 12:39 PM ET</span>
+    </div>
+    <div class="activity-row" data-type="cycle" data-bot="">
+      <span class="activity-icon" style="color:#58a6ff">📡</span>
+      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
+      <span class="activity-meta" style="white-space:nowrap">May 14, 12:24 PM ET</span>
+    </div>
     <div class="activity-row" data-type="cycle" data-bot="">
       <span class="activity-icon" style="color:#58a6ff">📡</span>
       <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
@@ -14113,51 +14158,6 @@
       <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
       <span class="activity-meta" style="white-space:nowrap">May 13, 08:23 PM ET</span>
     </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 08:09 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 07:54 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 07:39 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 07:24 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="cycle" data-bot="">
-      <span class="activity-icon" style="color:#58a6ff">📡</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">SCAN: 0 signals found, 0 trades placed</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 07:09 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="autotune" data-bot="">
-      <span class="activity-icon" style="color:#bc8cff">🧠</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_edge_thresholds.houston adjusted to 0.2 — V5 Stage 2 baseline (matched to atlanta): 3-12h, 2</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 07:00 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="autotune" data-bot="">
-      <span class="activity-icon" style="color:#bc8cff">🧠</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_entry_window_min_minutes.houston adjusted to 180 — V5 Stage 2 baseline (matched to atlanta): 3-12h, 2</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 07:00 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="autotune" data-bot="">
-      <span class="activity-icon" style="color:#bc8cff">🧠</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_entry_window_max_minutes.houston adjusted to 720 — V5 Stage 2 baseline (matched to atlanta): 3-12h, 2</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 07:00 PM ET</span>
-    </div>
-    <div class="activity-row" data-type="autotune" data-bot="">
-      <span class="activity-icon" style="color:#bc8cff">🧠</span>
-      <span class="activity-text" style="font-size:12px;color:#e6edf3">AUTO-TUNE: city_kelly_fraction.houston adjusted to 0.25 — V5 Stage 2 baseline (matched to atlanta): quarter-</span>
-      <span class="activity-meta" style="white-space:nowrap">May 13, 07:00 PM ET</span>
-    </div>
     </div>
   </div>
   <div class="card">
@@ -14271,7 +14271,7 @@ function switchBot(bot) {
 
 // ── Stale check ─────────────────────────────────────
 (function() {
-  var updated = new Date("2026-05-14T16:20:05Z");
+  var updated = new Date("2026-05-14T17:20:05Z");
   var now = new Date();
   var minsOld = (now - updated) / (1000 * 60);
   if (minsOld > 30) {
