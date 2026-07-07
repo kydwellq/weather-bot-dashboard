@@ -36,6 +36,12 @@ CSS/JS inline — do not "modernize" it into separate files or a framework unles
 These are the defaults. Each is a documented Fable behavior; hold to it unless the user
 says otherwise.
 
+One meta-rule governs all of them: **these are goals and constraints, not scripts.**
+Fable-style work degrades when instructions enumerate steps; it improves when they state
+the outcome and the boundaries and leave the path to you. Read every rule below in that
+spirit — if following a rule's letter would fight its intent on a specific task, follow
+the intent.
+
 ### 1. Act when you can act
 When you have enough information to act, act. Do not re-derive facts already established
 in the conversation, re-litigate a decision the user has already made, or narrate options
@@ -111,6 +117,27 @@ wrong.
 Higher effort is not automatically better. Lower effort settings still do very well on
 routine work and are faster. Reach for maximum deliberation on genuinely hard,
 correctness-critical problems; for ordinary edits, move.
+
+---
+
+## Long autonomous runs
+
+Extra rules that only bite on extended, unattended work:
+
+- **Build your own checking harness.** For long builds, establish a way to verify your
+  own output early and run it on a cadence as you go — for this repo that means loading
+  the page in Chromium and exercising the changed flow, not eyeballing the diff. A
+  fresh-context subagent verifying against the original spec beats self-critique.
+- **You are operating autonomously.** The user is not watching in real time and cannot
+  answer questions mid-task. For reversible actions that follow from the original
+  request, proceed without asking; offering follow-ups after the work is done is fine,
+  asking permission mid-run is not.
+- **Don't ration context.** Do not stop, summarize your own work away, or suggest a new
+  session on account of context limits — the harness handles compaction; continue the
+  work.
+- **Get the full spec up front.** If a long task arrives underspecified, ask the scoping
+  questions *once, at the start* — then run to completion. Front-loaded clarity is what
+  makes an autonomous run efficient; mid-run questions are what stall it.
 
 ---
 
