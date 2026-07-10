@@ -34,19 +34,25 @@ if [ -z "$BONE" ] || [ ! -d "$BONE" ]; then
 fi
 echo "==> bonereaper found at: $BONE"
 
-# ── 2. Install trade_gate.py ─────────────────────────────────────────
+# ── 2. Install trade_gate.py + forecast.py ───────────────────────────
 SRC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-/dev/null}")" 2>/dev/null && pwd || true)"
 DEST="$BONE/hawkeye_gate"
 mkdir -p "$DEST"
-if [ -n "$SRC_DIR" ] && [ -f "$SRC_DIR/trade_gate.py" ]; then
-  cp "$SRC_DIR/trade_gate.py" "$DEST/trade_gate.py"
-else
-  curl -fsSL "$RAW_BASE/trade_gate.py" -o "$DEST/trade_gate.py"
-fi
-echo "==> installed $DEST/trade_gate.py"
+for f in trade_gate.py forecast.py; do
+  if [ -n "$SRC_DIR" ] && [ -f "$SRC_DIR/$f" ]; then
+    cp "$SRC_DIR/$f" "$DEST/$f"
+  else
+    curl -fsSL "$RAW_BASE/$f" -o "$DEST/$f"
+  fi
+  echo "==> installed $DEST/$f"
+done
 
-# ── 3. Verify the gate self-test on this machine's python ────────────
+# ── 3. Verify self-tests, then a LIVE forecast smoke test ────────────
 python3 "$DEST/trade_gate.py"
+python3 "$DEST/forecast.py"
+echo "==> live forecast smoke test (austin low):"
+python3 "$DEST/forecast.py" --live austin low || \
+  echo "    live fetch failed — check outbound HTTPS to api.open-meteo.com"
 
 # ── 4. Show where to wire it in ──────────────────────────────────────
 echo
