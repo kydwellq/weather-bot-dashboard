@@ -1,0 +1,69 @@
+{
+  "generated_from": {
+    "trades_in_window": 105,
+    "settled": 100,
+    "held_to_settlement": 40,
+    "window": [
+      "2026-06-23",
+      "2026-07-10"
+    ],
+    "note": "dashboard trade log is a rolling window, not full history"
+  },
+  "mode": "paper",
+  "promotion_to_live_requires": "calibration breaker quiet for >=20 consecutive settled paper trades AND realized paper ROI > 0 over that span",
+  "strategies": {
+    "HAWKEYE_H2": {
+      "enabled": true,
+      "paper_only": true,
+      "evidence": {
+        "held_n": 30,
+        "held_wins": 8,
+        "win_rate_ci95": [
+          0.142,
+          0.444
+        ],
+        "avg_entry_price": 0.291,
+        "settled_n": 38,
+        "settled_pnl": -1.84,
+        "market_expected_positive": 12.3,
+        "observed_positive": 10,
+        "adverse_selection_z": -0.9
+      },
+      "reason": "insufficient evidence to disable; paper-only until promotion criterion met"
+    },
+    "HAWKEYE_LOW_V0": {
+      "enabled": false,
+      "paper_only": true,
+      "evidence": {
+        "held_n": 4,
+        "held_wins": 0,
+        "win_rate_ci95": [
+          0.0,
+          0.49
+        ],
+        "avg_entry_price": 0.105,
+        "settled_n": 47,
+        "settled_pnl": -11.72,
+        "market_expected_positive": 21.1,
+        "observed_positive": 0,
+        "adverse_selection_z": -7.6
+      },
+      "reason": "adverse selection: positive outcomes >2 sigma below market-implied expectation with negative net P&L"
+    }
+  },
+  "execution": {
+    "allow_manual_exit": false,
+    "evidence": {
+      "manual_exits": 60,
+      "negative": 52,
+      "total_pnl": -2.73
+    },
+    "reason": "manual exits are frequent and net-negative in window \u2014 hold to settlement"
+  },
+  "sizing": {
+    "min_contracts": 5,
+    "rationale": "per-contract fee ceil rounding <=0.6pp of stake at C>=5",
+    "max_fraction_of_bankroll_per_trade": 0.02,
+    "max_daily_loss_fraction": 0.05
+  }
+}

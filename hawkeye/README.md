@@ -45,8 +45,23 @@ Root causes, in order of severity:
   enforces honesty until they're fitted on ≥100 settled paper trades.
   Offline self-test: `python3 forecast.py`. Live smoke test on the
   fleet machine: `python3 forecast.py --live austin low`.
+- `calibrate.py` + `hawkeye_config.json` — data-derived trading policy,
+  regenerated from the dashboard trade log. Two statistically principled
+  disable criteria (a high losing fraction is NOT one of them — a 29¢
+  longshot book rightly loses 71% of its trades): (a) held-to-settlement
+  win-rate CI upper bound below average entry price, or (b) adverse
+  selection — positive outcomes more than 2σ below the market-implied
+  expectation with negative net P&L. Current policy from the data:
+  HAWKEYE_LOW_V0 **disabled** (z = −7.6: market expected ~21 of its 47
+  settled trades positive, observed 0); HAWKEYE_H2 enabled paper-only
+  (z = −0.9: performs at market odds — no alpha without the forecast
+  module, but no adverse selection); manual exits **banned** (52 of 60
+  negative, −$2.73); minimum 5 contracts (fee ceil rounding); global
+  paper mode with an explicit promotion-to-live criterion. Rerun
+  `python3 calibrate.py path/to/index.html` after each batch of settled
+  paper trades — every decision carries its evidence in the JSON.
 - `deploy_to_fleet.sh` — one-command install on the fleet machine:
-  locates the bonereaper checkout, installs both modules as
+  locates the bonereaper checkout, installs the modules and policy as
   `hawkeye_gate/`, runs the self-tests plus a live forecast smoke test,
   and prints the order-submission call sites to wire up.
 - `backtest.py` — replays the dashboard's own trade log through the
