@@ -38,7 +38,7 @@ echo "==> bonereaper found at: $BONE"
 SRC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-/dev/null}")" 2>/dev/null && pwd || true)"
 DEST="$BONE/hawkeye_gate"
 mkdir -p "$DEST"
-for f in trade_gate.py forecast.py calibrate.py hawkeye_config.json; do
+for f in trade_gate.py forecast.py calibrate.py collect.py hawkeye_config.json; do
   if [ -n "$SRC_DIR" ] && [ -f "$SRC_DIR/$f" ]; then
     cp "$SRC_DIR/$f" "$DEST/$f"
   else
@@ -81,4 +81,11 @@ Next steps (see hawkeye/README.md on the branch for detail):
  3. Run paper-only until the calibration breaker is quiet for 20+
     consecutive settled paper trades, then regenerate the policy:
         python3 hawkeye_gate/calibrate.py path/to/index.html
+ 4. PAUSED-BUT-LEARNING mode (works with every bot stopped, no bonereaper
+    integration needed) — add to crontab (UTC):
+        0 7  * * *  cd $BONE/hawkeye_gate && python3 collect.py forecasts
+        0 20 * * *  cd $BONE/hawkeye_gate && python3 collect.py outcomes
+    Check progress anytime:  python3 hawkeye_gate/collect.py report
+    When the report says CALIBRATED (needs ~100 forecast/outcome pairs,
+    about a week at 30/day), sigma is proven and paper trading can begin.
 EOF

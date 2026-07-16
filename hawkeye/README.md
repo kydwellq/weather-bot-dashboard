@@ -60,10 +60,23 @@ Root causes, in order of severity:
   paper mode with an explicit promotion-to-live criterion. Rerun
   `python3 calibrate.py path/to/index.html` after each batch of settled
   paper trades — every decision carries its evidence in the JSON.
+- `collect.py` — paused-but-learning mode: a standalone cron collector
+  that records each morning's multi-model forecasts and each day's
+  observed outcomes for all 15 cities, with **every bot stopped** — no
+  trading, no Kalshi account, no bonereaper integration. Its `report`
+  command measures whether σ is honest (bias, MAE, 1σ/2σ coverage vs the
+  ~68/95% targets, suggested σ multiplier) and declares CALIBRATED once
+  ~100 forecast/outcome pairs pass — roughly a week at 30 pairs/day.
+  That verdict is the evidence gate for restarting paper trading.
+  Outcome caveat is documented in the module: outcomes are Open-Meteo
+  previous-day values, close to but not the NWS settlement document —
+  right for σ calibration, while settle-grade validation still comes
+  from paper trades.
 - `deploy_to_fleet.sh` — one-command install on the fleet machine:
   locates the bonereaper checkout, installs the modules and policy as
   `hawkeye_gate/`, runs the self-tests plus a live forecast smoke test,
-  and prints the order-submission call sites to wire up.
+  prints the order-submission call sites to wire up, and prints the
+  cron lines for paused-but-learning collection.
 - `backtest.py` — replays the dashboard's own trade log through the
   gates. `python3 backtest.py ../index.html` currently reports: every
   one of the 125 settled trades blocked (92 no-forecast-data, 33
