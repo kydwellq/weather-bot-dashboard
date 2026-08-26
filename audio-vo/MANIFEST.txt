@@ -1,0 +1,53 @@
+ElevenLabs voiceover clips - weather-bot-dashboard
+==================================================
+
+Voice name : KY Korean American
+Voice ID   : YabRqOjc92Y8yMhz2GzF
+Model      : eleven_multilingual_v2
+Generated  : 2026-08-26
+Clips      : 23 (lead x9, fast x8, teaser x6)
+
+Columns: id | bytes | place-at (s) | duration (s) | ends (s)
+----------------------------------------------------------------
+lead-1      100471     0.0    5.15    5.15
+lead-2      248429     5.0   14.40   19.40
+lead-3       65363    10.5    2.97   13.47
+lead-4      110920    14.4    5.80   20.20
+lead-5      148537    18.8    8.17   26.97
+lead-6       83335    22.6    4.09   26.69
+lead-7       43211    25.7    1.58   27.28
+lead-8       97964    27.9    5.02   32.92
+lead-9      115100    30.7    6.08   36.78
+fast-1       86261     0.0    4.27    4.27
+fast-2       38613     3.2    1.30    4.50
+fast-3       92112     5.8    4.64   10.44
+fast-4      157732     9.4    8.73   18.13
+fast-5       75812    12.8    3.62   16.42
+fast-6       62437    16.0    2.79   18.79
+fast-7       37778    19.0    1.25   20.25
+fast-8      192422    21.1   10.91   32.01
+teaser-1     44047     0.0    1.63    1.63
+teaser-2     65363     2.8    2.97    5.77
+teaser-3     74976     5.6    3.58    9.18
+teaser-4     69124     8.8    3.20   12.00
+teaser-5     40285    12.0    1.39   13.39
+teaser-6    123459    13.9    6.59   20.49
+
+Timing note
+-----------
+Generated durations are what the model produced; place-at values are
+from the source script. Where a clip runs past the next clip's place-at,
+the two overlap and the cut needs adjusting:
+
+  lead-1    runs  5.15s into a 5.00s slot  -> overlaps lead-2    by  0.15s
+  lead-2    runs 14.40s into a 5.50s slot  -> overlaps lead-3    by  8.90s
+  lead-4    runs  5.80s into a 4.40s slot  -> overlaps lead-5    by  1.40s
+  lead-5    runs  8.17s into a 3.80s slot  -> overlaps lead-6    by  4.37s
+  lead-6    runs  4.09s into a 3.10s slot  -> overlaps lead-7    by  0.99s
+  lead-8    runs  5.02s into a 2.80s slot  -> overlaps lead-9    by  2.22s
+  fast-1    runs  4.27s into a 3.20s slot  -> overlaps fast-2    by  1.07s
+  fast-3    runs  4.64s into a 3.60s slot  -> overlaps fast-4    by  1.04s
+  fast-4    runs  8.73s into a 3.40s slot  -> overlaps fast-5    by  5.33s
+  fast-5    runs  3.62s into a 3.20s slot  -> overlaps fast-6    by  0.42s
+  teaser-2  runs  2.97s into a 2.80s slot  -> overlaps teaser-3  by  0.17s
+  teaser-3  runs  3.58s into a 3.20s slot  -> overlaps teaser-4  by  0.38s
